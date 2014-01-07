@@ -8,6 +8,49 @@ Put kinetic parameters for reactions to use as a training set for fitting
 group additivity values in this file.
 """
 recommended = True
+entry(
+    index = 1,
+    reactant1 = 
+"""
+1  C 0 {2,S} {6,S} {10,S}
+2  C 0 {1,S} {3,S} {9,S}
+3  C 0 {2,S} {4,D}
+4  C 0 {3,D} {5,S} {7,S}
+5  C 0 {4,S} {6,S} {8,S}
+6  O 0 {1,S} {5,S}
+7  O 0 {4,S}
+8  O 0 {5,S}
+9  O 0 {2,S}
+10 C 0 {1,S} {11,S}
+11 O 0 {10,S}
+""",
+    product1 = 
+"""
+1 C 0 {2,S} {3,D}
+2 O 0 {1,S}
+3 C 0 {1,D} {4,S}
+4 C 0 {3,S} {5,S} {6,D}
+5 O 0 {4,S}
+6 C 0 {4,D} {7,S}
+7 O 0 {6,S}
+
+""",
+    product2 = 
+"""
+1 C 0 {2,S} {3,S}
+2 O 0 {1,S}
+3 C 0 {1,S} {4,D}
+4 O 0 {3,D}
+""",
+    degeneracy = 1,
+    kinetics = Arrhenius(
+        A=(2.1e+15,'s^-1'),
+        n=0.0,
+        Ea=(55.3,'kcal/mol'),
+        T0=(1,'K'),
+        Tmin = (286,"K"),
+        Tmax = (2000,"K"),
+    ),
 
 entry(
     index = 1,
@@ -49,9 +92,10 @@ entry(
         n=0.0,
         Ea=(44.6,'kcal/mol'),
         T0=(1,'K'),
-        Tmin = (1000,"K"),
+        Tmin = (286,"K"),
         Tmax = (2000,"K"),
     ),
+    
     reference = None,
     referenceType = "",
     rank = 3, # MEANING UNKNOWN!
