@@ -51,6 +51,26 @@ entry(
         Tmin = (286,"K"),
         Tmax = (2000,"K"),
     ),
+    
+    reference = None,
+        referenceType = "",
+        rank = 3, # MEANING UNKNOWN!
+        shortDesc = u"""Hans-Heinrich Carstense et al. (2010) doi:10.1021/bk-2010-1052.ch010""",
+        longDesc = 
+    u"""
+     Electronic structure calculations at the CBS-QB3 method followed by the TST
+     calculations yielded the following rate constants of reaction for the retro-
+     Diels-Alder reaction (Taken from: Development of Detailed Kinetic Models for
+    the Thermal Conversion of Biomass via First Principle Methods and Rate Estimation
+     Rules,Hans-Heinrich Carstense et al. (2010) doi:10.1021/bk-2010-1052.ch010 )
+    
+     Valid temperature range is from 286-2000 (where the paper mentioned).
+    
+    """,
+        history = [
+            ("Thu Jan 7 15:39:30 2014","Fariba Seyedzadeh <seyedzadehkhanshan.fn@husky.neu.edu>","action","""Fariba Seyedzadeh <seyedzadehkhanshan.f@husky.neu.edu> created this entry."""),
+        ],
+    )
 
 entry(
     index = 1,
