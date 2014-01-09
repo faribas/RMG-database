@@ -42,8 +42,8 @@ entry(
     label = "diene_in",
     group = 
 """
-1 *4 Cd 0 {2,S}
-2 *5 Cd 0 {1,S}
+1 *4 {Cd,CO} 0 {2,S}
+2 *5 {Cd,CO} 0 {1,S}
 """,
     kinetics = None,
     reference = None,
@@ -63,8 +63,8 @@ entry(
     label = "ene",
     group = 
 """
-1 *1 {Cd,Od} 0 {2,D}
-2 *2 {Cd,Od} 0 {1,D}
+1 *1 {Cd,Od,CO} 0 {2,D}
+2 *2 {Cd,Od,CO} 0 {1,D}
 """,
     kinetics = None,
     reference = None,
@@ -85,8 +85,8 @@ entry(
     group = 
 """
 1 *3 {Cd,Od} 0 {2,D} {5,S} {6,S}
-2 *4 Cd 0 {1,D} {3,S}
-3 *5 Cd 0 {2,S} {4,D}
+2 *4 {Cd,CO} 0 {1,D} {3,S}
+3 *5 {Cd,CO} 0 {2,S} {4,D}
 4 *6 {Cd,Od} 0 {3,D} {7,S} {8,S}
 5    H  0 {1,S}
 6    H  0 {1,S}
@@ -112,8 +112,8 @@ entry(
     group = 
 """
 1 *3 {Cd,Od}  0 {2,D} {5,S} {6,S}
-2 *4 Cd  0 {1,D} {3,S}
-3 *5 Cd  0 {2,S} {4,D}
+2 *4 {Cd,CO}  0 {1,D} {3,S}
+3 *5 {Cd,CO}  0 {2,S} {4,D}
 4 *6 {Cd,Od}  0 {3,D} {7,S} {8,S}
 5    H   0 {1,S}
 6    H   0 {1,S}
@@ -139,8 +139,8 @@ entry(
     group = 
 """
 1 *3 {Cd,Od}     0 {2,D} {5,S} {6,S}
-2 *4 Cd     0 {1,D} {3,S}
-3 *5 Cd     0 {2,S} {4,D}
+2 *4 {Cd,CO}     0 {1,D} {3,S}
+3 *5 {Cd,CO}     0 {2,S} {4,D}
 4 *6 {Cd,Od}     0 {3,D} {7,S} {8,S}
 5    H      0 {1,S}
 6    H      0 {1,S}
@@ -166,8 +166,8 @@ entry(
     group = 
 """
 1 *3 {Cd,Od}            0 {2,D} {5,S} {6,S}
-2 *4 Cd            0 {1,D} {3,S}
-3 *5 Cd            0 {2,S} {4,D}
+2 *4 {Cd,CO}            0 {1,D} {3,S}
+3 *5 {Cd,CO}            0 {2,S} {4,D}
 4 *6 {Cd,Od}            0 {3,D} {7,S} {8,S}
 5    H             0 {1,S}
 6    H             0 {1,S}
@@ -193,8 +193,8 @@ entry(
     group = 
 """
 1 *3 {Cd,Od}  0 {2,D} {5,S} {6,S}
-2 *4 Cd  0 {1,D} {3,S}
-3 *5 Cd  0 {2,S} {4,D}
+2 *4 {Cd,CO}  0 {1,D} {3,S}
+3 *5 {Cd,CO}  0 {2,S} {4,D}
 4 *6 {Cd,Od}  0 {3,D} {7,S} {8,S}
 5    H   0 {1,S}
 6    H   0 {1,S}
@@ -220,8 +220,8 @@ entry(
     group = 
 """
 1 *3 {Cd,Od}     0 {2,D} {5,S} {6,S}
-2 *4 Cd     0 {1,D} {3,S}
-3 *5 Cd     0 {2,S} {4,D}
+2 *4 {Cd,CO}     0 {1,D} {3,S}
+3 *5 {Cd,CO}     0 {2,S} {4,D}
 4 *6 {Cd,Od}     0 {3,D} {7,S} {8,S}
 5    H      0 {1,S}
 6    H      0 {1,S}
@@ -247,8 +247,8 @@ entry(
     group = 
 """
 1 *3 {Cd,Od}            0 {2,D} {5,S} {6,S}
-2 *4 Cd            0 {1,D} {3,S}
-3 *5 Cd            0 {2,S} {4,D}
+2 *4 {Cd,CO}            0 {1,D} {3,S}
+3 *5 {Cd,CO}            0 {2,S} {4,D}
 4 *6 {Cd,Od}            0 {3,D} {7,S} {8,S}
 5    H             0 {1,S}
 6    H             0 {1,S}
@@ -274,8 +274,8 @@ entry(
     group = 
 """
 1 *3 {Cd,Od}            0 {2,D} {5,S} {6,S}
-2 *4 Cd            0 {1,D} {3,S}
-3 *5 Cd            0 {2,S} {4,D}
+2 *4 {Cd,CO}            0 {1,D} {3,S}
+3 *5 {Cd,CO}            0 {2,S} {4,D}
 4 *6 {Cd,Od}            0 {3,D} {7,S} {8,S}
 5    H             0 {1,S}
 6    H             0 {1,S}
@@ -301,8 +301,8 @@ entry(
     group = 
 """
 1 *3 {Cd,Od}  0 {2,D} {5,S} {6,S}
-2 *4 Cd  0 {1,D} {3,S}
-3 *5 Cd  0 {2,S} {4,D}
+2 *4 {Cd,CO}  0 {1,D} {3,S}
+3 *5 {Cd,CO}  0 {2,S} {4,D}
 4 *6 {Cd,Od}  0 {3,D} {7,S} {8,S}
 5    H   0 {1,S}
 6    R!H 0 {1,S}
@@ -328,8 +328,8 @@ entry(
     group = 
 """
 1 *3 {Cd,Od}     0 {2,D} {5,S} {6,S}
-2 *4 Cd     0 {1,D} {3,S}
-3 *5 Cd     0 {2,S} {4,D}
+2 *4 {Cd,CO}     0 {1,D} {3,S}
+3 *5 {Cd,CO}     0 {2,S} {4,D}
 4 *6 {Cd,Od}     0 {3,D} {7,S} {8,S}
 5    H      0 {1,S}
 6    {Cs,O} 0 {1,S}
@@ -355,8 +355,8 @@ entry(
     group = 
 """
 1 *3 {Cd,Od}            0 {2,D} {5,S} {6,S}
-2 *4 Cd            0 {1,D} {3,S}
-3 *5 Cd            0 {2,S} {4,D}
+2 *4 {Cd,CO}            0 {1,D} {3,S}
+3 *5 {Cd,CO}            0 {2,S} {4,D}
 4 *6 {Cd,Od}            0 {3,D} {7,S} {8,S}
 5    H             0 {1,S}
 6    {Cs,O}        0 {1,S}
@@ -382,8 +382,8 @@ entry(
     group = 
 """
 1 *3 {Cd,Od}            0 {2,D} {5,S} {6,S}
-2 *4 Cd            0 {1,D} {3,S}
-3 *5 Cd            0 {2,S} {4,D}
+2 *4 {Cd,CO}            0 {1,D} {3,S}
+3 *5 {Cd,CO}            0 {2,S} {4,D}
 4 *6 {Cd,Od}            0 {3,D} {7,S} {8,S}
 5    H             0 {1,S}
 6    {Cd,Ct,Cb,CO} 0 {1,S}
@@ -409,8 +409,8 @@ entry(
     group = 
 """
 1 *3 {Cd,Od}  0 {2,D} {5,S} {6,S}
-2 *4 Cd  0 {1,D} {3,S}
-3 *5 Cd  0 {2,S} {4,D}
+2 *4 {Cd,CO}  0 {1,D} {3,S}
+3 *5 {Cd,CO}  0 {2,S} {4,D}
 4 *6 {Cd,Od}  0 {3,D} {7,S} {8,S}
 5    H   0 {1,S}
 6    R!H 0 {1,S}
@@ -436,8 +436,8 @@ entry(
     group = 
 """
 1 *3 {Cd,Od}     0 {2,D} {5,S} {6,S}
-2 *4 Cd     0 {1,D} {3,S}
-3 *5 Cd     0 {2,S} {4,D}
+2 *4 {Cd,CO}     0 {1,D} {3,S}
+3 *5 {Cd,CO}     0 {2,S} {4,D}
 4 *6 {Cd,Od}     0 {3,D} {7,S} {8,S}
 5    H      0 {1,S}
 6    {Cs,O} 0 {1,S}
@@ -463,8 +463,8 @@ entry(
     group = 
 """
 1 *3 {Cd,Od}            0 {2,D} {5,S} {6,S}
-2 *4 Cd            0 {1,D} {3,S}
-3 *5 Cd            0 {2,S} {4,D}
+2 *4 {Cd,CO}            0 {1,D} {3,S}
+3 *5 {Cd,CO}            0 {2,S} {4,D}
 4 *6 {Cd,Od}            0 {3,D} {7,S} {8,S}
 5    H             0 {1,S}
 6    {Cs,O}        0 {1,S}
@@ -490,8 +490,8 @@ entry(
     group = 
 """
 1 *3 {Cd,Od}            0 {2,D} {5,S} {6,S}
-2 *4 Cd            0 {1,D} {3,S}
-3 *5 Cd            0 {2,S} {4,D}
+2 *4 {Cd,CO}            0 {1,D} {3,S}
+3 *5 {Cd,CO}            0 {2,S} {4,D}
 4 *6 {Cd,Od}            0 {3,D} {7,S} {8,S}
 5    H             0 {1,S}
 6    {Cs,O}        0 {1,S}
@@ -517,8 +517,8 @@ entry(
     group = 
 """
 1 *3 {Cd,Od}            0 {2,D} {5,S} {6,S}
-2 *4 Cd            0 {1,D} {3,S}
-3 *5 Cd            0 {2,S} {4,D}
+2 *4 {Cd,CO}            0 {1,D} {3,S}
+3 *5 {Cd,CO}            0 {2,S} {4,D}
 4 *6 {Cd,Od}            0 {3,D} {7,S} {8,S}
 5    H             0 {1,S}
 6    {Cd,Ct,Cb,CO} 0 {1,S}
@@ -544,8 +544,8 @@ entry(
     group = 
 """
 1 *3 {Cd,Od}            0 {2,D} {5,S} {6,S}
-2 *4 Cd            0 {1,D} {3,S}
-3 *5 Cd            0 {2,S} {4,D}
+2 *4 {Cd,CO}            0 {1,D} {3,S}
+3 *5 {Cd,CO}            0 {2,S} {4,D}
 4 *6 {Cd,Od}            0 {3,D} {7,S} {8,S}
 5    H             0 {1,S}
 6    {Cd,Ct,Cb,CO} 0 {1,S}
@@ -571,8 +571,8 @@ entry(
     group = 
 """
 1 *3 {Cd,Od}            0 {2,D} {5,S} {6,S}
-2 *4 Cd            0 {1,D} {3,S}
-3 *5 Cd            0 {2,S} {4,D}
+2 *4 {Cd,CO}            0 {1,D} {3,S}
+3 *5 {Cd,CO}            0 {2,S} {4,D}
 4 *6 {Cd,Od}            0 {3,D} {7,S} {8,S}
 5    H             0 {1,S}
 6    {Cd,Ct,Cb,CO} 0 {1,S}
@@ -598,8 +598,8 @@ entry(
     group = 
 """
 1 *3 {Cd,Od}  0 {2,D} {5,S} {6,S}
-2 *4 Cd  0 {1,D} {3,S}
-3 *5 Cd  0 {2,S} {4,D}
+2 *4 {Cd,CO}  0 {1,D} {3,S}
+3 *5 {Cd,CO}  0 {2,S} {4,D}
 4 *6 {Cd,Od}  0 {3,D} {7,S} {8,S}
 5    R!H 0 {1,S}
 6    R!H 0 {1,S}
@@ -625,8 +625,8 @@ entry(
     group = 
 """
 1 *3 {Cd,Od}     0 {2,D} {5,S} {6,S}
-2 *4 Cd     0 {1,D} {3,S}
-3 *5 Cd     0 {2,S} {4,D}
+2 *4 {Cd,CO}     0 {1,D} {3,S}
+3 *5 {Cd,CO}     0 {2,S} {4,D}
 4 *6 {Cd,Od}     0 {3,D} {7,S} {8,S}
 5    {Cs,O} 0 {1,S}
 6    {Cs,O} 0 {1,S}
@@ -652,8 +652,8 @@ entry(
     group = 
 """
 1 *3 {Cd,Od}            0 {2,D} {5,S} {6,S}
-2 *4 Cd            0 {1,D} {3,S}
-3 *5 Cd            0 {2,S} {4,D}
+2 *4 {Cd,CO}            0 {1,D} {3,S}
+3 *5 {Cd,CO}            0 {2,S} {4,D}
 4 *6 {Cd,Od}            0 {3,D} {7,S} {8,S}
 5    {Cs,O}        0 {1,S}
 6    {Cs,O}        0 {1,S}
@@ -679,8 +679,8 @@ entry(
     group = 
 """
 1 *3 {Cd,Od}            0 {2,D} {5,S} {6,S}
-2 *4 Cd            0 {1,D} {3,S}
-3 *5 Cd            0 {2,S} {4,D}
+2 *4 {Cd,CO}            0 {1,D} {3,S}
+3 *5 {Cd,CO}            0 {2,S} {4,D}
 4 *6 {Cd,Od}            0 {3,D} {7,S} {8,S}
 5    R!H           0 {1,S}
 6    {Cd,Ct,Cb,CO} 0 {1,S}
@@ -705,8 +705,8 @@ entry(
     label = "diene_in_2H",
     group = 
 """
-1 *4 Cd 0 {2,S} {3,S}
-2 *5 Cd 0 {1,S} {4,S}
+1 *4 {Cd,CO} 0 {2,S} {3,S}
+2 *5 {Cd,CO} 0 {1,S} {4,S}
 3    H  0 {1,S}
 4    H  0 {2,S}
 """,
@@ -728,8 +728,8 @@ entry(
     label = "diene_in_HNd",
     group = 
 """
-1 *4 Cd     0 {2,S} {3,S}
-2 *5 Cd     0 {1,S} {4,S}
+1 *4 {Cd,CO}     0 {2,S} {3,S}
+2 *5 {Cd,CO}     0 {1,S} {4,S}
 3    H      0 {1,S}
 4    {Cs,O} 0 {2,S}
 """,
@@ -751,8 +751,8 @@ entry(
     label = "diene_in_HDe",
     group = 
 """
-1 *4 Cd            0 {2,S} {3,S}
-2 *5 Cd            0 {1,S} {4,S}
+1 *4 {Cd,CO}            0 {2,S} {3,S}
+2 *5 {Cd,CO}            0 {1,S} {4,S}
 3    H             0 {1,S}
 4    {Cd,Ct,Cb,CO} 0 {2,S}
 """,
@@ -774,8 +774,8 @@ entry(
     label = "diene_in_NdH",
     group = 
 """
-1 *4 Cd     0 {2,S} {3,S}
-2 *5 Cd     0 {1,S} {4,S}
+1 *4 {Cd,CO}     0 {2,S} {3,S}
+2 *5 {Cd,CO}     0 {1,S} {4,S}
 3    {Cs,O} 0 {1,S}
 4    H      0 {2,S}
 """,
@@ -797,8 +797,8 @@ entry(
     label = "diene_in_DeH",
     group = 
 """
-1 *4 Cd            0 {2,S} {3,S}
-2 *5 Cd            0 {1,S} {4,S}
+1 *4 {Cd,CO}            0 {2,S} {3,S}
+2 *5 {Cd,CO}            0 {1,S} {4,S}
 3    {Cd,Ct,Cb,CO} 0 {1,S}
 4    H             0 {2,S}
 """,
@@ -820,8 +820,8 @@ entry(
     label = "diene_in_Nd2",
     group = 
 """
-1 *4 Cd     0 {2,S} {3,S}
-2 *5 Cd     0 {1,S} {4,S}
+1 *4 {Cd,CO}     0 {2,S} {3,S}
+2 *5 {Cd,CO}     0 {1,S} {4,S}
 3    {Cs,O} 0 {1,S}
 4    {Cs,O} 0 {2,S}
 """,
@@ -843,8 +843,8 @@ entry(
     label = "diene_in_NdDe",
     group = 
 """
-1 *4 Cd            0 {2,S} {3,S}
-2 *5 Cd            0 {1,S} {4,S}
+1 *4 {Cd,CO}            0 {2,S} {3,S}
+2 *5 {Cd,CO}            0 {1,S} {4,S}
 3    {Cs,O}        0 {1,S}
 4    {Cd,Ct,Cb,CO} 0 {2,S}
 """,
@@ -866,8 +866,8 @@ entry(
     label = "diene_in_DeNd",
     group = 
 """
-1 *4 Cd            0 {2,S} {3,S}
-2 *5 Cd            0 {1,S} {4,S}
+1 *4 {Cd,CO}            0 {2,S} {3,S}
+2 *5 {Cd,CO}            0 {1,S} {4,S}
 3    {Cd,Ct,Cb,CO} 0 {1,S}
 4    {Cs,O}        0 {2,S}
 """,
@@ -889,8 +889,8 @@ entry(
     label = "diene_in_De2",
     group = 
 """
-1 *4 Cd            0 {2,S} {3,S}
-2 *5 Cd            0 {1,S} {4,S}
+1 *4 {Cd,CO}            0 {2,S} {3,S}
+2 *5 {Cd{Cd,CO}            0 {1,S} {4,S}
 3    {Cd,Ct,Cb,CO} 0 {1,S}
 4    {Cd,Ct,Cb,CO} 0 {2,S}
 """,
@@ -912,8 +912,8 @@ entry(
     label = "ene_unsub_unsub",
     group = 
 """
-1 *1 {Cd,Od} 0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od} 0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO} 0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO} 0 {1,D} {5,S} {6,S}
 3    H  0 {1,S}
 4    H  0 {1,S}
 5    H  0 {2,S}
@@ -937,8 +937,8 @@ entry(
     label = "ene_unsub_monosub",
     group = 
 """
-1 *1 {Cd,Od}  0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}  0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}  0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}  0 {1,D} {5,S} {6,S}
 3    H   0 {1,S}
 4    H   0 {1,S}
 5    H   0 {2,S}
@@ -962,8 +962,8 @@ entry(
     label = "ene_2H_HNd",
     group = 
 """
-1 *1 {Cd,Od}    0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}     0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}    0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}     0 {1,D} {5,S} {6,S}
 3    H      0 {1,S}
 4    H      0 {1,S}
 5    H      0 {2,S}
@@ -987,8 +987,8 @@ entry(
     label = "ene_2H_HDe",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    H             0 {1,S}
 4    H             0 {1,S}
 5    H             0 {2,S}
@@ -1012,8 +1012,8 @@ entry(
     label = "ene_monosub_unsub",
     group = 
 """
-1 *1 {Cd,Od}  0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}  0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}  0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}  0 {1,D} {5,S} {6,S}
 3    H   0 {1,S}
 4    R!H 0 {1,S}
 5    H   0 {2,S}
@@ -1037,8 +1037,8 @@ entry(
     label = "ene_HNd_2H",
     group = 
 """
-1 *1 {Cd,Od}     0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}     0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}     0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}     0 {1,D} {5,S} {6,S}
 3    H      0 {1,S}
 4    {Cs,O} 0 {1,S}
 5    H      0 {2,S}
@@ -1062,8 +1062,8 @@ entry(
     label = "ene_HDe_2H",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    H             0 {1,S}
 4    {Cd,Ct,Cb,CO} 0 {1,S}
 5    H             0 {2,S}
@@ -1087,8 +1087,8 @@ entry(
     label = "ene_monosub_monosub",
     group = 
 """
-1 *1 {Cd,Od}  0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}  0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}  0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}  0 {1,D} {5,S} {6,S}
 3    H   0 {1,S}
 4    R!H 0 {1,S}
 5    H   0 {2,S}
@@ -1112,8 +1112,8 @@ entry(
     label = "ene_HNd_HNd",
     group = 
 """
-1 *1 {Cd,Od}     0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}     0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}     0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}     0 {1,D} {5,S} {6,S}
 3    H      0 {1,S}
 4    {Cs,O} 0 {1,S}
 5    H      0 {2,S}
@@ -1137,8 +1137,8 @@ entry(
     label = "ene_HNd_HDe",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    H             0 {1,S}
 4    {Cs,O}        0 {1,S}
 5    H             0 {2,S}
@@ -1162,8 +1162,8 @@ entry(
     label = "ene_HDe_HNd",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    H             0 {1,S}
 4    {Cd,Ct,Cb,CO} 0 {1,S}
 5    H             0 {2,S}
@@ -1187,8 +1187,8 @@ entry(
     label = "ene_HDe_HDe",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    H             0 {1,S}
 4    {Cd,Ct,Cb,CO} 0 {1,S}
 5    H             0 {2,S}
@@ -1212,8 +1212,8 @@ entry(
     label = "ene_unsub_disub",
     group = 
 """
-1 *1 {Cd,Od}  0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}  0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}  0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}  0 {1,D} {5,S} {6,S}
 3    H   0 {1,S}
 4    H   0 {1,S}
 5    R!H 0 {2,S}
@@ -1237,8 +1237,8 @@ entry(
     label = "ene_2H_Nd2",
     group = 
 """
-1 *1 {Cd,Od}     0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}     0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}     0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}     0 {1,D} {5,S} {6,S}
 3    H      0 {1,S}
 4    H      0 {1,S}
 5    {Cs,O} 0 {2,S}
@@ -1262,8 +1262,8 @@ entry(
     label = "ene_2H_NdDe",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    H             0 {1,S}
 4    H             0 {1,S}
 5    {Cs,O}        0 {2,S}
@@ -1287,8 +1287,8 @@ entry(
     label = "ene_2H_De2",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    H             0 {1,S}
 4    H             0 {1,S}
 5    {Cd,Ct,Cb,CO} 0 {2,S}
@@ -1312,8 +1312,8 @@ entry(
     label = "ene_disub_unsub",
     group = 
 """
-1 *1 {Cd,Od}  0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}  0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}  0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}  0 {1,D} {5,S} {6,S}
 3    R!H 0 {1,S}
 4    R!H 0 {1,S}
 5    H   0 {2,S}
@@ -1337,8 +1337,8 @@ entry(
     label = "ene_Nd2_2H",
     group = 
 """
-1 *1 {Cd,Od}     0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}     0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}     0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}     0 {1,D} {5,S} {6,S}
 3    {Cs,O} 0 {1,S}
 4    {Cs,O} 0 {1,S}
 5    H      0 {2,S}
@@ -1362,8 +1362,8 @@ entry(
     label = "ene_NdDe_2H",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    {Cs,O}        0 {1,S}
 4    {Cd,Ct,Cb,CO} 0 {1,S}
 5    H             0 {2,S}
@@ -1387,8 +1387,8 @@ entry(
     label = "ene_De2_2H",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO,CO}            0 {1,D} {5,S} {6,S}
 3    {Cd,Ct,Cb,CO} 0 {1,S}
 4    {Cd,Ct,Cb,CO} 0 {1,S}
 5    H             0 {2,S}
@@ -1412,8 +1412,8 @@ entry(
     label = "ene_monosub_disub",
     group = 
 """
-1 *1 {Cd,Od}  0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}  0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}  0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}  0 {1,D} {5,S} {6,S}
 3    R!H 0 {1,S}
 4    H   0 {1,S}
 5    R!H 0 {2,S}
@@ -1437,8 +1437,8 @@ entry(
     label = "ene_HNd_Nd2",
     group = 
 """
-1 *1 {Cd,Od}     0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}     0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}     0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}     0 {1,D} {5,S} {6,S}
 3    {Cs,O} 0 {1,S}
 4    H      0 {1,S}
 5    {Cs,O} 0 {2,S}
@@ -1462,8 +1462,8 @@ entry(
     label = "ene_HNd_NdDe",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    {Cs,O}        0 {1,S}
 4    H             0 {1,S}
 5    {Cs,O}        0 {2,S}
@@ -1487,8 +1487,8 @@ entry(
     label = "ene_HNd_De2",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    {Cs,O}        0 {1,S}
 4    H             0 {1,S}
 5    {Cd,Ct,Cb,CO} 0 {2,S}
@@ -1512,8 +1512,8 @@ entry(
     label = "ene_HDe_Nd2",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    {Cd,Ct,Cb,CO} 0 {1,S}
 4    H             0 {1,S}
 5    {Cs,O}        0 {2,S}
@@ -1537,8 +1537,8 @@ entry(
     label = "ene_HDe_NdDe",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    {Cd,Ct,Cb,CO} 0 {1,S}
 4    H             0 {1,S}
 5    {Cs,O}        0 {2,S}
@@ -1562,8 +1562,8 @@ entry(
     label = "ene_HDe_De2",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    {Cd,Ct,Cb,CO} 0 {1,S}
 4    H             0 {1,S}
 5    {Cd,Ct,Cb,CO} 0 {2,S}
@@ -1587,8 +1587,8 @@ entry(
     label = "ene_disub_monosub",
     group = 
 """
-1 *1 {Cd,Od}  0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}  0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}  0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}  0 {1,D} {5,S} {6,S}
 3    R!H 0 {1,S}
 4    R!H 0 {1,S}
 5    H   0 {2,S}
@@ -1612,8 +1612,8 @@ entry(
     label = "ene_Nd2_HNd",
     group = 
 """
-1 *1 {Cd,Od}     0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}     0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}     0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}     0 {1,D} {5,S} {6,S}
 3    {Cs,O} 0 {1,S}
 4    {Cs,O} 0 {1,S}
 5    H      0 {2,S}
@@ -1637,8 +1637,8 @@ entry(
     label = "ene_Nd2_HDe",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    {Cs,O}        0 {1,S}
 4    {Cs,O}        0 {1,S}
 5    H             0 {2,S}
@@ -1662,8 +1662,8 @@ entry(
     label = "ene_NdDe_HNd",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    {Cs,O}        0 {1,S}
 4    {Cd,Ct,Cb,CO} 0 {1,S}
 5    H             0 {2,S}
@@ -1687,8 +1687,8 @@ entry(
     label = "ene_NdDe_HDe",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    {Cs,O}        0 {1,S}
 4    {Cd,Ct,Cb,CO} 0 {1,S}
 5    H             0 {2,S}
@@ -1712,8 +1712,8 @@ entry(
     label = "ene_De2_HNd",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    {Cd,Ct,Cb,CO} 0 {1,S}
 4    {Cd,Ct,Cb,CO} 0 {1,S}
 5    H             0 {2,S}
@@ -1737,8 +1737,8 @@ entry(
     label = "ene_De2_HDe",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    {Cd,Ct,Cb,CO} 0 {1,S}
 4    {Cd,Ct,Cb,CO} 0 {1,S}
 5    H             0 {2,S}
@@ -1762,8 +1762,8 @@ entry(
     label = "ene_disub_disub",
     group = 
 """
-1 *1 {Cd,Od}  0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}  0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}  0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}  0 {1,D} {5,S} {6,S}
 3    R!H 0 {1,S}
 4    R!H 0 {1,S}
 5    R!H 0 {2,S}
@@ -1787,8 +1787,8 @@ entry(
     label = "ene_Nd2_Nd2",
     group = 
 """
-1 *1 {Cd,Od}     0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}     0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}     0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}     0 {1,D} {5,S} {6,S}
 3    {Cs,O} 0 {1,S}
 4    {Cs,O} 0 {1,S}
 5    {Cs,O} 0 {2,S}
@@ -1812,8 +1812,8 @@ entry(
     label = "ene_Nd2_NdDe",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    {Cs,O}        0 {1,S}
 4    {Cs,O}        0 {1,S}
 5    {Cs,O}        0 {2,S}
@@ -1837,8 +1837,8 @@ entry(
     label = "ene_Nd2_De2",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    {Cs,O}        0 {1,S}
 4    {Cs,O}        0 {1,S}
 5    {Cd,Ct,Cb,CO} 0 {2,S}
@@ -1862,8 +1862,8 @@ entry(
     label = "ene_NdDe_Nd2",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    {Cs,O}        0 {1,S}
 4    {Cd,Ct,Cb,CO} 0 {1,S}
 5    {Cs,O}        0 {2,S}
@@ -1887,8 +1887,8 @@ entry(
     label = "ene_NdDe_NdDe",
     group = 
 """
-1 *1 {Cd,Od}           0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}           0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    {Cs,O}        0 {1,S}
 4    {Cd,Ct,Cb,CO} 0 {1,S}
 5    {Cs,O}        0 {2,S}
@@ -1912,8 +1912,8 @@ entry(
     label = "ene_NdDe_De2",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    {Cs,O}        0 {1,S}
 4    {Cd,Ct,Cb,CO} 0 {1,S}
 5    {Cd,Ct,Cb,CO} 0 {2,S}
@@ -1937,8 +1937,8 @@ entry(
     label = "ene_De2_Nd2",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    {Cd,Ct,Cb,CO} 0 {1,S}
 4    {Cd,Ct,Cb,CO} 0 {1,S}
 5    {Cs,O}        0 {2,S}
@@ -1962,8 +1962,8 @@ entry(
     label = "ene_De2_NdDe",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    {Cd,Ct,Cb,CO} 0 {1,S}
 4    {Cd,Ct,Cb,CO} 0 {1,S}
 5    {Cs,O}        0 {2,S}
@@ -1987,8 +1987,8 @@ entry(
     label = "ene_De2_De2",
     group = 
 """
-1 *1 {Cd,Od}            0 {2,D} {3,S} {4,S}
-2 *2 {Cd,Od}            0 {1,D} {5,S} {6,S}
+1 *1 {Cd,Od,CO}            0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}            0 {1,D} {5,S} {6,S}
 3    {Cd,Ct,Cb,CO} 0 {1,S}
 4    {Cd,Ct,Cb,CO} 0 {1,S}
 5    {Cd,Ct,Cb,CO} 0 {2,S}
