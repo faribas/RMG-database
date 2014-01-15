@@ -1284,4 +1284,123 @@ Absolute value measured directly using thermal excitation technique and mass spe
         ("Thu Nov 15 16:45:30 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
     ],
 )
+entry(
+    index = 613,
+    label = "diene_O_monosubO_out;diene_in_HO;ene_HCs_HO",
+    group1 = 
+"""
+1 *3 Od  0 {2,D} 
+2 *4 {Cd,CO}  0 {1,D} {3,S}
+3 *5 {Cd,CO}  0 {2,S} {4,D}
+4 *6 {Cd,Od}  0 {3,D} {5,S} {6,S}
+5    H   0 {6,S}
+6    O 0 {6,S}
+
+""",
+    group2 = 
+"""
+1 *4 {Cd,CO}     0 {2,S} {3,S}
+2 *5 {Cd,CO}     0 {1,S} {4,S}
+3    H      0 {1,S}
+4    O 0 {2,S}
+""",
+    group3 = 
+"""
+1 *1 {Cd,Od,CO}     0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}     0 {1,D} {5,S} {6,S}
+3    H      0 {1,S}
+4    Cs 0 {1,S}
+5    H      0 {2,S}
+6    O 0 {2,S}
+""",
+    kinetics = ArrheniusEP(
+        A = (1260000000.0, 'cm^3/(mol*s)'),
+        n = 0,
+        alpha = 0,
+        E0 = (16.69, 'kcal/mol'),
+        Tmin = (352, 'K'),
+        Tmax = (423, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    rank = 3,
+    shortDesc = u"""Benford et al [200]""",
+    longDesc = 
+u"""
+
+The forward (recombination) rate coefficent here was calcualted from the reverse (decomposition)
+by RMG.
+
+Electronic structure calculations at the CBS-QB3 method followed by the TST
+calculations yielded the reverse rate constants of reaction for the retro-
+Diels-Alder reaction (Taken from: Development of Detailed Kinetic Models for
+the Thermal Conversion of Biomass via First Principle Methods and Rate Estimation
+Rules,Hans-Heinrich Carstense et al. (2010) doi:10.1021/bk-2010-1052.ch010 )
+
+Valid temperature range is from 286-2000 (where the paper mentioned).
+""",
+    history = [
+        ("Thu Jan 10 16:45:30 2014","Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu>","action","""Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu> made this entry ."""),
+    ],
+)
+entry(
+    index = 614,
+    label = "diene_monosubO_monosubO_out;diene_in_HO;ene_O_HO",
+    group1 = 
+"""
+1 *3 {Cd,Od}     0 {2,D} {5,S} {6,S}
+2 *4 {Cd,CO}     0 {1,D} {3,S}
+3 *5 {Cd,CO}     0 {2,S} {4,D}
+4 *6 {Cd,Od}     0 {3,D} {7,S} {8,S}
+5    H      0 {1,S}
+6    O 0 {1,S}
+7    O 0 {4,S}
+8    H      0 {4,S}
+""",
+    group2 = 
+"""
+1 *4 {Cd,CO}     0 {2,S} {3,S}
+2 *5 {Cd,CO}     0 {1,S} {4,S}
+3    H      0 {1,S}
+4    O 0 {2,S}
+""",
+    group3 = 
+"""
+1 *1 Od  0 {2,D} 
+2 *2 {Cd,Od,CO}  0 {1,D} {3,S} {4,S}
+3    H   0 {2,S}
+4    O 0 {2,S}
+""",
+    kinetics = ArrheniusEP(
+        A = (1260000000.0, 'cm^3/(mol*s)'),
+        n = 0,
+        alpha = 0,
+        E0 = (16.69, 'kcal/mol'),
+        Tmin = (352, 'K'),
+        Tmax = (423, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    rank = 3,
+    shortDesc = u"""Benford et al [200]""",
+    longDesc = 
+u"""
+The forward (recombination) rate coefficent here was calcualted from the reverse (decomposition)
+by RMG.
+
+Electronic structure calculations at the CBS-QB3 method followed by the TST
+calculations yielded the reverse rate constants of reaction for the retro-
+Diels-Alder reaction (Taken from: Development of Detailed Kinetic Models for
+the Thermal Conversion of Biomass via First Principle Methods and Rate Estimation
+Rules,Hans-Heinrich Carstense et al. (2010) doi:10.1021/bk-2010-1052.ch010 )
+
+Valid temperature range is from 286-2000 (where the paper mentioned).
+""",
+    history = [
+        ("Thu Jan 10 16:45:30 2014","Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu>","action","""Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu> made this entry ."""),
+    ],
+)
+
+
+
 
