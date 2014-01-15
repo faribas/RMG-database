@@ -296,14 +296,116 @@ u"""
 )
 
 entry(
+    index = 85,
+    label = "diene_O_monosub_out",
+    group = 
+"""
+1 *3 Od  0 {2,D} 
+2 *4 {Cd,CO}  0 {1,D} {3,S}
+3 *5 {Cd,CO}  0 {2,S} {4,D}
+4 *6 {Cd,Od}  0 {3,D} {5,S} {6,S}
+5    H   0 {4,S}
+6    R!H 0 {4,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Thu Jan 10 16:45:30 2014","Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu>","action","""Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu> made this entry ."""),
+    ],
+)
+
+entry(
+    index = 86,
+    label = "diene_O_monosubNd_out",
+    group = 
+"""
+1 *3 Od  0 {2,D} 
+2 *4 {Cd,CO}  0 {1,D} {3,S}
+3 *5 {Cd,CO}  0 {2,S} {4,D}
+4 *6 {Cd,Od}  0 {3,D} {5,S} {6,S}
+5    H   0 {4,S}
+6    Cs 0 {4,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Thu Jan 10 16:45:30 2014","Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu>","action","""Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu> made this entry ."""),
+    ],
+)
+
+entry(
+    index = 87,
+    label = "diene_O_monosubDe_out",
+    group = 
+"""
+1 *3 Od  0 {2,D} 
+2 *4 {Cd,CO}  0 {1,D} {3,S}
+3 *5 {Cd,CO}  0 {2,S} {4,D}
+4 *6 {Cd,Od}  0 {3,D} {5,S} {6,S}
+5    H   0 {4,S}
+6    Cd 0 {4,S}
+
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Thu Jan 10 16:45:30 2014","Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu>","action","""Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu> made this entry ."""),
+    ],
+)
+
+entry(
+    index = 88,
+    label = "diene_O_monosubO_out",
+    group = 
+"""
+1 *3 Od  0 {2,D} 
+2 *4 {Cd,CO}  0 {1,D} {3,S}
+3 *5 {Cd,CO}  0 {2,S} {4,D}
+4 *6 {Cd,Od}  0 {3,D} {5,S} {6,S}
+5    H   0 {4,S}
+6    O 0 {4,S}
+
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Thu Jan 10 16:45:30 2014","Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu>","action","""Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu> made this entry ."""),
+    ],
+)
+
+entry(
     index = 12,
     label = "diene_monosub_monosub_out",
     group = 
 """
-1 *3 {Cd,Od}  0 {2,D} {5,S} {6,S}
-2 *4 {Cd,CO}  0 {1,D} {3,S}
-3 *5 {Cd,CO}  0 {2,S} {4,D}
-4 *6 {Cd,Od}  0 {3,D} {7,S} {8,S}
+1 *3 Cd  0 {2,D} {5,S} {6,S}
+2 *4 Cd  0 {1,D} {3,S}
+3 *5 Cd  0 {2,S} {4,D}
+4 *6 Cd  0 {3,D} {7,S} {8,S}
 5    H   0 {1,S}
 6    R!H 0 {1,S}
 7    R!H 0 {4,S}
@@ -346,6 +448,33 @@ u"""
 """,
     history = [
         ("Thu Nov 15 16:45:30 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
+    ],
+)
+
+entry(
+    index = 84,
+    label = "diene_monosubO_monosubO_out",
+    group = 
+"""
+1 *3 {Cd,Od}     0 {2,D} {5,S} {6,S}
+2 *4 {Cd,CO}     0 {1,D} {3,S}
+3 *5 {Cd,CO}     0 {2,S} {4,D}
+4 *6 {Cd,Od}     0 {3,D} {7,S} {8,S}
+5    H      0 {1,S}
+6    O 0 {1,S}
+7    O 0 {4,S}
+8    H      0 {4,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Thu Jan 10 16:45:30 2014","Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu>","action","""Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu> made this entry ."""),
     ],
 )
 
@@ -747,6 +876,32 @@ u"""
 )
 
 entry(
+    index = 82,
+    label = "diene_in_HO",
+    group = 
+"""
+1 *4 {Cd,CO}     0 {2,S} {3,S}
+2 *5 {Cd,CO}     0 {1,S} {4,S}
+3    H      0 {1,S}
+4    O 0 {2,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Thu Jan 10 16:45:30 2014","Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu>","action","""Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu> made this entry ."""),
+    ],
+)
+
+
+
+
+entry(
     index = 29,
     label = "diene_in_HDe",
     group = 
@@ -791,6 +946,31 @@ u"""
         ("Thu Nov 15 16:45:30 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
     ],
 )
+
+entry(
+    index = 83,
+    label = "diene_in_OH",
+    group = 
+"""
+1 *4 {Cd,CO}     0 {2,S} {3,S}
+2 *5 {Cd,CO}     0 {1,S} {4,S}
+3    O 0 {1,S}
+4    H      0 {2,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Thu Jan 10 16:45:30 2014","Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu>","action","""Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu> made this entry ."""),
+    ],
+)
+
+
 
 entry(
     index = 31,
@@ -890,7 +1070,7 @@ entry(
     group = 
 """
 1 *4 {Cd,CO}            0 {2,S} {3,S}
-2 *5 {Cd{Cd,CO}            0 {1,S} {4,S}
+2 *5 {Cd,CO}            0 {1,S} {4,S}
 3    {Cd,Ct,Cb,CO} 0 {1,S}
 4    {Cd,Ct,Cb,CO} 0 {2,S}
 """,
@@ -1083,6 +1263,97 @@ u"""
 )
 
 entry(
+    index = 89,
+    label = "ene_O_monosub",
+    group = 
+"""
+1 *1 Od  0 {2,D} 
+2 *2 {Cd,Od,CO}  0 {1,D} {3,S} {4,S}
+3    H   0 {2,S}
+4    R!H 0 {2,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Thu Jan 10 16:45:30 2014","Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu>","action","""Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu> made this entry ."""),
+    ],
+)
+
+entry(
+    index = 90,
+    label = "ene_O_HNd",
+    group = 
+"""
+1 *1 Od  0 {2,D} 
+2 *2 {Cd,Od,CO}  0 {1,D} {3,S} {4,S}
+3    H   0 {2,S}
+4    Cs 0 {2,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Thu Jan 10 16:45:30 2014","Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu>","action","""Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu> made this entry ."""),
+    ],
+)
+entry(
+    index = 91,
+    label = "ene_O_HDe",
+    group = 
+"""
+1 *1 Od  0 {2,D} 
+2 *2 {Cd,Od,CO}  0 {1,D} {3,S} {4,S}
+3    H   0 {2,S}
+4    Cd 0 {2,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Thu Jan 10 16:45:30 2014","Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu>","action","""Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu> made this entry ."""),
+    ],
+)
+entry(
+    index = 92,
+    label = "ene_O_HO",
+    group = 
+"""
+1 *1 Od  0 {2,D} 
+2 *2 {Cd,Od,CO}  0 {1,D} {3,S} {4,S}
+3    H   0 {2,S}
+4    O 0 {2,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Thu Jan 10 16:45:30 2014","Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu>","action","""Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu> made this entry ."""),
+    ],
+)
+
+
+entry(
     index = 43,
     label = "ene_monosub_monosub",
     group = 
@@ -1131,6 +1402,59 @@ u"""
         ("Thu Nov 15 16:45:30 2012","Josh Allen <jwallen@mit.edu>","action","""Josh Allen <jwallen@mit.edu> imported this entry from the old RMG database."""),
     ],
 )
+
+entry(
+    index = 80,
+    label = "ene_HO_HCs",
+    group = 
+"""
+1 *1 {Cd,Od,CO}     0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}     0 {1,D} {5,S} {6,S}
+3    H      0 {1,S}
+4    O 0 {1,S}
+5    H      0 {2,S}
+6    Cs 0 {2,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Thu Jan 10 16:45:30 2014","Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu>","action","""Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu> made this entry ."""),
+    ],
+)
+
+entry(
+    index = 81,
+    label = "ene_HCs_HO",
+    group = 
+"""
+1 *1 {Cd,Od,CO}     0 {2,D} {3,S} {4,S}
+2 *2 {Cd,Od,CO}     0 {1,D} {5,S} {6,S}
+3    H      0 {1,S}
+4    Cs 0 {1,S}
+5    H      0 {2,S}
+6    O 0 {2,S}
+""",
+    kinetics = None,
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+    history = [
+        ("Thu Jan 10 16:45:30 2014","Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu>","action","""Fariba Seyedadeh <seyedzadehkhanshan.f@husky.neu.edu> made this entry ."""),
+    ],
+)
+
+
+
 
 entry(
     index = 45,
@@ -2018,8 +2342,13 @@ L1: diene_out
         L3: diene_unsub_disubNd2_out
         L3: diene_unsub_disubNdDe_out
         L3: diene_unsub_disubDe2_out
+    L2: diene_O_monosub_out
+        L3: diene_O_monosubNd_out
+        L3: diene_O_monosubDe_out
+        L3: diene_O_monosubO_out    
     L2: diene_monosub_monosub_out
         L3: diene_monosubNd_monosubNd_out
+            L4: diene_monosubO_monosubO_out
         L3: diene_monosubNd_monosubDe_out
         L3: diene_monosubDe_monosubDe_out
     L2: diene_monosub_disub_out
@@ -2036,8 +2365,10 @@ L1: diene_out
 L1: diene_in
     L2: diene_in_2H
     L2: diene_in_HNd
+        L3: diene_in_HO
     L2: diene_in_HDe
     L2: diene_in_NdH
+        L3: diene_in_OH
     L2: diene_in_DeH
     L2: diene_in_Nd2
     L2: diene_in_NdDe
@@ -2050,9 +2381,15 @@ L1: ene
         L3: ene_2H_HDe
     L2: ene_monosub_unsub
         L3: ene_HNd_2H
-        L3: ene_HDe_2H
+        L3: ene_HDe_2H   
+    L2: ene_O_monosub
+        L3: ene_O_HNd
+        L3: ene_O_HDe
+        L3: ene_O_HO
     L2: ene_monosub_monosub
         L3: ene_HNd_HNd
+            L4: ene_HO_HCs
+            L4: ene_HCs_HO
         L3: ene_HNd_HDe
         L3: ene_HDe_HNd
         L3: ene_HDe_HDe
