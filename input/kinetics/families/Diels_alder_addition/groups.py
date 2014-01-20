@@ -23,7 +23,7 @@ recipe(actions=[
 entry(
     index = 1,
     label = "diene_out",
-    group = "OR{diene_unsub_unsub_out, diene_unsub_monosub_out, diene_unsub_disub_out, diene_monosub_monosub_out, diene_monosub_disub_out, diene_disub_disub_out}",
+    group = "OR{diene_unsub_unsub_out, diene_unsub_monosub_out, diene_O_monosub_out, diene_unsub_disub_out, diene_monosub_monosub_out, diene_monosub_disub_out, diene_disub_disub_out}",
     kinetics = None,
     reference = None,
     referenceType = "",
@@ -301,7 +301,7 @@ entry(
     group = 
 """
 1 *3 Od  0 {2,D} 
-2 *4 {Cd,CO}  0 {1,D} {3,S}
+2 *4 CO  0 {1,D} {3,S}
 3 *5 {Cd,CO}  0 {2,S} {4,D}
 4 *6 {Cd,Od}  0 {3,D} {5,S} {6,S}
 5    H   0 {4,S}
@@ -326,7 +326,7 @@ entry(
     group = 
 """
 1 *3 Od  0 {2,D} 
-2 *4 {Cd,CO}  0 {1,D} {3,S}
+2 *4 CO  0 {1,D} {3,S}
 3 *5 {Cd,CO}  0 {2,S} {4,D}
 4 *6 {Cd,Od}  0 {3,D} {5,S} {6,S}
 5    H   0 {4,S}
@@ -351,7 +351,7 @@ entry(
     group = 
 """
 1 *3 Od  0 {2,D} 
-2 *4 {Cd,CO}  0 {1,D} {3,S}
+2 *4 CO  0 {1,D} {3,S}
 3 *5 {Cd,CO}  0 {2,S} {4,D}
 4 *6 {Cd,Od}  0 {3,D} {5,S} {6,S}
 5    H   0 {4,S}
@@ -377,11 +377,11 @@ entry(
     group = 
 """
 1 *3 Od  0 {2,D} 
-2 *4 {Cd,CO}  0 {1,D} {3,S}
+2 *4 CO  0 {1,D} {3,S}
 3 *5 {Cd,CO}  0 {2,S} {4,D}
 4 *6 {Cd,Od}  0 {3,D} {5,S} {6,S}
 5    H   0 {4,S}
-6    O 0 {4,S}
+6    Os  0 {4,S}
 
 """,
     kinetics = None,
