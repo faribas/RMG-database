@@ -1,137 +1,140 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-name = "Diels_alder_addition/training"
-shortDesc = u"Kinetics used to train group additivity values"
-longDesc = u"""
-Put kinetic parameters for reactions to use as a training set for fitting
-group additivity values in this file.
-"""
-recommended = True
-entry(
-    index = 1,
-    reactant1 = 
-"""
-1  C 0 {2,S} {6,S} {10,S}
-2  C 0 {1,S} {3,S} {9,S}
-3  C 0 {2,S} {4,D}
-4  C 0 {3,D} {5,S} {7,S}
-5  C 0 {4,S} {6,S} {8,S}
-6  O 0 {1,S} {5,S}
-7  O 0 {4,S}
-8  O 0 {5,S}
-9  O 0 {2,S}
-10 C 0 {1,S} {11,S}
-11 O 0 {10,S}
-""",
-    product1 = 
-"""
-1 C 0 {2,S} {3,D}
-2 O 0 {1,S}
-3 C 0 {1,D} {4,S}
-4 C 0 {3,S} {5,S} {6,D}
-5 O 0 {4,S}
-6 C 0 {4,D} {7,S}
-7 O 0 {6,S}
-
-""",
-    product2 = 
-"""
-1 C 0 {2,S} {3,S}
-2 O 0 {1,S}
-3 C 0 {1,S} {4,D}
-4 O 0 {3,D}
-""",
-    degeneracy = 1,
-    kinetics = Arrhenius(
-        A=(2.1e+15,'s^-1'),
-        n=0.0,
-        Ea=(55.3,'kcal/mol'),
-        T0=(1,'K'),
-        Tmin = (286,"K"),
-        Tmax = (2000,"K"),
-    ),
-    
-    reference = None,
-        referenceType = "",
-        rank = 3, # MEANING UNKNOWN!
-        shortDesc = u"""Hans-Heinrich Carstense et al. (2010) doi:10.1021/bk-2010-1052.ch010""",
-        longDesc = 
-    u"""
-     Electronic structure calculations at the CBS-QB3 method followed by the TST
-     calculations yielded the following rate constants of reaction for the retro-
-     Diels-Alder reaction (Taken from: Development of Detailed Kinetic Models for
-    the Thermal Conversion of Biomass via First Principle Methods and Rate Estimation
-     Rules,Hans-Heinrich Carstense et al. (2010) doi:10.1021/bk-2010-1052.ch010 )
-    
-     Valid temperature range is from 286-2000 (where the paper mentioned).
-    
-    """,
-        history = [
-            ("Thu Jan 7 15:39:30 2014","Fariba Seyedzadeh <seyedzadehkhanshan.fn@husky.neu.edu>","action","""Fariba Seyedzadeh <seyedzadehkhanshan.f@husky.neu.edu> created this entry."""),
-        ],
-    )
-
-entry(
-    index = 1,
-    reactant1 = 
-"""
-1  C 0 {2,S} {6,S} {10,S}
-2  C 0 {1,S} {3,S} {9,S}
-3  C 0 {2,S} {4,S} {8,S}
-4  C 0 {3,S} {5,D} {7,S}
-5  C 0 {4,D} {6,S}
-6  O 0 {1,S} {5,S}
-7  O 0 {4,S}
-8  O 0 {3,S}
-9  O 0 {2,S}
-10 C 0 {1,S} {11,S}
-11 O 0 {10,S}
-""",
-    product1 = 
-"""
-1 C 0 {2,D} {4,S} {6,S}
-2 C 0 {1,D} {3,S}
-3 O 0 {2,S}
-4 C 0 {1,S} {5,D}
-5 O 0 {4,D}
-6 O 0 {1,S}
-
-""",
-    product2 = 
-"""
-1 C 0 {2,S} {5,S}
-2 C 0 {1,S} {3,D}
-3 C 0 {2,D} {4,S}
-4 O 0 {3,S}
-5 O 0 {1,S}
-""",
-    degeneracy = 1,
-    kinetics = Arrhenius(
-        A=(2.3e+13,'s^-1'),
-        n=0.0,
-        Ea=(44.6,'kcal/mol'),
-        T0=(1,'K'),
-        Tmin = (286,"K"),
-        Tmax = (2000,"K"),
-    ),
-    
-    reference = None,
-    referenceType = "",
-    rank = 3, # MEANING UNKNOWN!
-    shortDesc = u"""Hans-Heinrich Carstense et al. (2010) doi:10.1021/bk-2010-1052.ch010""",
-    longDesc = 
-u"""
- Electronic structure calculations at the CBS-QB3 method followed by the TST
- calculations yielded the following rate constants of reaction for the retro-
- Diels-Alder reaction (Taken from: Development of Detailed Kinetic Models for
-the Thermal Conversion of Biomass via First Principle Methods and Rate Estimation
- Rules,Hans-Heinrich Carstense et al. (2010) doi:10.1021/bk-2010-1052.ch010 )
- 
- Valid temperature range is from 286-2000 (where the paper mentioned).
-
-""",
-    history = [
-        ("Thu Jan 7 15:39:30 2014","Fariba Seyedzadeh <seyedzadehkhanshan.fn@husky.neu.edu>","action","""Fariba Seyedzadeh <seyedzadehkhanshan.f@husky.neu.edu> created this entry."""),
-    ],
-)
+#name = "Diels_alder_addition/training"
+#shortDesc = u"Kinetics used to train group additivity values"
+#longDesc = u"""
+#Put kinetic parameters for reactions to use as a training set for fitting
+#group additivity values in this file.
+#"""
+#recommended = True
+#entry(
+#    index = 1,
+#    reactant1 = 
+#"""
+#1 C 0 {2,S} {3,S}
+#2 O 0 {1,S}
+#3 C 0 {1,S} {4,D}
+#4 O 0 {3,D}
+#
+#""",
+#    reactant2 = 
+#"""
+#1 C 0 {2,S} {3,D}
+#2 O 0 {1,S}
+#3 C 0 {1,D} {4,S}
+#4 C 0 {3,S} {5,S} {6,D}
+#5 O 0 {4,S}
+#6 C 0 {4,D} {7,S}
+#7 O 0 {6,S}
+#
+#""",
+#    product1 = 
+#"""
+#1  C 0 {2,S} {6,S} {10,S}
+#2  C 0 {1,S} {3,S} {9,S}
+#3  C 0 {2,S} {4,D}
+#4  C 0 {3,D} {5,S} {7,S}
+#5  C 0 {4,S} {6,S} {8,S}
+#6  O 0 {1,S} {5,S}
+#7  O 0 {4,S}
+#8  O 0 {5,S}
+#9  O 0 {2,S}
+#10 C 0 {1,S} {11,S}
+#11 O 0 {10,S}
+#""",
+#    degeneracy = 1,
+#    kinetics = Arrhenius(
+#        A=(1.02e+10,'cm^3/(mol*s)'),
+#        n=0.0,
+#        Ea=(23.697,'kcal/mol'),
+#        T0=(1,'K'),
+#        Tmin = (286,"K"),
+#        Tmax = (2000,"K"),
+#    ),
+#    
+# reference = None,
+#     referenceType = "",
+#     rank = 3, # MEANING UNKNOWN!
+#     shortDesc = u"""Hans-Heinrich Carstense et al. (2010) doi:10.1021/bk-2010-1052.ch010""",
+#     longDesc = 
+# u"""
+#  Electronic structure calculations at the CBS-QB3 method followed by the TST
+#  calculations yielded the following rate constants of reaction for the retro-
+#  Diels-Alder reaction (Taken from: Development of Detailed Kinetic Models for
+# the Thermal Conversion of Biomass via First Principle Methods and Rate Estimation
+#  Rules,Hans-Heinrich Carstense et al. (2010) doi:10.1021/bk-2010-1052.ch010 )
+# 
+#  Valid temperature range is from 286-2000 (where the paper mentioned).
+# 
+# """,
+#     history = [
+#         ("Thu Jan 7 15:39:30 2014","Fariba Seyedzadeh <seyedzadehkhanshan.fn@husky.neu.edu>","action","""Fariba Seyedzadeh <seyedzadehkhanshan.f@husky.neu.edu> created this entry."""),
+#     ],
+# )
+# 
+#entry(
+#    index = 2,
+#    reactant1 = 
+#"""
+#1 C 0 {2,S} {5,S}
+#2 C 0 {1,S} {3,D}
+#3 C 0 {2,D} {4,S}
+#4 O 0 {3,S}
+#5 O 0 {1,S}
+#
+#""",
+#    reactant2 = 
+#"""
+#1 C 0 {2,D} {4,S} {6,S}
+#2 C 0 {1,D} {3,S}
+#3 O 0 {2,S}
+#4 C 0 {1,S} {5,D}
+#5 O 0 {4,D}
+#6 O 0 {1,S}
+#
+#""",
+#    product1 = 
+#"""
+#1  C 0 {2,S} {6,S} {10,S}
+#2  C 0 {1,S} {3,S} {9,S}
+#3  C 0 {2,S} {4,S} {8,S}
+#4  C 0 {3,S} {5,D} {7,S}
+#5  C 0 {4,D} {6,S}
+#6  O 0 {1,S} {5,S}
+#7  O 0 {4,S}
+#8  O 0 {3,S}
+#9  O 0 {2,S}
+#10 C 0 {1,S} {11,S}
+#11 O 0 {10,S}
+#
+#""",
+#    degeneracy = 1,
+#    kinetics = Arrhenius(
+#        A=(5.86e+9,'cm^3/(mol*s)'),
+#        n=0.0,
+#        Ea=(24.398,'kcal/mol'),
+#        T0=(1,'K'),
+#        Tmin = (286,"K"),
+#        Tmax = (2000,"K"),
+#    ),
+#    
+#    reference = None,
+#    referenceType = "",
+#    rank = 3, # MEANING UNKNOWN!
+#    shortDesc = u"""Hans-Heinrich Carstense et al. (2010) doi:10.1021/bk-2010-1052.ch010""",
+#    longDesc = 
+#u"""
+# Electronic structure calculations at the CBS-QB3 method followed by the TST
+# calculations yielded the following rate constants of reaction for the retro-
+# Diels-Alder reaction (Taken from: Development of Detailed Kinetic Models for
+#the Thermal Conversion of Biomass via First Principle Methods and Rate Estimation
+# Rules,Hans-Heinrich Carstense et al. (2010) doi:10.1021/bk-2010-1052.ch010 )
+# 
+# Valid temperature range is from 286-2000 (where the paper mentioned).
+#
+#""",
+#    history = [
+#        ("Thu Jan 7 15:39:30 2014","Fariba Seyedzadeh <seyedzadehkhanshan.fn@husky.neu.edu>","action","""Fariba Seyedzadeh <seyedzadehkhanshan.f@husky.neu.edu> created this entry."""),
+#    ],
+#)
