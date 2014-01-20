@@ -1293,9 +1293,8 @@ entry(
 2 *4 {Cd,CO}  0 {1,D} {3,S}
 3 *5 {Cd,CO}  0 {2,S} {4,D}
 4 *6 {Cd,Od}  0 {3,D} {5,S} {6,S}
-5    H   0 {6,S}
-6    O 0 {6,S}
-
+5    H   0 {4,S}
+6    O 0 {4,S}
 """,
     group2 = 
 """
@@ -1314,17 +1313,17 @@ entry(
 6    O 0 {2,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1260000000.0, 'cm^3/(mol*s)'),
+        A = (5.86e+9, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
-        E0 = (16.69, 'kcal/mol'),
+        E0 = (24.398, 'kcal/mol'),
         Tmin = (352, 'K'),
         Tmax = (423, 'K'),
     ),
     reference = None,
     referenceType = "",
     rank = 3,
-    shortDesc = u"""Benford et al [200]""",
+    shortDesc = u"""Carstense et al.""",
     longDesc = 
 u"""
 
@@ -1372,17 +1371,17 @@ entry(
 4    O 0 {2,S}
 """,
     kinetics = ArrheniusEP(
-        A = (1260000000.0, 'cm^3/(mol*s)'),
+        A = (1.02e+10, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
-        E0 = (16.69, 'kcal/mol'),
+        E0 = (23.697, 'kcal/mol'),
         Tmin = (352, 'K'),
         Tmax = (423, 'K'),
     ),
     reference = None,
     referenceType = "",
     rank = 3,
-    shortDesc = u"""Benford et al [200]""",
+    shortDesc = u"""Carstense et al.""",
     longDesc = 
 u"""
 The forward (recombination) rate coefficent here was calcualted from the reverse (decomposition)
