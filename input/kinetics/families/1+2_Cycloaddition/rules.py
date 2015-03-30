@@ -9,10 +9,8 @@ longDesc = u"""
 entry(
     index = 576,
     label = "elec_def;multiplebond",
-    group1 = "OR{carbene, me_carbene, dime_carbene, ph_carbene, o_atom, imidogen}",
-    group2 = "OR{mb_carbonyl, mb_db, mb_tb}",
     kinetics = ArrheniusEP(
-        A = (1000000000000.0, 'cm^3/(mol*s)'),
+        A = (1e+12, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -21,32 +19,13 @@ entry(
     ),
     rank = 0,
     shortDesc = u"""Default""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 577,
     label = "carbene;mb_db_unsub",
-    group1 = 
-"""
-1 *3 C 2S {2,S} {3,S}
-2    H 0  {1,S}
-3    H 0  {1,S}
-""",
-    group2 = 
-"""
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    H  0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (1980000000000.0, 'cm^3/(mol*s)', '*|/', 3.2),
+        A = (1.98e+12, 'cm^3/(mol*s)', '*|/', 3.2),
         n = 0,
         alpha = 0,
         E0 = (5.29, 'kcal/mol', '+|-', 0.26),
@@ -55,30 +34,13 @@ entry(
     ),
     rank = 3,
     shortDesc = u"""Frey et al [192]""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 579,
-    label = "o_atom;mb_db_unsub",
-    group1 = 
-"""
-1 *3 O {2S,2T}
-""",
-    group2 = 
-"""
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    H  0 {2,S}
-""",
+    label = "o_atom_singlet;mb_db_unsub",
     kinetics = ArrheniusEP(
-        A = (700000000000.0, 'cm^3/(mol*s)'),
+        A = (7e+11, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -95,22 +57,9 @@ Excitation: direct photolysis, analysis: UV-Vis absorption, Pressure 0.1 - 1000 
 
 entry(
     index = 580,
-    label = "o_atom;mb_db_monosub_Nd",
-    group1 = 
-"""
-1 *3 O {2S,2T}
-""",
-    group2 = 
-"""
-1 *1 Cd     0 {2,D} {3,S} {4,S}
-2 *2 Cd     0 {1,D} {5,S} {6,S}
-3    H      0 {1,S}
-4    H      0 {1,S}
-5    H      0 {2,S}
-6    {Cs,O} 0 {2,S}
-""",
+    label = "o_atom_singlet;mb_db_monosub_Nd",
     kinetics = ArrheniusEP(
-        A = (2900000000000.0, 'cm^3/(mol*s)'),
+        A = (2.9e+12, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -127,22 +76,9 @@ Excitation: direct photolysis, analysis: UV-Vis absorption, Pressure 0.1 - 1000 
 
 entry(
     index = 581,
-    label = "o_atom;mb_db_monosub_Nd",
-    group1 = 
-"""
-1 *3 O {2S,2T}
-""",
-    group2 = 
-"""
-1 *1 Cd     0 {2,D} {3,S} {4,S}
-2 *2 Cd     0 {1,D} {5,S} {6,S}
-3    H      0 {1,S}
-4    H      0 {1,S}
-5    H      0 {2,S}
-6    {Cs,O} 0 {2,S}
-""",
+    label = "o_atom_singlet;mb_db_monosub_Nd",
     kinetics = ArrheniusEP(
-        A = (4200000000000.0, 'cm^3/(mol*s)'),
+        A = (4.2e+12, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0.5, 'kcal/mol'),
@@ -160,22 +96,9 @@ Absolute values measured directly. Excitation: discharge, analysis :GC, Pressure
 
 entry(
     index = 582,
-    label = "o_atom;mb_db_monosub_Nd",
-    group1 = 
-"""
-1 *3 O {2S,2T}
-""",
-    group2 = 
-"""
-1 *1 Cd     0 {2,D} {3,S} {4,S}
-2 *2 Cd     0 {1,D} {5,S} {6,S}
-3    H      0 {1,S}
-4    H      0 {1,S}
-5    H      0 {2,S}
-6    {Cs,O} 0 {2,S}
-""",
+    label = "o_atom_singlet;mb_db_monosub_Nd",
     kinetics = ArrheniusEP(
-        A = (1900000000000.0, 'cm^3/(mol*s)', '*|/', 1.2),
+        A = (1.9e+12, 'cm^3/(mol*s)', '*|/', 1.2),
         n = 0,
         alpha = 0,
         E0 = (0.8, 'kcal/mol', '+|-', 0.4),
@@ -195,22 +118,9 @@ O + 1-C4H8 --> ethyloxirane. Original uncertainty 3.0E+11
 
 entry(
     index = 583,
-    label = "o_atom;mb_db_onecdisub_Nd",
-    group1 = 
-"""
-1 *3 O {2S,2T}
-""",
-    group2 = 
-"""
-1 *1 Cd     0 {2,D} {3,S} {4,S}
-2 *2 Cd     0 {1,D} {5,S} {6,S}
-3    H      0 {1,S}
-4    H      0 {1,S}
-5    {Cs,O} 0 {2,S}
-6    {Cs,O} 0 {2,S}
-""",
+    label = "o_atom_singlet;mb_db_onecdisub_Nd",
     kinetics = ArrheniusEP(
-        A = (7600000000000.0, 'cm^3/(mol*s)', '*|/', 1.2),
+        A = (7.6e+12, 'cm^3/(mol*s)', '*|/', 1.2),
         n = 0,
         alpha = 0,
         E0 = (0.1, 'kcal/mol', '+|-', 0.4),
@@ -230,22 +140,9 @@ O + iso-C4H8 --> 2,2- dimethyloxirane. Original uncertainty 1.2E+12
 
 entry(
     index = 584,
-    label = "o_atom;mb_db_twocdisub_Nd",
-    group1 = 
-"""
-1 *3 O {2S,2T}
-""",
-    group2 = 
-"""
-1 *1 Cd     0 {2,D} {3,S} {4,S}
-2 *2 Cd     0 {1,D} {5,S} {6,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {1,S}
-5    H      0 {2,S}
-6    {Cs,O} 0 {2,S}
-""",
+    label = "o_atom_singlet;mb_db_twocdisub_Nd",
     kinetics = ArrheniusEP(
-        A = (15400000000000.0, 'cm^3/(mol*s)'),
+        A = (1.54e+13, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -264,22 +161,9 @@ Pressure 0.39 atm. Excitation : sensitized photolysis, analysis :GC.
 
 entry(
     index = 585,
-    label = "o_atom;mb_db_tetrasub_Nd",
-    group1 = 
-"""
-1 *3 O {2S,2T}
-""",
-    group2 = 
-"""
-1 *1 Cd     0 {2,D} {3,S} {4,S}
-2 *2 Cd     0 {1,D} {5,S} {6,S}
-3    {Cs,O} 0 {1,S}
-4    {Cs,O} 0 {1,S}
-5    {Cs,O} 0 {2,S}
-6    {Cs,O} 0 {2,S}
-""",
+    label = "o_atom_singlet;mb_db_tetrasub_Nd",
     kinetics = ArrheniusEP(
-        A = (31800000000000.0, 'cm^3/(mol*s)', '*|/', 1.2),
+        A = (3.18e+13, 'cm^3/(mol*s)', '*|/', 1.2),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -299,21 +183,8 @@ Pressure 0.39 atm. Excitation : sensitized photolysis, analysis :GC.
 entry(
     index = 586,
     label = "carbene;mb_tb_unsub",
-    group1 = 
-"""
-1 *3 C 2S {2,S} {3,S}
-2    H 0  {1,S}
-3    H 0  {1,S}
-""",
-    group2 = 
-"""
-1 *1 Ct 0 {2,T} {3,S}
-2 *2 Ct 0 {1,T} {4,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (1770000000000000.0, 'cm^3/(mol*s)'),
+        A = (1.77e+15, 'cm^3/(mol*s)'),
         n = -0.662,
         alpha = 0,
         E0 = (0.0377, 'kcal/mol'),
@@ -322,32 +193,13 @@ entry(
     ),
     rank = 2,
     shortDesc = u"""Polino [carbene,acetylene]""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 587,
     label = "carbene;mb_db_unsub",
-    group1 = 
-"""
-1 *3 C 2S {2,S} {3,S}
-2    H 0  {1,S}
-3    H 0  {1,S}
-""",
-    group2 = 
-"""
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    H  0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (1240000000000000.0, 'cm^3/(mol*s)'),
+        A = (1.24e+15, 'cm^3/(mol*s)'),
         n = -0.684,
         alpha = 0,
         E0 = (-0.0805, 'kcal/mol'),
@@ -356,30 +208,13 @@ entry(
     ),
     rank = 2,
     shortDesc = u"""Polino [carbene,ethene]""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 588,
     label = "carbene;mb_tb_monosub_Nd",
-    group1 = 
-"""
-1 *3 C 2S {2,S} {3,S}
-2    H 0  {1,S}
-3    H 0  {1,S}
-""",
-    group2 = 
-"""
-1 *1 Ct      0 {2,T} {3,S}
-2 *2 Ct      0 {1,T} {4,S}
-3    {Cs,Os} 0 {1,S}
-4    H       0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (4500000000000000.0, 'cm^3/(mol*s)'),
+        A = (4.5e+15, 'cm^3/(mol*s)'),
         n = -0.708,
         alpha = 0,
         E0 = (-0.0267, 'kcal/mol'),
@@ -388,32 +223,13 @@ entry(
     ),
     rank = 2,
     shortDesc = u"""Polino [carbene,propyne]""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 589,
     label = "carbene;mb_db_monosub_Nd",
-    group1 = 
-"""
-1 *3 C 2S {2,S} {3,S}
-2    H 0  {1,S}
-3    H 0  {1,S}
-""",
-    group2 = 
-"""
-1 *1 Cd     0 {2,D} {3,S} {4,S}
-2 *2 Cd     0 {1,D} {5,S} {6,S}
-3    H      0 {1,S}
-4    H      0 {1,S}
-5    H      0 {2,S}
-6    {Cs,O} 0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (5000000000000000.0, 'cm^3/(mol*s)'),
+        A = (5e+15, 'cm^3/(mol*s)'),
         n = -0.826,
         alpha = 0,
         E0 = (-0.09, 'kcal/mol'),
@@ -422,29 +238,13 @@ entry(
     ),
     rank = 2,
     shortDesc = u"""Polino [carbene,propene]""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 590,
     label = "carbene;mb_db_dbSub",
-    group1 = 
-"""
-1 *3 C 2S {2,S} {3,S}
-2    H 0  {1,S}
-3    H 0  {1,S}
-""",
-    group2 = 
-"""
-1 *1 Cdd      0 {2,D} {3,D}
-2 *2 Cd       0 {1,D}
-3    {Cd,Cdd} 0 {1,D}
-""",
     kinetics = ArrheniusEP(
-        A = (638000000000000.0, 'cm^3/(mol*s)'),
+        A = (6.38e+14, 'cm^3/(mol*s)'),
         n = -0.562,
         alpha = 0,
         E0 = (-0.133, 'kcal/mol'),
@@ -453,30 +253,13 @@ entry(
     ),
     rank = 2,
     shortDesc = u"""Polino [carbene,propadiene]""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 591,
     label = "carbene;mb_tb_disub_twoNd",
-    group1 = 
-"""
-1 *3 C 2S {2,S} {3,S}
-2    H 0  {1,S}
-3    H 0  {1,S}
-""",
-    group2 = 
-"""
-1 *1 Ct      0 {2,T} {3,S}
-2 *2 Ct      0 {1,T} {4,S}
-3    {Cs,Os} 0 {1,S}
-4    {Cs,Os} 0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (4700000000000000.0, 'cm^3/(mol*s)'),
+        A = (4.7e+15, 'cm^3/(mol*s)'),
         n = -0.823,
         alpha = 0,
         E0 = (0.023, 'kcal/mol'),
@@ -485,32 +268,13 @@ entry(
     ),
     rank = 2,
     shortDesc = u"""Polino [carbene,2-butyne]""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 592,
     label = "carbene;mb_db_monosub_De",
-    group1 = 
-"""
-1 *3 C 2S {2,S} {3,S}
-2    H 0  {1,S}
-3    H 0  {1,S}
-""",
-    group2 = 
-"""
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    H             0 {1,S}
-4    H             0 {1,S}
-5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (1850000000000000.0, 'cm^3/(mol*s)'),
+        A = (1.85e+15, 'cm^3/(mol*s)'),
         n = -0.7,
         alpha = 0,
         E0 = (-0.0672, 'kcal/mol'),
@@ -519,9 +283,5 @@ entry(
     ),
     rank = 2,
     shortDesc = u"""Polino [carbene,1,3-butadiene]""",
-    longDesc = 
-u"""
-
-""",
 )
 

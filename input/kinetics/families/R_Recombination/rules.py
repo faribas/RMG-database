@@ -21,16 +21,8 @@ is apparently not causing a problem
 entry(
     index = 424,
     label = "Y_rad;Y_rad",
-    group1 = 
-"""
-1 * R 1
-""",
-    group2 = 
-"""
-1 * R 1
-""",
     kinetics = ArrheniusEP(
-        A = (10000000000000.0, 'cm^3/(mol*s)'),
+        A = (1e+13, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -39,25 +31,13 @@ entry(
     ),
     rank = 0,
     shortDesc = u"""Default""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 425,
     label = "H_rad;H_rad",
-    group1 = 
-"""
-1 * H 1
-""",
-    group2 = 
-"""
-1 * H 1
-""",
     kinetics = ArrheniusEP(
-        A = (109000000000.0, 'cm^3/(mol*s)'),
+        A = (1.09e+11, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (1.5, 'kcal/mol'),
@@ -81,19 +61,8 @@ Checked by Greg Magoon; I suspect the parameters in the paper come from a differ
 entry(
     index = 426,
     label = "H_rad;C_methyl",
-    group1 = 
-"""
-1 * H 1
-""",
-    group2 = 
-"""
-1 * C 1 {2,S} {3,S} {4,S}
-2   H 0 {1,S}
-3   H 0 {1,S}
-4   H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (193000000000000.0, 'cm^3/(mol*s)'),
+        A = (1.93e+14, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0.27, 'kcal/mol'),
@@ -117,19 +86,8 @@ Verified by Greg Magoon: RMG value agrees with NIST record, and the points in th
 entry(
     index = 427,
     label = "H_rad;C_methyl",
-    group1 = 
-"""
-1 * H 1
-""",
-    group2 = 
-"""
-1 * C 1 {2,S} {3,S} {4,S}
-2   H 0 {1,S}
-3   H 0 {1,S}
-4   H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (211000000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (2.11e+14, 'cm^3/(mol*s)', '*|/', 2),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -163,19 +121,8 @@ MRH 31-Aug-2009
 entry(
     index = 428,
     label = "H_rad;C_rad/H2/Cs",
-    group1 = 
-"""
-1 * H 1
-""",
-    group2 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   H  0 {1,S}
-4   Cs 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (100000000000000.0, 'cm^3/(mol*s)', '+|-', 10000000000000.0),
+        A = (1e+14, 'cm^3/(mol*s)', '+|-', 1e+13),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -198,19 +145,8 @@ Verified by Greg Magoon; I changed the DA uncertainty from (times/divide)1.1 to 
 entry(
     index = 429,
     label = "H_rad;C_rad/H/NonDeC",
-    group1 = 
-"""
-1 * H 1
-""",
-    group2 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   Cs 0 {1,S}
-4   Cs 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (20000000000000.0, 'cm^3/(mol*s)', '*|/', 3.16),
+        A = (2e+13, 'cm^3/(mol*s)', '*|/', 3.16),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -228,19 +164,8 @@ u"""
 entry(
     index = 430,
     label = "H_rad;C_rad/H/NonDeC",
-    group1 = 
-"""
-1 * H 1
-""",
-    group2 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   Cs 0 {1,S}
-4   Cs 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (150000000000000.0, 'cm^3/(mol*s)', '+|-', 30000000000000.0),
+        A = (1.5e+14, 'cm^3/(mol*s)', '+|-', 3e+13),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -263,18 +188,8 @@ Verified by Greg Magoon; I changed the DA uncertainty from (times/divide)1.25 to
 entry(
     index = 431,
     label = "H_rad;Cd_pri_rad",
-    group1 = 
-"""
-1 * H 1
-""",
-    group2 = 
-"""
-1 * C 1 {2,D} {3,S}
-2   C 0 {1,D}
-3   H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (121000000000000.0, 'cm^3/(mol*s)', '+|-', 48200000000000.0),
+        A = (1.21e+14, 'cm^3/(mol*s)', '+|-', 4.82e+13),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -297,18 +212,8 @@ Verified by Greg Magoon; note that the value in rateLibrary agrees with value re
 entry(
     index = 432,
     label = "H_rad;Cd_pri_rad",
-    group1 = 
-"""
-1 * H 1
-""",
-    group2 = 
-"""
-1 * C 1 {2,D} {3,S}
-2   C 0 {1,D}
-3   H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (536000000000000.0, 'cm^3/(mol*s)'),
+        A = (5.36e+14, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0.98, 'kcal/mol'),
@@ -332,17 +237,8 @@ Verified by Greg Magoon; RMG and NIST data seem to be the same; presumably, NIST
 entry(
     index = 433,
     label = "H_rad;Ct_rad/Ct",
-    group1 = 
-"""
-1 * H 1
-""",
-    group2 = 
-"""
-1 * Ct 1 {2,T}
-2   Ct 0 {1,T}
-""",
     kinetics = ArrheniusEP(
-        A = (181000000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (1.81e+14, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -375,18 +271,8 @@ MRH 28-Aug-2009
 entry(
     index = 434,
     label = "H_rad;Cb_rad",
-    group1 = 
-"""
-1 * H 1
-""",
-    group2 = 
-"""
-1 * Cb       1 {2,B} {3,B}
-2   {Cb,Cbf} 0 {1,B}
-3   {Cb,Cbf} 0 {1,B}
-""",
     kinetics = ArrheniusEP(
-        A = (220000000000000.0, 'cm^3/(mol*s)', '+|-', 80000000000000.0),
+        A = (2.2e+14, 'cm^3/(mol*s)', '+|-', 8e+13),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -403,10 +289,10 @@ u"""
 [173] Ackerman, L.; Hippler, H.; Pagsberg, P.; Reihs, C.; Troe, J. J. Phys. Chem. 1990, 94, 5247. 
 (300K, absolute value measured directly, excitation : flash photolysis, analysis : VIS-UV absorption, pressure 0.01-0.99 atm) 
 
-[172b] Emdee, J. L., Brezinsky, K., and Glassman, I., J. Phys. Chem. 96:2151–2161 (1992) DOI: 10.1021/j100184a025
+[172b] Emdee, J. L., Brezinsky, K., and Glassman, I., J. Phys. Chem. 96:21512161 (1992) DOI: 10.1021/j100184a025
 H + phenyl --> benzene (R1 in [172]) (Reaction 1 in [172b])
 Verified by Greg Magoon
-[172]: reported rate coefficient is for k_inf (see Table 1); temperature range considered is 1000-1200 K; this paper cites: Emdee, J. L., Brezinsky, K., and Glassman, I., J. Phys. Chem. 96:2151–2161 (1992) DOI: 10.1021/j100184a025 (included as 172b, above), which, in turn, references [173] (Troe) paper...conditions for this paper are 1100 K - 1200 K
+[172]: reported rate coefficient is for k_inf (see Table 1); temperature range considered is 1000-1200 K; this paper cites: Emdee, J. L., Brezinsky, K., and Glassman, I., J. Phys. Chem. 96:21512161 (1992) DOI: 10.1021/j100184a025 (included as 172b, above), which, in turn, references [173] (Troe) paper...conditions for this paper are 1100 K - 1200 K
 [173]: this contains the uncertainty estimate (see Table 2); I updated the DA uncertainty as I have done elsewhere; this seems to be the actual raw value that was subsequently interpreted/used in the paper cited by Ref. 172; conditions are 300 K and 1 bar, so apparently, the paper cited by Ref. 172 and/or Ref. 172 itself has assumed that it is in high-pressure limit and that it is temperature independent
 [172b]: see Table III
 """,
@@ -415,18 +301,8 @@ Verified by Greg Magoon
 entry(
     index = 435,
     label = "H_rad;CO_pri_rad",
-    group1 = 
-"""
-1 * H 1
-""",
-    group2 = 
-"""
-1 * C 1 {2,D} {3,S}
-2   O 0 {1,D}
-3   H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (46800000000.0, 'cm^3/(mol*s)'),
+        A = (4.68e+10, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (-4.53, 'kcal/mol'),
@@ -450,17 +326,8 @@ Verified by Greg Magoon; three A factors have been reported (for 3 different den
 entry(
     index = 436,
     label = "H_rad;O_pri_rad",
-    group1 = 
-"""
-1 * H 1
-""",
-    group2 = 
-"""
-1 * O 1 {2,S}
-2   H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (162000000000000.0, 'cm^3/(mol*s)'),
+        A = (1.62e+14, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0.15, 'kcal/mol'),
@@ -481,20 +348,6 @@ H + OH --> H2O
 entry(
     index = 437,
     label = "C_methyl;C_methyl",
-    group1 = 
-"""
-1 * C 1 {2,S} {3,S} {4,S}
-2   H 0 {1,S}
-3   H 0 {1,S}
-4   H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C 1 {2,S} {3,S} {4,S}
-2   H 0 {1,S}
-3   H 0 {1,S}
-4   H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
         A = (8.26e+17, 'cm^3/(mol*s)'),
         n = -1.4,
@@ -520,22 +373,8 @@ Verified by Greg Magoon; NIST record has slightly different parameters than RMG 
 entry(
     index = 438,
     label = "C_methyl;C_methyl",
-    group1 = 
-"""
-1 * C 1 {2,S} {3,S} {4,S}
-2   H 0 {1,S}
-3   H 0 {1,S}
-4   H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C 1 {2,S} {3,S} {4,S}
-2   H 0 {1,S}
-3   H 0 {1,S}
-4   H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (36100000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (3.61e+13, 'cm^3/(mol*s)', '*|/', 2),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -570,22 +409,8 @@ MRH 31-Aug-2009
 entry(
     index = 439,
     label = "C_methyl;C_rad/H2/Cs",
-    group1 = 
-"""
-1 * C 1 {2,S} {3,S} {4,S}
-2   H 0 {1,S}
-3   H 0 {1,S}
-4   H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   H  0 {1,S}
-4   Cs 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (33700000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (3.37e+13, 'cm^3/(mol*s)', '*|/', 2),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -621,22 +446,8 @@ MRH 31-Aug-2009
 entry(
     index = 440,
     label = "C_methyl;C_rad/H/NonDeC",
-    group1 = 
-"""
-1 * C 1 {2,S} {3,S} {4,S}
-2   H 0 {1,S}
-3   H 0 {1,S}
-4   H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   Cs 0 {1,S}
-4   Cs 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (664000000000000.0, 'cm^3/(mol*s)'),
+        A = (6.64e+14, 'cm^3/(mol*s)'),
         n = -0.57,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -665,22 +476,8 @@ but rateLibrary has slightly different value of 6.64E14
 entry(
     index = 441,
     label = "C_methyl;C_rad/Cs3",
-    group1 = 
-"""
-1 * C 1 {2,S} {3,S} {4,S}
-2   H 0 {1,S}
-3   H 0 {1,S}
-4   H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   Cs 0 {1,S}
-3   Cs 0 {1,S}
-4   Cs 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (4880000000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (4.88e+15, 'cm^3/(mol*s)', '*|/', 2),
         n = -1,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -726,21 +523,8 @@ MRH 31-Aug-2009
 entry(
     index = 442,
     label = "C_methyl;Cd_pri_rad",
-    group1 = 
-"""
-1 * C 1 {2,S} {3,S} {4,S}
-2   H 0 {1,S}
-3   H 0 {1,S}
-4   H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C 1 {2,D} {3,S}
-2   C 0 {1,D}
-3   H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (72300000000000.0, 'cm^3/(mol*s)', '+|-', 18100000000000.0),
+        A = (7.23e+13, 'cm^3/(mol*s)', '+|-', 1.81e+13),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -763,21 +547,8 @@ Verified by Greg Magoon; DA uncertainty updated, as I have done elsewhere
 entry(
     index = 443,
     label = "C_methyl;Cb_rad",
-    group1 = 
-"""
-1 * C 1 {2,S} {3,S} {4,S}
-2   H 0 {1,S}
-3   H 0 {1,S}
-4   H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * Cb       1 {2,B} {3,B}
-2   {Cb,Cbf} 0 {1,B}
-3   {Cb,Cbf} 0 {1,B}
-""",
     kinetics = ArrheniusEP(
-        A = (13800000000000.0, 'cm^3/(mol*s)', '+|-', 800000000000.0),
+        A = (1.38e+13, 'cm^3/(mol*s)', '+|-', 8e+11),
         n = 0,
         alpha = 0,
         E0 = (0.046, 'kcal/mol', '+|-', 0.072),
@@ -801,21 +572,8 @@ Verified by Greg Magoon; 0.05 kcal barrier changed to 0.046 as reported in paper
 entry(
     index = 444,
     label = "C_methyl;Cb_rad",
-    group1 = 
-"""
-1 * C 1 {2,S} {3,S} {4,S}
-2   H 0 {1,S}
-3   H 0 {1,S}
-4   H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * Cb       1 {2,B} {3,B}
-2   {Cb,Cbf} 0 {1,B}
-3   {Cb,Cbf} 0 {1,B}
-""",
     kinetics = ArrheniusEP(
-        A = (13900000000000.0, 'cm^3/(mol*s)', '+|-', 700000000000.0),
+        A = (1.39e+13, 'cm^3/(mol*s)', '+|-', 7e+11),
         n = 0,
         alpha = 0,
         E0 = (0.03, 'kcal/mol', '+|-', 0.07),
@@ -839,21 +597,8 @@ Verified by Greg Magoon; values appear in Appendix A and (with uncertainty) on p
 entry(
     index = 445,
     label = "C_methyl;CO_pri_rad",
-    group1 = 
-"""
-1 * C 1 {2,S} {3,S} {4,S}
-2   H 0 {1,S}
-3   H 0 {1,S}
-4   H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C 1 {2,D} {3,S}
-2   O 0 {1,D}
-3   H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (18100000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (1.81e+13, 'cm^3/(mol*s)', '*|/', 2),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -884,21 +629,8 @@ MRH 28-Aug-2009
 entry(
     index = 446,
     label = "C_methyl;CO_rad/NonDe",
-    group1 = 
-"""
-1 * C 1 {2,S} {3,S} {4,S}
-2   H 0 {1,S}
-3   H 0 {1,S}
-4   H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C      1 {2,D} {3,S}
-2   O      0 {1,D}
-3   {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (42000000000000.0, 'cm^3/(mol*s)', '+|-', 8400000000000.0),
+        A = (4.2e+13, 'cm^3/(mol*s)', '+|-', 8.4e+12),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -921,21 +653,8 @@ Verified by Greg Magoon; Note that the paper cites 4 other values for k6 from li
 entry(
     index = 447,
     label = "C_methyl;CO_rad/NonDe",
-    group1 = 
-"""
-1 * C 1 {2,S} {3,S} {4,S}
-2   H 0 {1,S}
-3   H 0 {1,S}
-4   H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C      1 {2,D} {3,S}
-2   O      0 {1,D}
-3   {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (4040000000000000.0, 'cm^3/(mol*s)', '*|/', 1.5),
+        A = (4.04e+15, 'cm^3/(mol*s)', '*|/', 1.5),
         n = -0.8,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -974,20 +693,8 @@ MRH 28-Aug-2009
 entry(
     index = 448,
     label = "C_methyl;O_pri_rad",
-    group1 = 
-"""
-1 * C 1 {2,S} {3,S} {4,S}
-2   H 0 {1,S}
-3   H 0 {1,S}
-4   H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * O 1 {2,S}
-2   H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (60300000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (6.03e+13, 'cm^3/(mol*s)', '*|/', 2),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1022,20 +729,8 @@ MRH 31-Aug-2009
 entry(
     index = 449,
     label = "C_methyl;O_rad/NonDe",
-    group1 = 
-"""
-1 * C 1 {2,S} {3,S} {4,S}
-2   H 0 {1,S}
-3   H 0 {1,S}
-4   H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * O      1 {2,S}
-2   {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (12100000000000.0, 'cm^3/(mol*s)', '*|/', 5),
+        A = (1.21e+13, 'cm^3/(mol*s)', '*|/', 5),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1065,22 +760,8 @@ MRH 28-Aug-2009
 entry(
     index = 450,
     label = "C_rad/H2/Cs;C_rad/H2/Cs",
-    group1 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   H  0 {1,S}
-4   Cs 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   H  0 {1,S}
-4   Cs 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (11500000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (1.15e+13, 'cm^3/(mol*s)', '*|/', 2),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1110,22 +791,8 @@ MRH 31-Aug-2009
 entry(
     index = 451,
     label = "C_rad/H2/Cs;C_rad/H/NonDeC",
-    group1 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   H  0 {1,S}
-4   Cs 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   Cs 0 {1,S}
-4   Cs 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (115000000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (1.15e+14, 'cm^3/(mol*s)', '*|/', 2),
         n = -0.35,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1156,22 +823,8 @@ MRH 30-Aug-2009
 entry(
     index = 452,
     label = "C_rad/H2/Cs;C_rad/Cs3",
-    group1 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   H  0 {1,S}
-4   Cs 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   Cs 0 {1,S}
-3   Cs 0 {1,S}
-4   Cs 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (691000000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (6.91e+14, 'cm^3/(mol*s)', '*|/', 2),
         n = -0.75,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1214,21 +867,8 @@ MRH 31-Aug-2009
 entry(
     index = 453,
     label = "C_rad/H2/Cs;CO_pri_rad",
-    group1 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   H  0 {1,S}
-4   Cs 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C 1 {2,D} {3,S}
-2   O 0 {1,D}
-3   H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (18100000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (1.81e+13, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1257,21 +897,8 @@ MRH 28-Aug-2009
 entry(
     index = 454,
     label = "C_rad/H2/Cs;CO_rad/NonDe",
-    group1 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   H  0 {1,S}
-4   Cs 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C      1 {2,D} {3,S}
-2   O      0 {1,D}
-3   {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (312000000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (3.12e+14, 'cm^3/(mol*s)', '*|/', 3),
         n = -0.5,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1300,20 +927,8 @@ MRH 28-Aug-2009
 entry(
     index = 455,
     label = "C_rad/H2/Cs;O_pri_rad",
-    group1 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   H  0 {1,S}
-4   Cs 0 {1,S}
-""",
-    group2 = 
-"""
-1 * O 1 {2,S}
-2   H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (77000000000000.0, 'cm^3/(mol*s)', '+|-', 10000000000000.0),
+        A = (7.7e+13, 'cm^3/(mol*s)', '+|-', 1e+13),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1336,22 +951,8 @@ Verified by Greg Magoon; value reported for k1a,Infinity (high-pressure) appears
 entry(
     index = 456,
     label = "C_rad/H/NonDeC;C_rad/H/NonDeC",
-    group1 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   Cs 0 {1,S}
-4   Cs 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   Cs 0 {1,S}
-4   Cs 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (325000000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (3.25e+14, 'cm^3/(mol*s)', '*|/', 2),
         n = -0.7,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1387,22 +988,8 @@ MRH 30-Aug-2009
 entry(
     index = 457,
     label = "C_rad/H/NonDeC;C_rad/Cs3",
-    group1 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   Cs 0 {1,S}
-4   Cs 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   Cs 0 {1,S}
-3   Cs 0 {1,S}
-4   Cs 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (4120000000000000.0, 'cm^3/(mol*s)', '*|/', 1.5),
+        A = (4.12e+15, 'cm^3/(mol*s)', '*|/', 1.5),
         n = -1.1,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1443,21 +1030,8 @@ MRH 31-Aug-2009
 entry(
     index = 458,
     label = "C_rad/H/NonDeC;CO_rad/NonDe",
-    group1 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   Cs 0 {1,S}
-4   Cs 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C      1 {2,D} {3,S}
-2   O      0 {1,D}
-3   {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (66400000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (6.64e+13, 'cm^3/(mol*s)', '*|/', 2),
         n = -0.35,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1492,20 +1066,8 @@ MRH 30-Aug-2009
 entry(
     index = 459,
     label = "C_rad/H/NonDeC;O_rad/NonDe",
-    group1 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   Cs 0 {1,S}
-4   Cs 0 {1,S}
-""",
-    group2 = 
-"""
-1 * O      1 {2,S}
-2   {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (6030000000000.0, 'cm^3/(mol*s)', '*|/', 5),
+        A = (6.03e+12, 'cm^3/(mol*s)', '*|/', 5),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1535,20 +1097,6 @@ MRH 30-Aug-2009
 entry(
     index = 460,
     label = "C_rad/Cs3;C_rad/Cs3",
-    group1 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   Cs 0 {1,S}
-3   Cs 0 {1,S}
-4   Cs 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   Cs 0 {1,S}
-3   Cs 0 {1,S}
-4   Cs 0 {1,S}
-""",
     kinetics = ArrheniusEP(
         A = (1.24e+16, 'cm^3/(mol*s)', '*|/', 2),
         n = -1.5,
@@ -1590,21 +1138,8 @@ MRH 31-Aug-2009
 entry(
     index = 461,
     label = "C_rad/Cs3;CO_pri_rad",
-    group1 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   Cs 0 {1,S}
-3   Cs 0 {1,S}
-4   Cs 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C 1 {2,D} {3,S}
-2   O 0 {1,D}
-3   H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (12100000000000.0, 'cm^3/(mol*s)', '*|/', 5),
+        A = (1.21e+13, 'cm^3/(mol*s)', '*|/', 5),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1636,21 +1171,8 @@ MRH 31-Aug-2009
 entry(
     index = 462,
     label = "C_rad/Cs3;CO_rad/NonDe",
-    group1 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   Cs 0 {1,S}
-3   Cs 0 {1,S}
-4   Cs 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C      1 {2,D} {3,S}
-2   O      0 {1,D}
-3   {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (775000000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (7.75e+14, 'cm^3/(mol*s)', '*|/', 2),
         n = -0.75,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1691,20 +1213,8 @@ MRH 31-Aug-2009
 entry(
     index = 463,
     label = "C_rad/Cs3;O_rad/NonDe",
-    group1 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   Cs 0 {1,S}
-3   Cs 0 {1,S}
-4   Cs 0 {1,S}
-""",
-    group2 = 
-"""
-1 * O      1 {2,S}
-2   {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (9040000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (9.04e+12, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1736,20 +1246,8 @@ MRH 31-Aug-2009
 entry(
     index = 464,
     label = "Cd_pri_rad;Cd_pri_rad",
-    group1 = 
-"""
-1 * C 1 {2,D} {3,S}
-2   C 0 {1,D}
-3   H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C 1 {2,D} {3,S}
-2   C 0 {1,D}
-3   H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (72300000000000.0, 'cm^3/(mol*s)', '+|-', 12000000000000.0),
+        A = (7.23e+13, 'cm^3/(mol*s)', '+|-', 1.2e+13),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1771,19 +1269,8 @@ Verified by Greg Magoon; DA uncertainty updated, as I have done elsewhere; based
 entry(
     index = 465,
     label = "Cd_pri_rad;Ct_rad/Ct",
-    group1 = 
-"""
-1 * C 1 {2,D} {3,S}
-2   C 0 {1,D}
-3   H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * Ct 1 {2,T}
-2   Ct 0 {1,T}
-""",
     kinetics = ArrheniusEP(
-        A = (100000000000000.0, 'cm^3/(mol*s)'),
+        A = (1e+14, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1807,20 +1294,8 @@ Verified by Greg Magoon; value confirmed from paper data in Table III; this is p
 entry(
     index = 466,
     label = "Cd_pri_rad;CO_pri_rad",
-    group1 = 
-"""
-1 * C 1 {2,D} {3,S}
-2   C 0 {1,D}
-3   H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C 1 {2,D} {3,S}
-2   O 0 {1,D}
-3   H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (18100000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (1.81e+13, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1850,20 +1325,8 @@ MRH 28-Aug-2009
 entry(
     index = 467,
     label = "Cb_rad;Cb_rad",
-    group1 = 
-"""
-1 * Cb       1 {2,B} {3,B}
-2   {Cb,Cbf} 0 {1,B}
-3   {Cb,Cbf} 0 {1,B}
-""",
-    group2 = 
-"""
-1 * Cb       1 {2,B} {3,B}
-2   {Cb,Cbf} 0 {1,B}
-3   {Cb,Cbf} 0 {1,B}
-""",
     kinetics = ArrheniusEP(
-        A = (5700000000000.0, 'cm^3/(mol*s)'),
+        A = (5.7e+12, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1884,20 +1347,8 @@ Phenyl + Phenyl --> Biphenyl
 entry(
     index = 468,
     label = "Cb_rad;Cb_rad",
-    group1 = 
-"""
-1 * Cb       1 {2,B} {3,B}
-2   {Cb,Cbf} 0 {1,B}
-3   {Cb,Cbf} 0 {1,B}
-""",
-    group2 = 
-"""
-1 * Cb       1 {2,B} {3,B}
-2   {Cb,Cbf} 0 {1,B}
-3   {Cb,Cbf} 0 {1,B}
-""",
     kinetics = ArrheniusEP(
-        A = (13900000000000.0, 'cm^3/(mol*s)', '+|-', 1100000000000.0),
+        A = (1.39e+13, 'cm^3/(mol*s)', '+|-', 1.1e+12),
         n = 0,
         alpha = 0,
         E0 = (0.11, 'kcal/mol', '+|-', 0.072),
@@ -1921,20 +1372,8 @@ Verified by Greg Magoon: total pressure ~7 torr; DA uncertainty changed to addit
 entry(
     index = 469,
     label = "CO_pri_rad;CO_pri_rad",
-    group1 = 
-"""
-1 * C 1 {2,D} {3,S}
-2   O 0 {1,D}
-3   H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C 1 {2,D} {3,S}
-2   O 0 {1,D}
-3   H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (15100000000000.0, 'cm^3/(mol*s)', '+|-', 6020000000000.0),
+        A = (1.51e+13, 'cm^3/(mol*s)', '+|-', 6.02e+12),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -1957,20 +1396,8 @@ Verified by Greg Magoon: the existing k in the rateLibrary appeared to be off by
 entry(
     index = 470,
     label = "CO_pri_rad;CO_rad/NonDe",
-    group1 = 
-"""
-1 * C 1 {2,D} {3,S}
-2   O 0 {1,D}
-3   H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C      1 {2,D} {3,S}
-2   O      0 {1,D}
-3   {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (18100000000000.0, 'cm^3/(mol*s)', '*|/', 3),
+        A = (1.81e+13, 'cm^3/(mol*s)', '*|/', 3),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2000,20 +1427,8 @@ MRH 28-Aug-2009
 entry(
     index = 471,
     label = "CO_rad/NonDe;CO_rad/NonDe",
-    group1 = 
-"""
-1 * C      1 {2,D} {3,S}
-2   O      0 {1,D}
-3   {Cs,O} 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C      1 {2,D} {3,S}
-2   O      0 {1,D}
-3   {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (12100000000000.0, 'cm^3/(mol*s)', '*|/', 2),
+        A = (1.21e+13, 'cm^3/(mol*s)', '*|/', 2),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2042,18 +1457,8 @@ MRH 28-Aug-2009
 entry(
     index = 472,
     label = "O_pri_rad;O_pri_rad",
-    group1 = 
-"""
-1 * O 1 {2,S}
-2   H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * O 1 {2,S}
-2   H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (15700000000000.0, 'cm^3/(mol*s)', '+|-', 6020000000000.0),
+        A = (1.57e+13, 'cm^3/(mol*s)', '+|-', 6.02e+12),
         n = (0, '', '+|-', 0.5),
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2093,18 +1498,8 @@ MRH 1-Sept-2009
 entry(
     index = 473,
     label = "O_rad/NonDe;O_rad/NonDe",
-    group1 = 
-"""
-1 * O      1 {2,S}
-2   {Cs,O} 0 {1,S}
-""",
-    group2 = 
-"""
-1 * O      1 {2,S}
-2   {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (1810000000000.0, 'cm^3/(mol*s)', '*|/', 5),
+        A = (1.81e+12, 'cm^3/(mol*s)', '*|/', 5),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2135,19 +1530,8 @@ MRH 28-Aug-2009
 entry(
     index = 474,
     label = "H_rad;Cs_rad",
-    group1 = 
-"""
-1 * H 1
-""",
-    group2 = 
-"""
-1 * C 1 {2,S} {3,S} {4,S}
-2   R 0 {1,S}
-3   R 0 {1,S}
-4   R 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (50000000000000.0, 'cm^3/(mol*s)'),
+        A = (5e+13, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2166,22 +1550,8 @@ Curran's estimation, based on half that recommended by Allara and Shaw [146] for
 entry(
     index = 475,
     label = "C_methyl;C_ter_rad",
-    group1 = 
-"""
-1 * C 1 {2,S} {3,S} {4,S}
-2   H 0 {1,S}
-3   H 0 {1,S}
-4   H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C   1 {2,S} {3,S} {4,S}
-2   R!H 0 {1,S}
-3   R!H 0 {1,S}
-4   R!H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (16300000000000.0, 'cm^3/(mol*s)'),
+        A = (1.63e+13, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0.596, 'kcal/mol'),
@@ -2200,22 +1570,8 @@ Curran's estimation, based on recommendations of Tsang [92] for CH3 + tC4H9
 entry(
     index = 476,
     label = "C_methyl;C_sec_rad",
-    group1 = 
-"""
-1 * C 1 {2,S} {3,S} {4,S}
-2   H 0 {1,S}
-3   H 0 {1,S}
-4   H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C   1 {2,S} {3,S} {4,S}
-2   H   0 {1,S}
-3   R!H 0 {1,S}
-4   R!H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (680000000000000.0, 'cm^3/(mol*s)'),
+        A = (6.8e+14, 'cm^3/(mol*s)'),
         n = -0.68,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2234,22 +1590,8 @@ Curran's estimation based on half Tsang's [91] recommendation for CH3 + iC3H7
 entry(
     index = 477,
     label = "C_pri_rad;C_sec_rad",
-    group1 = 
-"""
-1 * C   1 {2,S} {3,S} {4,S}
-2   H   0 {1,S}
-3   H   0 {1,S}
-4   R!H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C   1 {2,S} {3,S} {4,S}
-2   H   0 {1,S}
-3   R!H 0 {1,S}
-4   R!H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (479000000000000.0, 'cm^3/(mol*s)'),
+        A = (4.79e+14, 'cm^3/(mol*s)'),
         n = -0.75,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2268,22 +1610,8 @@ Curran's estimation for neoC5H11 + iC3H7, similar to tC4H9 + iC4H9
 entry(
     index = 478,
     label = "C_pri_rad;C_ter_rad",
-    group1 = 
-"""
-1 * C   1 {2,S} {3,S} {4,S}
-2   H   0 {1,S}
-3   H   0 {1,S}
-4   R!H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C   1 {2,S} {3,S} {4,S}
-2   R!H 0 {1,S}
-3   R!H 0 {1,S}
-4   R!H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (359000000000000.0, 'cm^3/(mol*s)'),
+        A = (3.59e+14, 'cm^3/(mol*s)'),
         n = -0.75,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2304,18 +1632,8 @@ values from literature for smaller alkyl, based upon the consideration that rate
 entry(
     index = 479,
     label = "O_pri_rad;O_sec_rad",
-    group1 = 
-"""
-1 * O 1 {2,S}
-2   H 0 {1,S}
-""",
-    group2 = 
-"""
-1 * O   1 {2,S}
-2   R!H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (20000000000000.0, 'cm^3/(mol*s)'),
+        A = (2e+13, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2339,17 +1657,8 @@ Verified by Greg Magoon; it is not immediately clear whether this rate constant 
 entry(
     index = 480,
     label = "O2_birad;H_rad",
-    group1 = 
-"""
-1 * O 1 {2,S}
-2   O 1 {1,S}
-""",
-    group2 = 
-"""
-1 * H 1
-""",
     kinetics = ArrheniusEP(
-        A = (43950000000.0, 'cm^3/(mol*s)'),
+        A = (4.395e+10, 'cm^3/(mol*s)'),
         n = 1,
         alpha = 0,
         E0 = (0.45, 'kcal/mol'),
@@ -2403,17 +1712,8 @@ Moved from R_Addition_MultipleBond on 3-Jun-2010, JDM.
 entry(
     index = 481,
     label = "O2_birad;H_rad",
-    group1 = 
-"""
-1 * O 1 {2,S}
-2   O 1 {1,S}
-""",
-    group2 = 
-"""
-1 * H 1
-""",
     kinetics = ArrheniusEP(
-        A = (8150000000000.0, 'cm^3/(mol*s)'),
+        A = (8.15e+12, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0.76, 'kcal/mol'),
@@ -2437,20 +1737,8 @@ Moved from R_Addition_MultipleBond on 3-Jun-2010, JDM.
 entry(
     index = 482,
     label = "O2_birad;C_methyl",
-    group1 = 
-"""
-1 * O 1 {2,S}
-2   O 1 {1,S}
-""",
-    group2 = 
-"""
-1 * C 1 {2,S} {3,S} {4,S}
-2   H 0 {1,S}
-3   H 0 {1,S}
-4   H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (2260000000000.0, 'cm^3/(mol*s)', '+|-', 420000000000.0),
+        A = (2.26e+12, 'cm^3/(mol*s)', '+|-', 4.2e+11),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2472,20 +1760,20 @@ In their study modelling iso-octane oxidation, Curran et al [8] chose to use the
 Rates measurement of **n-butyl** + O2 at 300 K. High pressure limit from flash photolysis experiments.
 
 C.D.W. divided rate expression by 2, to get rate of addition rate per site,
-giving  (2.26±0.42)E12 cm3/mole/sec.
+giving  (2.260.42)E12 cm3/mole/sec.
 
     Rate constants for the reaction of four different butyl radicals with molecular oxygen 
     have been measured **at room temperature**. The radicals were generated by flash photolysis 
     and their time decay was followed with a photoionization mass spectrometer. The radical 
-    concentrations were kept low to avoid complications from radical–radical reactions. 
+    concentrations were kept low to avoid complications from radicalradical reactions. 
     Radical lifetimes were long, up to 50 msec, thus assuring that thermalized radicals were being studied. 
     
-    The rate constants, in units of 10E−11 cm3/molecule/sec, are:
+    The rate constants, in units of 10E11 cm3/molecule/sec, are:
     
-     * **n-butyl (0.75±0.14); (gives (2.26±0.42)E12 cm3/mole/sec when divided by 2 to get rate per site)**
-     * s-butyl (1.66±0.22); (gives (5.00±0.66)E12 cm3/mole/sec when divided by 2 to get rate per site)
-     * t-butyl (2.34±0.39); (gives (7.05±1.17)E12 cm3/mole/sec when divided by 2 to get rate per site)
-     * 3-hydroxy s-butyl (2.8±1.8). (gives (8.43±5.42)E12 cm3/mole/sec when divided by 2 to get rate per site)
+     * **n-butyl (0.750.14); (gives (2.260.42)E12 cm3/mole/sec when divided by 2 to get rate per site)**
+     * s-butyl (1.660.22); (gives (5.000.66)E12 cm3/mole/sec when divided by 2 to get rate per site)
+     * t-butyl (2.340.39); (gives (7.051.17)E12 cm3/mole/sec when divided by 2 to get rate per site)
+     * 3-hydroxy s-butyl (2.81.8). (gives (8.435.42)E12 cm3/mole/sec when divided by 2 to get rate per site)
      
     No pressure dependence of the rate constants was observed over the range 1 to 4 Torr. 
 
@@ -2500,20 +1788,8 @@ Moved from R_Addition_MultipleBond on 3-Jun-2010, JDM.
 entry(
     index = 483,
     label = "O2_birad;C_pri_rad",
-    group1 = 
-"""
-1 * O 1 {2,S}
-2   O 1 {1,S}
-""",
-    group2 = 
-"""
-1 * C   1 {2,S} {3,S} {4,S}
-2   H   0 {1,S}
-3   H   0 {1,S}
-4   R!H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (2260000000000.0, 'cm^3/(mol*s)', '+|-', 420000000000.0),
+        A = (2.26e+12, 'cm^3/(mol*s)', '+|-', 4.2e+11),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2532,20 +1808,20 @@ In their study modelling iso-octane oxidation, Curran et al [8] chose to use the
 
 Rates measurement of **n-butyl** + O2 at 300 K. High pressure limit from flash photolysis experiments.
 C.D.W. divided rate expression by 2, to get rate of addition rate per site, 
-giving  (2.26±0.42)E12 cm3/mole/sec.
+giving  (2.260.42)E12 cm3/mole/sec.
 
     Rate constants for the reaction of four different butyl radicals with molecular oxygen 
     have been measured **at room temperature**. The radicals were generated by flash photolysis 
     and their time decay was followed with a photoionization mass spectrometer. The radical 
-    concentrations were kept low to avoid complications from radical–radical reactions. 
+    concentrations were kept low to avoid complications from radicalradical reactions. 
     Radical lifetimes were long, up to 50 msec, thus assuring that thermalized radicals were being studied. 
     
-    The rate constants, in units of 10E−11 cm3/molecule/sec, are:
+    The rate constants, in units of 10E11 cm3/molecule/sec, are:
     
-     * n-butyl (0.75±0.14); (gives (2.26±0.42)E12 cm3/mole/sec when divided by 2 to get rate per site)
-     * s-butyl (1.66±0.22); (gives (5.00±0.66)E12 cm3/mole/sec when divided by 2 to get rate per site)
-     * t-butyl (2.34±0.39); (gives (7.05±1.17)E12 cm3/mole/sec when divided by 2 to get rate per site)
-     * 3-hydroxy s-butyl (2.8±1.8). (gives (8.43±5.42)E12 cm3/mole/sec when divided by 2 to get rate per site)
+     * n-butyl (0.750.14); (gives (2.260.42)E12 cm3/mole/sec when divided by 2 to get rate per site)
+     * s-butyl (1.660.22); (gives (5.000.66)E12 cm3/mole/sec when divided by 2 to get rate per site)
+     * t-butyl (2.340.39); (gives (7.051.17)E12 cm3/mole/sec when divided by 2 to get rate per site)
+     * 3-hydroxy s-butyl (2.81.8). (gives (8.435.42)E12 cm3/mole/sec when divided by 2 to get rate per site)
      
     No pressure dependence of the rate constants was observed over the range 1 to 4 Torr. 
 
@@ -2561,20 +1837,8 @@ Moved from R_Addition_MultipleBond on 3-Jun-2010, JDM.
 entry(
     index = 484,
     label = "O2_birad;C_sec_rad",
-    group1 = 
-"""
-1 * O 1 {2,S}
-2   O 1 {1,S}
-""",
-    group2 = 
-"""
-1 * C   1 {2,S} {3,S} {4,S}
-2   H   0 {1,S}
-3   R!H 0 {1,S}
-4   R!H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (3770000000000.0, 'cm^3/(mol*s)', '+|-', 1000000000000.0),
+        A = (3.77e+12, 'cm^3/(mol*s)', '+|-', 1e+12),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2585,7 +1849,7 @@ entry(
     shortDesc = u"""Curran et al. [8]. (Estimated at 300K)""",
     longDesc = 
 u"""
-Lenhardt [143] measured (10.0±1.3)E12 cm3/mole/sec (at 300K, high pressure limit, from flash photolysis experiments.)
+Lenhardt [143] measured (10.01.3)E12 cm3/mole/sec (at 300K, high pressure limit, from flash photolysis experiments.)
 Atkinson [96], in their review, recommend 6.62E12 cm3/mole/sec. (according to Curran [8]).
 Curran [8], in their modelling paper, refer to both these and chose and "intermediate" value of 7.54E12 cm3/mol/sec.
 
@@ -2608,20 +1872,8 @@ Moved from R_Addition_MultipleBond on 3-Jun-2010, JDM.
 entry(
     index = 485,
     label = "O2_birad;C_ter_rad",
-    group1 = 
-"""
-1 * O 1 {2,S}
-2   O 1 {1,S}
-""",
-    group2 = 
-"""
-1 * C   1 {2,S} {3,S} {4,S}
-2   R!H 0 {1,S}
-3   R!H 0 {1,S}
-4   R!H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (7050000000000.0, 'cm^3/(mol*s)', '+|-', 1170000000000.0),
+        A = (7.05e+12, 'cm^3/(mol*s)', '+|-', 1.17e+12),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2640,20 +1892,20 @@ In their study modelling iso-octane oxidation, Curran et al [8] chose to use the
 
 Rates measurement of **t-butyl** + O2 at 300 K. High pressure limit from flash photolysis experiments.
 C.D.W. divided rate expression by 2, to get rate of addition rate per site, 
-giving  (7.05±1.17)E12 cm3/mole/sec.
+giving  (7.051.17)E12 cm3/mole/sec.
 
     Rate constants for the reaction of four different butyl radicals with molecular oxygen 
     have been measured **at room temperature**. The radicals were generated by flash photolysis 
     and their time decay was followed with a photoionization mass spectrometer. The radical 
-    concentrations were kept low to avoid complications from radical–radical reactions. 
+    concentrations were kept low to avoid complications from radicalradical reactions. 
     Radical lifetimes were long, up to 50 msec, thus assuring that thermalized radicals were being studied. 
     
-    The rate constants, in units of 10E−11 cm3/molecule/sec, are:
+    The rate constants, in units of 10E11 cm3/molecule/sec, are:
     
-     * n-butyl (0.75±0.14); (gives (2.26±0.42)E12 cm3/mole/sec when divided by 2 to get rate per site)
-     * s-butyl (1.66±0.22); (gives (5.00±0.66)E12 cm3/mole/sec when divided by 2 to get rate per site)
-     * **t-butyl (2.34±0.39); (gives (7.05±1.17)E12 cm3/mole/sec when divided by 2 to get rate per site)**
-     * 3-hydroxy s-butyl (2.8±1.8). (gives (8.43±5.42)E12 cm3/mole/sec when divided by 2 to get rate per site)
+     * n-butyl (0.750.14); (gives (2.260.42)E12 cm3/mole/sec when divided by 2 to get rate per site)
+     * s-butyl (1.660.22); (gives (5.000.66)E12 cm3/mole/sec when divided by 2 to get rate per site)
+     * **t-butyl (2.340.39); (gives (7.051.17)E12 cm3/mole/sec when divided by 2 to get rate per site)**
+     * 3-hydroxy s-butyl (2.81.8). (gives (8.435.42)E12 cm3/mole/sec when divided by 2 to get rate per site)
      
     No pressure dependence of the rate constants was observed over the range 1 to 4 Torr. 
 
@@ -2669,19 +1921,8 @@ Moved from R_Addition_MultipleBond on 3-Jun-2010, JDM.
 entry(
     index = 486,
     label = "O2_birad;Cd_pri_rad",
-    group1 = 
-"""
-1 * O 1 {2,S}
-2   O 1 {1,S}
-""",
-    group2 = 
-"""
-1 * C 1 {2,D} {3,S}
-2   C 0 {1,D}
-3   H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (3000000000000.0, 'cm^3/(mol*s)'),
+        A = (3e+12, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2702,19 +1943,8 @@ Moved from R_Addition_MultipleBond on 3-Jun-2010, JDM.
 entry(
     index = 488,
     label = "O2_birad;Cb_rad",
-    group1 = 
-"""
-1 * O 1 {2,S}
-2   O 1 {1,S}
-""",
-    group2 = 
-"""
-1 * Cb       1 {2,B} {3,B}
-2   {Cb,Cbf} 0 {1,B}
-3   {Cb,Cbf} 0 {1,B}
-""",
     kinetics = ArrheniusEP(
-        A = (3015000000000.0, 'cm^3/(mol*s)', '*|/', 1.2),
+        A = (3.015e+12, 'cm^3/(mol*s)', '*|/', 1.2),
         n = 0,
         alpha = 0,
         E0 = (0.32, 'kcal/mol', '+|-', 0.13),
@@ -2735,19 +1965,8 @@ Moved from R_Addition_MultipleBond on 3-Jun-2010, JDM.
 entry(
     index = 489,
     label = "O2_birad;CO_pri_rad",
-    group1 = 
-"""
-1 * O 1 {2,S}
-2   O 1 {1,S}
-""",
-    group2 = 
-"""
-1 * C 1 {2,D} {3,S}
-2   O 0 {1,D}
-3   H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (3500000000000.0, 'cm^3/(mol*s)'),
+        A = (3.5e+12, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2768,19 +1987,8 @@ Moved from R_Addition_MultipleBond on 3-Jun-2010, JDM.
 entry(
     index = 490,
     label = "O2_birad;CO_rad/NonDe",
-    group1 = 
-"""
-1 * O 1 {2,S}
-2   O 1 {1,S}
-""",
-    group2 = 
-"""
-1 * C      1 {2,D} {3,S}
-2   O      0 {1,D}
-3   {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (1505000000000.0, 'cm^3/(mol*s)', '*|/', 3.16),
+        A = (1.505e+12, 'cm^3/(mol*s)', '*|/', 3.16),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2801,20 +2009,8 @@ Moved from R_Addition_MultipleBond on 3-Jun-2010, JDM.
 entry(
     index = 491,
     label = "SsJ-Ss;C_methyl",
-    group1 = 
-"""
-1 * Ss 1 {2,S}
-2   Ss 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C 1 {2,S} {3,S} {4,S}
-2   H 0 {1,S}
-3   H 0 {1,S}
-4   H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (6440000000.0, 'cm^3/(mol*s)'),
+        A = (6.44e+09, 'cm^3/(mol*s)'),
         n = 1.19,
         alpha = 0,
         E0 = (0.51, 'kcal/mol'),
@@ -2847,16 +2043,8 @@ estimate is known).
 entry(
     index = 491,
     label = "Y_rad;H_rad",
-    group1 = 
-"""
-1 * R 1
-""",
-    group2 = 
-"""
-1 * H 1
-""",
     kinetics = ArrheniusEP(
-        A = (10000000000000.0, 'cm^3/(mol*s)'),
+        A = (1e+13, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2865,54 +2053,13 @@ entry(
     ),
     rank = 1,
     shortDesc = u"""MRH estimate""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 492,
-    label = "SsJ-Cs;SsJ-Cs",
-    group1 = 
-"""
-1 * Ss 1 {2,S}
-2   Cs 0 {1,S}
-""",
-    group2 = 
-"""
-1 * Ss 1 {2,S}
-2   Cs 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (43600000000.0, 'cm^3/(mol*s)'),
-        n = 1.3,
-        alpha = 0,
-        E0 = (-0.88, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 5,
-    shortDesc = u"""A.G. Vandeputte""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 492,
     label = "Y_rad;Y_rad",
-    group1 = 
-"""
-1 * R 1
-""",
-    group2 = 
-"""
-1 * R 1
-""",
     kinetics = ArrheniusEP(
-        A = (10000000000000.0, 'cm^3/(mol*s)'),
+        A = (1e+13, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -2935,21 +2082,25 @@ reasonable.
 )
 
 entry(
+    index = 492,
+    label = "SsJ-Cs;SsJ-Cs",
+    kinetics = ArrheniusEP(
+        A = (4.36e+10, 'cm^3/(mol*s)'),
+        n = 1.3,
+        alpha = 0,
+        E0 = (-0.88, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 5,
+    shortDesc = u"""A.G. Vandeputte""",
+)
+
+entry(
     index = 493,
     label = "CsJ-SsHH;H_rad",
-    group1 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   Ss 0 {1,S}
-3   H  0 {1,S}
-4   H  0 {1,S}
-""",
-    group2 = 
-"""
-1 * H 1
-""",
     kinetics = ArrheniusEP(
-        A = (820000000000.0, 'cm^3/(mol*s)'),
+        A = (8.2e+11, 'cm^3/(mol*s)'),
         n = 0.68,
         alpha = 0,
         E0 = (0.07, 'kcal/mol'),
@@ -2958,26 +2109,13 @@ entry(
     ),
     rank = 5,
     shortDesc = u"""A.G. Vandeputte""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 494,
     label = "SsJ-H;H_rad",
-    group1 = 
-"""
-1 * Ss 1 {2,S}
-2   H  0 {1,S}
-""",
-    group2 = 
-"""
-1 * H 1
-""",
     kinetics = ArrheniusEP(
-        A = (25300000000000.0, 'cm^3/(mol*s)'),
+        A = (2.53e+13, 'cm^3/(mol*s)'),
         n = 0.56,
         alpha = 0,
         E0 = (-0.02, 'kcal/mol'),
@@ -2986,28 +2124,13 @@ entry(
     ),
     rank = 5,
     shortDesc = u"""A.G. Vandeputte""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 495,
     label = "H_rad;C_rad/H2/Cd",
-    group1 = 
-"""
-1 * H 1
-""",
-    group2 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   H  0 {1,S}
-4   Cd 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (29200000000000.0, 'cm^3/(mol*s)'),
+        A = (2.92e+13, 'cm^3/(mol*s)'),
         n = 0.18,
         alpha = 0,
         E0 = (0.124, 'kcal/mol'),
@@ -3016,28 +2139,13 @@ entry(
     ),
     rank = 3,
     shortDesc = u"""Harding et al. (2007HAR/KLI3789-3801), value devided by 2 to account for two addition sites""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 496,
     label = "H_rad;C_rad/H/OneDeC",
-    group1 = 
-"""
-1 * H 1
-""",
-    group2 = 
-"""
-1 * C             1 {2,S} {3,S} {4,S}
-2   H             0 {1,S}
-3   {Cd,Ct,Cb,CO} 0 {1,S}
-4   Cs            0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (29200000000000.0, 'cm^3/(mol*s)'),
+        A = (2.92e+13, 'cm^3/(mol*s)'),
         n = 0.18,
         alpha = 0,
         E0 = (0.124, 'kcal/mol'),
@@ -3046,28 +2154,13 @@ entry(
     ),
     rank = 5,
     shortDesc = u"""Estimated by 495""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 497,
     label = "H_rad;C_rad/OneDe",
-    group1 = 
-"""
-1 * H 1
-""",
-    group2 = 
-"""
-1 * C             1 {2,S} {3,S} {4,S}
-2   {Cd,Ct,Cb,CO} 0 {1,S}
-3   {Cs,O}        0 {1,S}
-4   {Cs,O}        0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (29200000000000.0, 'cm^3/(mol*s)'),
+        A = (2.92e+13, 'cm^3/(mol*s)'),
         n = 0.18,
         alpha = 0,
         E0 = (0.124, 'kcal/mol'),
@@ -3076,28 +2169,13 @@ entry(
     ),
     rank = 5,
     shortDesc = u"""Estimated by 495""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 498,
     label = "H_rad;C_rad/TwoDe",
-    group1 = 
-"""
-1 * H 1
-""",
-    group2 = 
-"""
-1 * C             1 {2,S} {3,S} {4,S}
-2   {Cd,Ct,Cb,CO} 0 {1,S}
-3   {Cd,Ct,Cb,CO} 0 {1,S}
-4   {Cs,O}        0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (29200000000000.0, 'cm^3/(mol*s)'),
+        A = (2.92e+13, 'cm^3/(mol*s)'),
         n = 0.18,
         alpha = 0,
         E0 = (0.124, 'kcal/mol'),
@@ -3106,31 +2184,13 @@ entry(
     ),
     rank = 5,
     shortDesc = u"""Estimated by 495""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 499,
     label = "C_rad/H2/Cd;C_rad/H2/Cd",
-    group1 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   H  0 {1,S}
-4   Cd 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   H  0 {1,S}
-4   Cd 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (10200000000000.0, 'cm^3/(mol*s)'),
+        A = (1.02e+13, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (-0.26, 'kcal/mol'),
@@ -3139,31 +2199,13 @@ entry(
     ),
     rank = 4,
     shortDesc = u"""Tsang (1991) Chemical kinetic data base for combustion chemistry. Part V. Propene Literature review""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 500,
     label = "C_rad/H2/Cd;C_rad/H2/Cs",
-    group1 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   H  0 {1,S}
-4   Cd 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   H  0 {1,S}
-4   Cs 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (20500000000000.0, 'cm^3/(mol*s)'),
+        A = (2.05e+13, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (-0.13, 'kcal/mol'),
@@ -3172,31 +2214,13 @@ entry(
     ),
     rank = 4,
     shortDesc = u"""Tsang (1991) Chemical kinetic data base for combustion chemistry. Part V. Propene Literature review""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 501,
     label = "C_rad/H2/Cd;C_methyl",
-    group1 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   H  0 {1,S}
-4   Cd 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C 1 {2,S} {3,S} {4,S}
-2   H 0 {1,S}
-3   H 0 {1,S}
-4   H 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (102000000000000.0, 'cm^3/(mol*s)'),
+        A = (1.02e+14, 'cm^3/(mol*s)'),
         n = -0.32,
         alpha = 0,
         E0 = (-0.13, 'kcal/mol'),
@@ -3205,31 +2229,13 @@ entry(
     ),
     rank = 4,
     shortDesc = u"""Tsang (1991) Chemical kinetic data base for combustion chemistry. Part V. Propene Literature review""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 502,
     label = "C_rad/H2/Cd;C_rad/H/NonDeC",
-    group1 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   H  0 {1,S}
-4   Cd 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   Cs 0 {1,S}
-4   Cs 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (115000000000000.0, 'cm^3/(mol*s)'),
+        A = (1.15e+14, 'cm^3/(mol*s)'),
         n = -0.35,
         alpha = 0,
         E0 = (-0.13, 'kcal/mol'),
@@ -3238,31 +2244,13 @@ entry(
     ),
     rank = 4,
     shortDesc = u"""Tsang (1991) Chemical kinetic data base for combustion chemistry. Part V. Propene Literature review""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 503,
     label = "C_rad/H2/Cd;C_rad/Cs3",
-    group1 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   H  0 {1,S}
-4   Cd 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   Cs 0 {1,S}
-3   Cs 0 {1,S}
-4   Cs 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (724000000000000.0, 'cm^3/(mol*s)'),
+        A = (7.24e+14, 'cm^3/(mol*s)'),
         n = -0.75,
         alpha = 0,
         E0 = (-0.13, 'kcal/mol'),
@@ -3271,31 +2259,13 @@ entry(
     ),
     rank = 4,
     shortDesc = u"""Tsang (1991) Chemical kinetic data base for combustion chemistry. Part V. Propene Literature review""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 504,
     label = "C_rad/H2/Cd;C_rad/H/CdCd",
-    group1 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   H  0 {1,S}
-4   Cd 0 {1,S}
-""",
-    group2 = 
-"""
-1 * C  1 {2,S} {3,S} {4,S}
-2   H  0 {1,S}
-3   Cd 0 {1,S}
-4   Cd 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (10200000000000.0, 'cm^3/(mol*s)'),
+        A = (1.02e+13, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (-0.26, 'kcal/mol'),
@@ -3304,26 +2274,125 @@ entry(
     ),
     rank = 5,
     shortDesc = u"""Better estimate then averaging out, Tsang (1991) Chemical kinetic data base for combustion chemistry. Part V. Propene Literature review""",
-    longDesc = 
-u"""
+)
 
+entry(
+    index = 505,
+    label = "Cd_allenic;Cd_allenic",
+    kinetics = ArrheniusEP(
+        A = (4.29E+9, 'cm^3/(mol*s)'),
+        n = 0.8,
+        alpha = 0,
+        E0 = (-1.03, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (2500, 'K'),
+    ),
+    rank = 3,
+    shortDesc = u"""2007GEO/MIL4259-4268""",
+    longDesc = """
+A. G. Vandeputte
+Some estimated values for propyne recombination reactions
 """,
+)
+
+entry(
+    index = 506,
+    label = "Cd_allenic;C_methyl",
+    kinetics = ArrheniusEP(
+        A = (5.00E+12, 'cm^3/(mol*s)'),
+        n = 0,
+        alpha = 0,
+        E0 = (0, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (2500, 'K'),
+    ),
+    rank = 5,
+    shortDesc = u"""1987WU/KER6291""",
+    longDesc = """
+Estimated value, agrees with 1987WU/KER6291
+""",
+)
+
+entry(
+    index = 507,
+    label = "Cd_allenic;H_rad",
+    kinetics = ArrheniusEP(
+        A = (1.00E+13, 'cm^3/(mol*s)'),
+        n = 0,
+        alpha = 0,
+        E0 = (0, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (2500, 'K'),
+    ),
+    rank = 5,
+    shortDesc = u"""A. G. Vandeputte estimated value""",
+)
+
+entry(
+    index = 508,
+    label = "C_rad_cyclopentadiene;H_rad",
+    kinetics = ArrheniusEP(
+        A = (1.00E+14, 'cm^3/(mol*s)'),
+        n = 0,
+        alpha = 0,
+        E0 = (0, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
+    ),
+    rank = 3,
+    shortDesc = u"""BENZENE OXIDATION TAKEN FROM DACOSTA 2003 IJCK""",
+)
+
+entry(
+    index = 509,
+    label = "C_rad_cyclopentadiene;C_methyl",
+    kinetics = ArrheniusEP(
+        A = (8.34E+15, 'cm^3/(mol*s)'),
+        n = -0.7,
+        alpha = 0,
+        E0 = (0.5, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
+    ),
+    rank = 3,
+    shortDesc = u"""Sharma J. Phys. Chem. A 113 8871 - 8882 (2009)""",
+)
+
+entry(
+    index = 510,
+    label = "C_rad_cyclopentadiene;C_rad_cyclopentadiene",
+    kinetics = ArrheniusEP(
+        A = (5.00E+13, 'cm^3/(mol*s)'),
+        n = 0,
+        alpha = 0,
+        E0 = (0, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
+    ),
+    rank = 5,
+    shortDesc = u"""A. G. Vandeputte estimated value""",
+)
+
+entry(
+    index = 511,
+    label = "H_rad;C_rad/H/CdCd",
+    kinetics = ArrheniusEP(
+        A = (2.00E+13, 'cm^3/(mol*s)'),
+        n = 0,
+        alpha = 0,
+        E0 = (0, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (2500, 'K'),
+    ),
+    rank = 5,
+    shortDesc = u"""A. G. Vandeputte estimated value""",
 )
 
 entry(
     index = 3000,
     label = "H_rad;SsJ-H",
-    group1 = 
-"""
-1 * H 1
-""",
-    group2 = 
-"""
-1 * Ss 1 {2,S}
-2   H  0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (5770000000000000.0, 'cm^3/(mol*s)'),
+        A = (5.77e+15, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0.43, 'kcal/mol'),
@@ -3332,9 +2401,5 @@ entry(
     ),
     rank = 3,
     shortDesc = u"""GA Jonas x 3 for spinorbit""",
-    longDesc = 
-u"""
-
-""",
 )
 

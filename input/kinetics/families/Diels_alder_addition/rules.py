@@ -9,65 +9,23 @@ longDesc = u"""
 entry(
     index = 589,
     label = "diene_out;diene_in;ene",
-    group1 = "OR{diene_unsub_unsub_out, diene_unsub_monosub_out, diene_unsub_disub_out, diene_monosub_monosub_out, diene_monosub_disub_out, diene_disub_disub_out, diene_5ring_out}",
-    group2 = 
-"""
-1 *4 Cd 0 {2,S}
-2 *5 Cd 0 {1,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 0 {2,D}
-2 *2 Cd 0 {1,D}
-""",
     kinetics = ArrheniusEP(
-        A = (5000000000.0, 'cm^3/(mol*s)'),
+        A = (5e+09, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
-        E0 = (0, 'kcal/mol'),
+        E0 = (20, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
-    rank = 0,
+    rank = 5,
     shortDesc = u"""default""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 590,
     label = "diene_unsub_unsub_out;diene_in_2H;ene_2H_HDe",
-    group1 = 
-"""
-1 *3 Cd 0 {2,D} {5,S} {6,S}
-2 *4 Cd 0 {1,D} {3,S}
-3 *5 Cd 0 {2,S} {4,D}
-4 *6 Cd 0 {3,D} {7,S} {8,S}
-5    H  0 {1,S}
-6    H  0 {1,S}
-7    H  0 {4,S}
-8    H  0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd 0 {2,S} {3,S}
-2 *5 Cd 0 {1,S} {4,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    H             0 {1,S}
-4    H             0 {1,S}
-5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (8910000000.0, 'cm^3/(mol*s)'),
+        A = (8.91e+09, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (24.44, 'kcal/mol'),
@@ -88,35 +46,8 @@ Absolute value measured directly using thermal excitation technique and GC. Pres
 entry(
     index = 591,
     label = "diene_unsub_unsub_out;diene_in_2H;ene_HDe_2H",
-    group1 = 
-"""
-1 *3 Cd 0 {2,D} {5,S} {6,S}
-2 *4 Cd 0 {1,D} {3,S}
-3 *5 Cd 0 {2,S} {4,D}
-4 *6 Cd 0 {3,D} {7,S} {8,S}
-5    H  0 {1,S}
-6    H  0 {1,S}
-7    H  0 {4,S}
-8    H  0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd 0 {2,S} {3,S}
-2 *5 Cd 0 {1,S} {4,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    H             0 {1,S}
-4    {Cd,Ct,Cb,CO} 0 {1,S}
-5    H             0 {2,S}
-6    H             0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (8910000000.0, 'cm^3/(mol*s)'),
+        A = (8.91e+09, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (24.44, 'kcal/mol'),
@@ -137,35 +68,8 @@ Absolute value measured directly using thermal excitation technique and GC. Pres
 entry(
     index = 592,
     label = "diene_unsub_unsub_out;diene_in_2H;ene_HNd_HDe",
-    group1 = 
-"""
-1 *3 Cd 0 {2,D} {5,S} {6,S}
-2 *4 Cd 0 {1,D} {3,S}
-3 *5 Cd 0 {2,S} {4,D}
-4 *6 Cd 0 {3,D} {7,S} {8,S}
-5    H  0 {1,S}
-6    H  0 {1,S}
-7    H  0 {4,S}
-8    H  0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd 0 {2,S} {3,S}
-2 *5 Cd 0 {1,S} {4,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    H             0 {1,S}
-4    {Cs,O}        0 {1,S}
-5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (899000000.0, 'cm^3/(mol*s)'),
+        A = (8.99e+08, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (22.06, 'kcal/mol'),
@@ -186,35 +90,8 @@ Absolute value measured directly. Excitation: thermal. Pressure 0.64-0.78 atm
 entry(
     index = 593,
     label = "diene_unsub_unsub_out;diene_in_2H;ene_HDe_HNd",
-    group1 = 
-"""
-1 *3 Cd 0 {2,D} {5,S} {6,S}
-2 *4 Cd 0 {1,D} {3,S}
-3 *5 Cd 0 {2,S} {4,D}
-4 *6 Cd 0 {3,D} {7,S} {8,S}
-5    H  0 {1,S}
-6    H  0 {1,S}
-7    H  0 {4,S}
-8    H  0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd 0 {2,S} {3,S}
-2 *5 Cd 0 {1,S} {4,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    H             0 {1,S}
-4    {Cd,Ct,Cb,CO} 0 {1,S}
-5    H             0 {2,S}
-6    {Cs,O}        0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (899000000.0, 'cm^3/(mol*s)'),
+        A = (8.99e+08, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (22.06, 'kcal/mol'),
@@ -235,35 +112,8 @@ Absolute value measured directly. Excitation: thermal. Pressure 0.64-0.78 atm
 entry(
     index = 594,
     label = "diene_unsub_unsub_out;diene_in_HNd;ene_unsub_unsub",
-    group1 = 
-"""
-1 *3 Cd 0 {2,D} {5,S} {6,S}
-2 *4 Cd 0 {1,D} {3,S}
-3 *5 Cd 0 {2,S} {4,D}
-4 *6 Cd 0 {3,D} {7,S} {8,S}
-5    H  0 {1,S}
-6    H  0 {1,S}
-7    H  0 {4,S}
-8    H  0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd     0 {2,S} {3,S}
-2 *5 Cd     0 {1,S} {4,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    H  0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (132000000000.0, 'cm^3/(mol*s)'),
+        A = (1.32e+11, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (29.61, 'kcal/mol'),
@@ -284,35 +134,8 @@ Data derived from fitting to a complex mechanism. Excitation: thermal. Analysis:
 entry(
     index = 595,
     label = "diene_unsub_unsub_out;diene_in_NdH;ene_unsub_unsub",
-    group1 = 
-"""
-1 *3 Cd 0 {2,D} {5,S} {6,S}
-2 *4 Cd 0 {1,D} {3,S}
-3 *5 Cd 0 {2,S} {4,D}
-4 *6 Cd 0 {3,D} {7,S} {8,S}
-5    H  0 {1,S}
-6    H  0 {1,S}
-7    H  0 {4,S}
-8    H  0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd     0 {2,S} {3,S}
-2 *5 Cd     0 {1,S} {4,S}
-3    {Cs,O} 0 {1,S}
-4    H      0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    H  0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (132000000000.0, 'cm^3/(mol*s)'),
+        A = (1.32e+11, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (29.61, 'kcal/mol'),
@@ -333,35 +156,8 @@ Data derived from fitting to a complex mechanism. Excitation: thermal. Analysis:
 entry(
     index = 596,
     label = "diene_unsub_unsub_out;diene_in_HNd;ene_HDe_2H",
-    group1 = 
-"""
-1 *3 Cd 0 {2,D} {5,S} {6,S}
-2 *4 Cd 0 {1,D} {3,S}
-3 *5 Cd 0 {2,S} {4,D}
-4 *6 Cd 0 {3,D} {7,S} {8,S}
-5    H  0 {1,S}
-6    H  0 {1,S}
-7    H  0 {4,S}
-8    H  0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd     0 {2,S} {3,S}
-2 *5 Cd     0 {1,S} {4,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    H             0 {1,S}
-4    {Cd,Ct,Cb,CO} 0 {1,S}
-5    H             0 {2,S}
-6    H             0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (1020000000.0, 'cm^3/(mol*s)'),
+        A = (1.02e+09, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (18.7, 'kcal/mol'),
@@ -382,35 +178,8 @@ Absolute value measured directly. Excitation: thermal. Pressure 0.64-0.78 atm
 entry(
     index = 597,
     label = "diene_unsub_unsub_out;diene_in_NdH;ene_2H_HDe",
-    group1 = 
-"""
-1 *3 Cd 0 {2,D} {5,S} {6,S}
-2 *4 Cd 0 {1,D} {3,S}
-3 *5 Cd 0 {2,S} {4,D}
-4 *6 Cd 0 {3,D} {7,S} {8,S}
-5    H  0 {1,S}
-6    H  0 {1,S}
-7    H  0 {4,S}
-8    H  0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd     0 {2,S} {3,S}
-2 *5 Cd     0 {1,S} {4,S}
-3    {Cs,O} 0 {1,S}
-4    H      0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    H             0 {1,S}
-4    H             0 {1,S}
-5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (1020000000.0, 'cm^3/(mol*s)'),
+        A = (1.02e+09, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (18.7, 'kcal/mol'),
@@ -431,35 +200,8 @@ Absolute value measured directly. Excitation: thermal. Pressure 0.64-0.78 atm
 entry(
     index = 598,
     label = "diene_monosubNd_monosubNd_out;diene_in_2H;ene_unsub_unsub",
-    group1 = 
-"""
-1 *3 Cd     0 {2,D} {5,S} {6,S}
-2 *4 Cd     0 {1,D} {3,S}
-3 *5 Cd     0 {2,S} {4,D}
-4 *6 Cd     0 {3,D} {7,S} {8,S}
-5    H      0 {1,S}
-6 *7 {Cs,O} 0 {1,S}
-7 *8 {Cs,O} 0 {4,S}
-8    H      0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd 0 {2,S} {3,S}
-2 *5 Cd 0 {1,S} {4,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 0 {2,D} {3,S} {4,S}
-2 *2 Cd 0 {1,D} {5,S} {6,S}
-3    H  0 {1,S}
-4    H  0 {1,S}
-5    H  0 {2,S}
-6    H  0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (4570000000.0, 'cm^3/(mol*s)', '*|/', 1.05),
+        A = (4.57e+09, 'cm^3/(mol*s)', '*|/', 1.05),
         n = 0,
         alpha = 0,
         E0 = (26.03, 'kcal/mol'),
@@ -480,35 +222,8 @@ Absolute value measured directly using thermal excitation technique and GC. Pres
 entry(
     index = 599,
     label = "diene_monosubNd_monosubNd_out;diene_in_2H;ene_2H_HNd",
-    group1 = 
-"""
-1 *3 Cd     0 {2,D} {5,S} {6,S}
-2 *4 Cd     0 {1,D} {3,S}
-3 *5 Cd     0 {2,S} {4,D}
-4 *6 Cd     0 {3,D} {7,S} {8,S}
-5    H      0 {1,S}
-6 *7 {Cs,O} 0 {1,S}
-7 *8 {Cs,O} 0 {4,S}
-8    H      0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd 0 {2,S} {3,S}
-2 *5 Cd 0 {1,S} {4,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd     0 {2,D} {3,S} {4,S}
-2 *2 Cd     0 {1,D} {5,S} {6,S}
-3    H      0 {1,S}
-4    H      0 {1,S}
-5    H      0 {2,S}
-6    {Cs,O} 0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (1120000000.0, 'cm^3/(mol*s)', '*|/', 1.12),
+        A = (1.12e+09, 'cm^3/(mol*s)', '*|/', 1.12),
         n = 0,
         alpha = 0,
         E0 = (26.63, 'kcal/mol'),
@@ -529,35 +244,8 @@ Absolute value measured directly using thermal excitation technique and GC. Pres
 entry(
     index = 600,
     label = "diene_monosubNd_monosubNd_out;diene_in_2H;ene_2H_HNd",
-    group1 = 
-"""
-1 *3 Cd     0 {2,D} {5,S} {6,S}
-2 *4 Cd     0 {1,D} {3,S}
-3 *5 Cd     0 {2,S} {4,D}
-4 *6 Cd     0 {3,D} {7,S} {8,S}
-5    H      0 {1,S}
-6 *7 {Cs,O} 0 {1,S}
-7 *8 {Cs,O} 0 {4,S}
-8    H      0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd 0 {2,S} {3,S}
-2 *5 Cd 0 {1,S} {4,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd     0 {2,D} {3,S} {4,S}
-2 *2 Cd     0 {1,D} {5,S} {6,S}
-3    H      0 {1,S}
-4    H      0 {1,S}
-5    H      0 {2,S}
-6    {Cs,O} 0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (2090000000.0, 'cm^3/(mol*s)', '*|/', 1.12),
+        A = (2.09e+09, 'cm^3/(mol*s)', '*|/', 1.12),
         n = 0,
         alpha = 0,
         E0 = (28.81, 'kcal/mol'),
@@ -578,35 +266,8 @@ Absolute value measured directly using thermal excitation technique and GC. Pres
 entry(
     index = 601,
     label = "diene_monosubNd_monosubNd_out;diene_in_2H;ene_2H_HNd",
-    group1 = 
-"""
-1 *3 Cd     0 {2,D} {5,S} {6,S}
-2 *4 Cd     0 {1,D} {3,S}
-3 *5 Cd     0 {2,S} {4,D}
-4 *6 Cd     0 {3,D} {7,S} {8,S}
-5    H      0 {1,S}
-6 *7 {Cs,O} 0 {1,S}
-7 *8 {Cs,O} 0 {4,S}
-8    H      0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd 0 {2,S} {3,S}
-2 *5 Cd 0 {1,S} {4,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd     0 {2,D} {3,S} {4,S}
-2 *2 Cd     0 {1,D} {5,S} {6,S}
-3    H      0 {1,S}
-4    H      0 {1,S}
-5    H      0 {2,S}
-6    {Cs,O} 0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (708000000.0, 'cm^3/(mol*s)', '*|/', 1.12),
+        A = (7.08e+08, 'cm^3/(mol*s)', '*|/', 1.12),
         n = 0,
         alpha = 0,
         E0 = (26.23, 'kcal/mol'),
@@ -627,35 +288,8 @@ Absolute value measured directly using thermal excitation technique and GC. Pres
 entry(
     index = 602,
     label = "diene_monosubNd_monosubNd_out;diene_in_2H;ene_2H_HNd",
-    group1 = 
-"""
-1 *3 Cd     0 {2,D} {5,S} {6,S}
-2 *4 Cd     0 {1,D} {3,S}
-3 *5 Cd     0 {2,S} {4,D}
-4 *6 Cd     0 {3,D} {7,S} {8,S}
-5    H      0 {1,S}
-6 *7 {Cs,O} 0 {1,S}
-7 *8 {Cs,O} 0 {4,S}
-8    H      0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd 0 {2,S} {3,S}
-2 *5 Cd 0 {1,S} {4,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd     0 {2,D} {3,S} {4,S}
-2 *2 Cd     0 {1,D} {5,S} {6,S}
-3    H      0 {1,S}
-4    H      0 {1,S}
-5    H      0 {2,S}
-6    {Cs,O} 0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (1170000000.0, 'cm^3/(mol*s)', '*|/', 1.12),
+        A = (1.17e+09, 'cm^3/(mol*s)', '*|/', 1.12),
         n = 0,
         alpha = 0,
         E0 = (28.62, 'kcal/mol'),
@@ -676,35 +310,8 @@ Absolute value measured directly using thermal excitation technique and GC. Pres
 entry(
     index = 603,
     label = "diene_monosubNd_monosubNd_out;diene_in_2H;ene_2H_HNd",
-    group1 = 
-"""
-1 *3 Cd     0 {2,D} {5,S} {6,S}
-2 *4 Cd     0 {1,D} {3,S}
-3 *5 Cd     0 {2,S} {4,D}
-4 *6 Cd     0 {3,D} {7,S} {8,S}
-5    H      0 {1,S}
-6 *7 {Cs,O} 0 {1,S}
-7 *8 {Cs,O} 0 {4,S}
-8    H      0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd 0 {2,S} {3,S}
-2 *5 Cd 0 {1,S} {4,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd     0 {2,D} {3,S} {4,S}
-2 *2 Cd     0 {1,D} {5,S} {6,S}
-3    H      0 {1,S}
-4    H      0 {1,S}
-5    H      0 {2,S}
-6    {Cs,O} 0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (372000000.0, 'cm^3/(mol*s)', '*|/', 1.07),
+        A = (3.72e+08, 'cm^3/(mol*s)', '*|/', 1.07),
         n = 0,
         alpha = 0,
         E0 = (26.63, 'kcal/mol'),
@@ -725,35 +332,8 @@ Absolute value measured directly using thermal excitation technique and GC. Pres
 entry(
     index = 604,
     label = "diene_monosubNd_monosubNd_out;diene_in_2H;ene_2H_HNd",
-    group1 = 
-"""
-1 *3 Cd     0 {2,D} {5,S} {6,S}
-2 *4 Cd     0 {1,D} {3,S}
-3 *5 Cd     0 {2,S} {4,D}
-4 *6 Cd     0 {3,D} {7,S} {8,S}
-5    H      0 {1,S}
-6 *7 {Cs,O} 0 {1,S}
-7 *8 {Cs,O} 0 {4,S}
-8    H      0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd 0 {2,S} {3,S}
-2 *5 Cd 0 {1,S} {4,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd     0 {2,D} {3,S} {4,S}
-2 *2 Cd     0 {1,D} {5,S} {6,S}
-3    H      0 {1,S}
-4    H      0 {1,S}
-5    H      0 {2,S}
-6    {Cs,O} 0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (295000000.0, 'cm^3/(mol*s)', '*|/', 1.1),
+        A = (2.95e+08, 'cm^3/(mol*s)', '*|/', 1.1),
         n = 0,
         alpha = 0,
         E0 = (28.42, 'kcal/mol'),
@@ -774,35 +354,8 @@ Absolute value measured directly using thermal excitation technique and GC. Pres
 entry(
     index = 605,
     label = "diene_monosubNd_monosubNd_out;diene_in_2H;ene_HNd_2H",
-    group1 = 
-"""
-1 *3 Cd     0 {2,D} {5,S} {6,S}
-2 *4 Cd     0 {1,D} {3,S}
-3 *5 Cd     0 {2,S} {4,D}
-4 *6 Cd     0 {3,D} {7,S} {8,S}
-5    H      0 {1,S}
-6 *7 {Cs,O} 0 {1,S}
-7 *8 {Cs,O} 0 {4,S}
-8    H      0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd 0 {2,S} {3,S}
-2 *5 Cd 0 {1,S} {4,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd     0 {2,D} {3,S} {4,S}
-2 *2 Cd     0 {1,D} {5,S} {6,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {1,S}
-5    H      0 {2,S}
-6    H      0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (1120000000.0, 'cm^3/(mol*s)', '*|/', 1.12),
+        A = (1.12e+09, 'cm^3/(mol*s)', '*|/', 1.12),
         n = 0,
         alpha = 0,
         E0 = (26.63, 'kcal/mol'),
@@ -823,35 +376,8 @@ Absolute value measured directly using thermal excitation technique and GC. Pres
 entry(
     index = 606,
     label = "diene_monosubNd_monosubNd_out;diene_in_2H;ene_2H_HDe",
-    group1 = 
-"""
-1 *3 Cd     0 {2,D} {5,S} {6,S}
-2 *4 Cd     0 {1,D} {3,S}
-3 *5 Cd     0 {2,S} {4,D}
-4 *6 Cd     0 {3,D} {7,S} {8,S}
-5    H      0 {1,S}
-6 *7 {Cs,O} 0 {1,S}
-7 *8 {Cs,O} 0 {4,S}
-8    H      0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd 0 {2,S} {3,S}
-2 *5 Cd 0 {1,S} {4,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    H             0 {1,S}
-4    H             0 {1,S}
-5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (1020000000.0, 'cm^3/(mol*s)', '*|/', 1.07),
+        A = (1.02e+09, 'cm^3/(mol*s)', '*|/', 1.07),
         n = 0,
         alpha = 0,
         E0 = (20.07, 'kcal/mol'),
@@ -872,35 +398,8 @@ Absolute value measured directly using thermal excitation technique and GC. Pres
 entry(
     index = 607,
     label = "diene_monosubNd_monosubNd_out;diene_in_2H;ene_2H_HDe",
-    group1 = 
-"""
-1 *3 Cd     0 {2,D} {5,S} {6,S}
-2 *4 Cd     0 {1,D} {3,S}
-3 *5 Cd     0 {2,S} {4,D}
-4 *6 Cd     0 {3,D} {7,S} {8,S}
-5    H      0 {1,S}
-6 *7 {Cs,O} 0 {1,S}
-7 *8 {Cs,O} 0 {4,S}
-8    H      0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd 0 {2,S} {3,S}
-2 *5 Cd 0 {1,S} {4,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    H             0 {1,S}
-4    H             0 {1,S}
-5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (603000000.0, 'cm^3/(mol*s)', '*|/', 1.07),
+        A = (6.03e+08, 'cm^3/(mol*s)', '*|/', 1.07),
         n = 0,
         alpha = 0,
         E0 = (20.87, 'kcal/mol'),
@@ -921,35 +420,8 @@ Absolute value measured directly using thermal excitation technique and GC. Pres
 entry(
     index = 608,
     label = "diene_monosubNd_monosubNd_out;diene_in_2H;ene_2H_HDe",
-    group1 = 
-"""
-1 *3 Cd     0 {2,D} {5,S} {6,S}
-2 *4 Cd     0 {1,D} {3,S}
-3 *5 Cd     0 {2,S} {4,D}
-4 *6 Cd     0 {3,D} {7,S} {8,S}
-5    H      0 {1,S}
-6 *7 {Cs,O} 0 {1,S}
-7 *8 {Cs,O} 0 {4,S}
-8    H      0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd 0 {2,S} {3,S}
-2 *5 Cd 0 {1,S} {4,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    H             0 {1,S}
-4    H             0 {1,S}
-5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (11500000000.0, 'cm^3/(mol*s)', '*|/', 1.05),
+        A = (1.15e+10, 'cm^3/(mol*s)', '*|/', 1.05),
         n = 0,
         alpha = 0,
         E0 = (26.83, 'kcal/mol'),
@@ -970,35 +442,8 @@ Absolute value measured directly using thermal excitation technique and GC. Pres
 entry(
     index = 609,
     label = "diene_monosubNd_monosubNd_out;diene_in_2H;ene_2H_HDe",
-    group1 = 
-"""
-1 *3 Cd     0 {2,D} {5,S} {6,S}
-2 *4 Cd     0 {1,D} {3,S}
-3 *5 Cd     0 {2,S} {4,D}
-4 *6 Cd     0 {3,D} {7,S} {8,S}
-5    H      0 {1,S}
-6 *7 {Cs,O} 0 {1,S}
-7 *8 {Cs,O} 0 {4,S}
-8    H      0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd 0 {2,S} {3,S}
-2 *5 Cd 0 {1,S} {4,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    H             0 {1,S}
-4    H             0 {1,S}
-5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (3800000000.0, 'cm^3/(mol*s)', '*|/', 1.05),
+        A = (3.8e+09, 'cm^3/(mol*s)', '*|/', 1.05),
         n = 0,
         alpha = 0,
         E0 = (24.84, 'kcal/mol'),
@@ -1019,35 +464,8 @@ Absolute value measured directly using thermal excitation technique and GC. Pres
 entry(
     index = 610,
     label = "diene_monosubNd_monosubNd_out;diene_in_2H;ene_HDe_2H",
-    group1 = 
-"""
-1 *3 Cd     0 {2,D} {5,S} {6,S}
-2 *4 Cd     0 {1,D} {3,S}
-3 *5 Cd     0 {2,S} {4,D}
-4 *6 Cd     0 {3,D} {7,S} {8,S}
-5    H      0 {1,S}
-6 *7 {Cs,O} 0 {1,S}
-7 *8 {Cs,O} 0 {4,S}
-8    H      0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd 0 {2,S} {3,S}
-2 *5 Cd 0 {1,S} {4,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    H             0 {1,S}
-4    {Cd,Ct,Cb,CO} 0 {1,S}
-5    H             0 {2,S}
-6    H             0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (1020000000.0, 'cm^3/(mol*s)', '*|/', 1.07),
+        A = (1.02e+09, 'cm^3/(mol*s)', '*|/', 1.07),
         n = 0,
         alpha = 0,
         E0 = (20.07, 'kcal/mol'),
@@ -1068,35 +486,8 @@ Absolute value measured directly using thermal excitation technique and GC. Pres
 entry(
     index = 611,
     label = "diene_monosubNd_monosubNd_out;diene_in_2H;ene_HNd_HDe",
-    group1 = 
-"""
-1 *3 Cd     0 {2,D} {5,S} {6,S}
-2 *4 Cd     0 {1,D} {3,S}
-3 *5 Cd     0 {2,S} {4,D}
-4 *6 Cd     0 {3,D} {7,S} {8,S}
-5    H      0 {1,S}
-6 *7 {Cs,O} 0 {1,S}
-7 *8 {Cs,O} 0 {4,S}
-8    H      0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd 0 {2,S} {3,S}
-2 *5 Cd 0 {1,S} {4,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    H             0 {1,S}
-4    {Cs,O}        0 {1,S}
-5    H             0 {2,S}
-6    {Cd,Ct,Cb,CO} 0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (1260000000.0, 'cm^3/(mol*s)'),
+        A = (1.26e+09, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (16.69, 'kcal/mol'),
@@ -1117,35 +508,8 @@ Absolute value measured directly using thermal excitation technique and mass spe
 entry(
     index = 612,
     label = "diene_monosubNd_monosubNd_out;diene_in_2H;ene_HDe_HNd",
-    group1 = 
-"""
-1 *3 Cd     0 {2,D} {5,S} {6,S}
-2 *4 Cd     0 {1,D} {3,S}
-3 *5 Cd     0 {2,S} {4,D}
-4 *6 Cd     0 {3,D} {7,S} {8,S}
-5    H      0 {1,S}
-6 *7 {Cs,O} 0 {1,S}
-7 *8 {Cs,O} 0 {4,S}
-8    H      0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd 0 {2,S} {3,S}
-2 *5 Cd 0 {1,S} {4,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd            0 {2,D} {3,S} {4,S}
-2 *2 Cd            0 {1,D} {5,S} {6,S}
-3    H             0 {1,S}
-4    {Cd,Ct,Cb,CO} 0 {1,S}
-5    H             0 {2,S}
-6    {Cs,O}        0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (1260000000.0, 'cm^3/(mol*s)'),
+        A = (1.26e+09, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (16.69, 'kcal/mol'),
@@ -1166,44 +530,44 @@ Absolute value measured directly using thermal excitation technique and mass spe
 entry(
     index = 614,
     label = "diene_5ring_Nd_Nd_out;diene_in_2H;ene_HNd_HNd",
-    group1 = 
-"""
-1 *3 Cd     0 {2,D} {5,S} {6,S}
-2 *4 Cd     0 {1,D} {3,S}
-3 *5 Cd     0 {2,S} {4,D}
-4 *6 Cd     0 {3,D} {6,S} {7,S}
-5 *7 {Cs,O} 0 {1,S}
-6 *8 C      0 {1,S} {4,S}
-7 *9 {Cs,O} 0 {4,S}
-""",
-    group2 = 
-"""
-1 *4 Cd 0 {2,S} {3,S}
-2 *5 Cd 0 {1,S} {4,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd     0 {2,D} {3,S} {4,S}
-2 *2 Cd     0 {1,D} {5,S} {6,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {1,S}
-5    H      0 {2,S}
-6    {Cs,O} 0 {2,S}
-""",
     kinetics = ArrheniusEP(
-        A = (3.24E-01, 'cm^3/(mol*s)'),
+        A = (8.11E-02, 'cm^3/(mol*s)'),
         n = 3.05,
         alpha = 0,
         E0 = (24.75, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
-    rank = 3,
-    shortDesc = u"""A.G. Vandeputte""",
-    longDesc = 
-u"""
-""",
+    rank = 4,
+    shortDesc = u"""A. G. Vandeputte, BMK/cbsb7 HO""",
 )
 
+entry(
+    index = 615,
+    label = "diene_unsub_unsub_out;diene_in_2H;yne_unsub_monosub",
+    kinetics = ArrheniusEP(
+        A = (1.22E-01, 'cm^3/(mol*s)'),
+        n = 2.98,
+        alpha = 0,
+        E0 = (28.1, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 4,
+    shortDesc = u"""A. G. Vandeputte, BMK/cbsb7 HO, butadiene + propyne""",
+)
+
+entry(
+    index = 616,
+    label = "diene_unsub_unsub_out;diene_in_2H;allene_unsub",
+    kinetics = ArrheniusEP(
+        A = (1.77e-01, 'cm^3/(mol*s)'),
+        n = 2.94,
+        alpha = 0,
+        E0 = (29.0, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 4,
+    shortDesc = u"""A. G. Vandeputte, BMK/cbsb7 HO, butadiene + allene""",
+)

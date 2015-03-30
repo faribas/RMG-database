@@ -9,13 +9,6 @@ longDesc = u"""
 entry(
     index = 1,
     label = "R_ROR",
-    group1 = 
-"""
-1 *1 R 0 {2,D}
-2 *2 R 0 {1,D} {3,S}
-3 *3 O 0 {2,S} {4,S}
-4 *4 R 0 {3,S}
-""",
     kinetics = ArrheniusEP(
         A = (100000, 's^-1'),
         n = 2,
@@ -26,25 +19,11 @@ entry(
     ),
     rank = 0,
     shortDesc = u"""A. G. Vandeputte, general rate""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 2,
     label = "Cds/H2_Cds/CsOH",
-    group1 = 
-"""
-1 *1 C  0 {2,D} {5,S} {6,S}
-2 *2 C  0 {1,D} {3,S} {7,S}
-3 *3 O  0 {2,S} {4,S}
-4 *4 H  0 {3,S}
-5    H  0 {1,S}
-6    H  0 {1,S}
-7    Cs 0 {2,S}
-""",
     kinetics = ArrheniusEP(
         A = (205000, 's^-1'),
         n = 2.37,
@@ -55,25 +34,11 @@ entry(
     ),
     rank = 4,
     shortDesc = u"""A. G. Vandeputte, CBS-QB3, HO""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 3,
     label = "Cds/H2_Cds/HOH",
-    group1 = 
-"""
-1 *1 C 0 {2,D} {5,S} {6,S}
-2 *2 C 0 {1,D} {3,S} {7,S}
-3 *3 O 0 {2,S} {4,S}
-4 *4 H 0 {3,S}
-5    H 0 {1,S}
-6    H 0 {1,S}
-7    H 0 {2,S}
-""",
     kinetics = ArrheniusEP(
         A = (7040, 's^-1'),
         n = 2.66,
@@ -84,23 +49,11 @@ entry(
     ),
     rank = 4,
     shortDesc = u"""A. G. Vandeputte, BMK/cbsb7, HO""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 4,
     label = "S_Cds/HOH",
-    group1 = 
-"""
-1 *1 S 0 {2,D}
-2 *2 C 0 {1,D} {3,S} {5,S}
-3 *3 O 0 {2,S} {4,S}
-4 *4 H 0 {3,S}
-5    H 0 {2,S}
-""",
     kinetics = ArrheniusEP(
         A = (52, 's^-1'),
         n = 3.26,
@@ -111,26 +64,11 @@ entry(
     ),
     rank = 3,
     shortDesc = u"""calculated by CAC, CCSD(T)/vtz f12""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 5,
     label = "S_Cds/CH3OH",
-    group1 = 
-"""
-1 *1 S  0 {2,D}
-2 *2 C  0 {1,D} {3,S} {5,S}
-3 *3 O  0 {2,S} {4,S}
-4 *4 H  0 {3,S}
-5    Cs 0 {2,S} {6,S} {7,S} {8,S}
-6    H  0 {5,S}
-7    H  0 {5,S}
-8    H  0 {5,S}
-""",
     kinetics = ArrheniusEP(
         A = (104, 's^-1'),
         n = 3.21,
@@ -141,29 +79,11 @@ entry(
     ),
     rank = 3,
     shortDesc = u"""calculated by CAC, CCSD(T)/vtz f12""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 6,
     label = "S_Cds/CH2CH3OH",
-    group1 = 
-"""
-1  *1 S  0 {2,D}
-2  *2 C  0 {1,D} {3,S} {5,S}
-3  *3 O  0 {2,S} {4,S}
-4  *4 H  0 {3,S}
-5     Cs 0 {2,S} {6,S} {7,S} {8,S}
-6     Cs 0 {5,S} {9,S} {10,S} {11,S}
-7     H  0 {5,S}
-8     H  0 {5,S}
-9     H  0 {6,S}
-10    H  0 {6,S}
-11    H  0 {6,S}
-""",
     kinetics = ArrheniusEP(
         A = (87.5, 's^-1'),
         n = 3.23,
@@ -174,9 +94,5 @@ entry(
     ),
     rank = 3,
     shortDesc = u"""calculated by CAC, CCSD(T)/vtz f12""",
-    longDesc = 
-u"""
-
-""",
 )
 

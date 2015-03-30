@@ -13,60 +13,23 @@ or in a section(s) titled 'General'
 entry(
     index = 807,
     label = "Rn;multiplebond_intra;radadd_intra",
-    group1 = "OR{R4, R5, R6, R7}",
-    group2 = 
-"""
-1 *2 {Cd,Ct,CO,N}     0 {2,{D,T}}
-2 *3 {Cd,Ct,Od,Cdd,N} 0 {1,{D,T}}
-""",
-    group3 = 
-"""
-1 *1 R!H 1
-""",
     kinetics = ArrheniusEP(
-        A = (10000000000.0, 's^-1'),
-        n = 0,
+        A = (1e+09, 's^-1'),
+        n = 0.21,
         alpha = 0,
-        E0 = (5, 'kcal/mol'),
+        E0 = (20, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 808,
     label = "R6_SSS_D;doublebond_intra_2H_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (25100000000.0, 's^-1'),
+        A = (2.51e+10, 's^-1'),
         n = 0,
         alpha = 0,
         E0 = (6.85, 'kcal/mol'),
@@ -74,39 +37,13 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 2,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 809,
     label = "R4_S_D;doublebond_intra_2H_pri;radadd_intra_csHDe",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs            1 {2,S} {3,S}
-2    H             0 {1,S}
-3    {Cd,Ct,Cb,CO} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (10000000000.0, 's^-1'),
+        A = (1e+10, 's^-1'),
         n = 0,
         alpha = 0,
         E0 = (25.85, 'kcal/mol'),
@@ -114,36 +51,13 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 2,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 810,
     label = "R6_SMS_D;doublebond_intra;radadd_intra_cs",
-    group1 = 
-"""
-1 *1 R!H        1 {2,S}
-2 *4 {Cd,Ct,Cb} 0 {1,S} {3,{D,T,B}}
-3 *6 {Cd,Ct,Cb} 0 {2,{D,T,B}} {4,S}
-4 *5 R!H        0 {3,S} {5,S}
-5 *2 Cd         0 {4,S} {6,D}
-6 *3 {Cd,Cdd}         0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D}
-2 *3 {Cd,Cdd} 0 {1,D}
-""",
-    group3 = 
-"""
-1 *1 Cs 1
-""",
     kinetics = ArrheniusEP(
-        A = (10000000000.0, 's^-1'),
+        A = (1e+10, 's^-1'),
         n = 0,
         alpha = 0,
         E0 = (46.85, 'kcal/mol'),
@@ -151,36 +65,13 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 2,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 811,
     label = "R6_SSM_D;doublebond_intra;radadd_intra_cs",
-    group1 = 
-"""
-1 *1 R!H        1 {2,S}
-2 *4 R!H        0 {1,S} {3,S}
-3 *6 {Cd,Ct,Cb} 0 {2,S} {4,{D,T,B}}
-4 *5 {Cd,Ct,Cb} 0 {3,{D,T,B}} {5,S}
-5 *2 Cd         0 {4,S} {6,D}
-6 *3 {Cd,Cdd}         0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D}
-2 *3 {Cd,Cdd} 0 {1,D}
-""",
-    group3 = 
-"""
-1 *1 Cs 1
-""",
     kinetics = ArrheniusEP(
-        A = (10000000000.0, 's^-1'),
+        A = (1e+10, 's^-1'),
         n = 0,
         alpha = 0,
         E0 = (46.85, 'kcal/mol'),
@@ -188,40 +79,13 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 2,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 812,
     label = "R5_SD_D;doublebond_intra_HNd_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 Cd  0 {1,S} {3,D}
-3 *5 Cd  0 {2,D} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (10000000000.0, 's^-1'),
+        A = (1e+10, 's^-1'),
         n = 0,
         alpha = 0,
         E0 = (46.85, 'kcal/mol'),
@@ -229,38 +93,13 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 2,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
 )
 
 entry(
     index = 813,
     label = "R5_SS_D;doublebond_intra_2H_pri;radadd_intra_O",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 O 1
-""",
     kinetics = ArrheniusEP(
-        A = (27240000000.0, 's^-1', '*|/', 3),
+        A = (2.724e+10, 's^-1', '*|/', 3),
         n = 0.478,
         alpha = 0,
         E0 = (29.169, 'kcal/mol', '+|-', 2),
@@ -290,33 +129,175 @@ k(T) = 2.724e+10 * (T/1K)^0.478 * exp(-29.169 kcal/mol / RT) cm3/mol/s.
 )
 
 entry(
+    index = 814,
+    label = "R6_SSM;multiplebond_intra;radadd_intra",
+    kinetics = ArrheniusEP(
+        A = (1e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (30, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 5,
+    shortDesc = u"""Guess""",
+)
+
+entry(
+    index = 815,
+    label = "R6_SMM;multiplebond_intra;radadd_intra",
+    kinetics = ArrheniusEP(
+        A = (1e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (40, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 5,
+    shortDesc = u"""Guess""",
+)
+
+entry(
+    index = 816,
+    label = "R7_MSMS;multiplebond_intra;radadd_intra",
+    kinetics = ArrheniusEP(
+        A = (1e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (30, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 5,
+    shortDesc = u"""Guess""",
+)
+
+entry(
+    index = 817,
+    label = "R7_SMSM;multiplebond_intra;radadd_intra",
+    kinetics = ArrheniusEP(
+        A = (1e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (40, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 5,
+    shortDesc = u"""Guess""",
+)
+
+entry(
+    index = 818,
+    label = "R7_MMSR;multiplebond_intra;radadd_intra",
+    kinetics = ArrheniusEP(
+        A = (1e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (30, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 5,
+    shortDesc = u"""Guess""",
+)
+
+entry(
+    index = 819,
+    label = "R7_RSMM;multiplebond_intra;radadd_intra",
+    kinetics = ArrheniusEP(
+        A = (1e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (40, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 5,
+    shortDesc = u"""Guess""",
+)
+
+entry(
+    index = 820,
+    label = "R7_SMMS;multiplebond_intra;radadd_intra",
+    kinetics = ArrheniusEP(
+        A = (1e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (45, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 5,
+    shortDesc = u"""Guess""",
+)
+
+entry(
+    index = 821,
+    label = "R5_DS_D;doublebond_intra_2H_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (5.41e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (12.8, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 3,
+    shortDesc = u"""BMK/cbsb7 + 1D-HR""",
+)
+
+entry(
+    index = 822,
+    label = "R6_DSS_D;doublebond_intra_2H_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (8.73e+09, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (4, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 3,
+    shortDesc = u"""BMK/cbsb7 + 1D-HR""",
+)
+
+entry(
+    index = 823,
+    label = "R5_MS;multiplebond_intra;radadd_intra_cdsingle",
+    kinetics = ArrheniusEP(
+        A = (5.41e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (12.8, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 5,
+    shortDesc = u"""Guess, i.e. 821""",
+)
+
+entry(
+    index = 824,
+    label = "R6_MSR;multiplebond_intra;radadd_intra_cdsingle",
+    kinetics = ArrheniusEP(
+        A = (8.73e+09, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (4, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 5,
+    shortDesc = u"""Guess, i.e. 822""",
+)
+
+entry(
     index = 900,
     label = "R6_SSS_D;doublebond_intra_2H_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (500000000.0, 's^-1'),
+        A = (5e+08, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (7.29, 'kcal/mol'),
@@ -324,41 +305,14 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 901,
     label = "R6_SSS_D;doublebond_intra_2H_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (3350000000.0, 's^-1'),
+        A = (3.35e+09, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (7.51, 'kcal/mol'),
@@ -366,167 +320,59 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 902,
     label = "R6_SSS_D;doublebond_intra_2H_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (1070000000.0, 's^-1'),
+        A = (1.05e+09, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (6.49, 'kcal/mol'),
+        E0 = (7.08, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 903,
     label = "R6_SSS_D;doublebond_intra_2H_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (12600000000.0, 's^-1'),
+        A = (7.08e+09, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (16.39, 'kcal/mol'),
+        E0 = (15.69, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 904,
     label = "R6_SSS_D;doublebond_intra_2H_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (846000000.0, 's^-1'),
+        A = (1.04e+09, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (17.33, 'kcal/mol'),
+        E0 = (16.3, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 905,
     label = "R6_SSS_D;doublebond_intra_2H_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (2450000000.0, 's^-1'),
+        A = (2.45e+09, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (13, 'kcal/mol'),
@@ -534,41 +380,14 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 906,
     label = "R6_SSS_D;doublebond_intra_2H_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (2570000000.0, 's^-1'),
+        A = (2.57e+09, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (14.02, 'kcal/mol'),
@@ -576,40 +395,14 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 907,
     label = "R6_SSS_D;doublebond_intra_2H_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (9680000000.0, 's^-1'),
+        A = (9.68e+09, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (4.72, 'kcal/mol'),
@@ -617,41 +410,14 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 908,
     label = "R6_SSS_D;doublebond_intra_HNd_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (5260000000.0, 's^-1'),
+        A = (5.26e+09, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (7.16, 'kcal/mol'),
@@ -659,41 +425,14 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 909,
     label = "R6_SSS_D;doublebond_intra_HNd_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (35200000000.0, 's^-1'),
+        A = (3.52e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (7.38, 'kcal/mol'),
@@ -701,167 +440,59 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 910,
     label = "R6_SSS_D;doublebond_intra_HNd_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (11200000000.0, 's^-1'),
+        A = (1.1e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (6.36, 'kcal/mol'),
+        E0 = (6.95, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 911,
     label = "R6_SSS_D;doublebond_intra_HNd_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (132000000000.0, 's^-1'),
+        A = (7.44e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (16.26, 'kcal/mol'),
+        E0 = (15.56, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 912,
     label = "R6_SSS_D;doublebond_intra_HNd_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (8890000000.0, 's^-1'),
+        A = (1.09e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (17.2, 'kcal/mol'),
+        E0 = (16.17, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 913,
     label = "R6_SSS_D;doublebond_intra_HNd_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (25700000000.0, 's^-1'),
+        A = (2.57e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (12.87, 'kcal/mol'),
@@ -869,41 +500,14 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 914,
     label = "R6_SSS_D;doublebond_intra_HNd_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (27000000000.0, 's^-1'),
+        A = (2.7e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (13.89, 'kcal/mol'),
@@ -911,40 +515,14 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 915,
     label = "R6_SSS_D;doublebond_intra_HNd_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (102000000000.0, 's^-1'),
+        A = (1.02e+11, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (4.59, 'kcal/mol'),
@@ -952,41 +530,14 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 916,
     label = "R6_SSS_D;doublebond_intra_NdNd_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (8810000000.0, 's^-1'),
+        A = (8.81e+09, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (6.89, 'kcal/mol'),
@@ -994,41 +545,14 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 917,
     label = "R6_SSS_D;doublebond_intra_NdNd_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (58900000000.0, 's^-1'),
+        A = (5.89e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (7.11, 'kcal/mol'),
@@ -1036,167 +560,59 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 918,
     label = "R6_SSS_D;doublebond_intra_NdNd_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (18800000000.0, 's^-1'),
+        A = (1.85e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (6.08, 'kcal/mol'),
+        E0 = (6.68, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 919,
     label = "R6_SSS_D;doublebond_intra_NdNd_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (222000000000.0, 's^-1'),
+        A = (1.25e+11, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (15.99, 'kcal/mol'),
+        E0 = (15.28, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 920,
     label = "R6_SSS_D;doublebond_intra_NdNd_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (14900000000.0, 's^-1'),
+        A = (1.83e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (16.93, 'kcal/mol'),
+        E0 = (15.89, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 921,
     label = "R6_SSS_D;doublebond_intra_NdNd_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (43100000000.0, 's^-1'),
+        A = (4.31e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (12.6, 'kcal/mol'),
@@ -1204,41 +620,14 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 922,
     label = "R6_SSS_D;doublebond_intra_NdNd_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (45300000000.0, 's^-1'),
+        A = (4.53e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (13.61, 'kcal/mol'),
@@ -1246,40 +635,14 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 923,
     label = "R6_SSS_D;doublebond_intra_NdNd_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (170000000000.0, 's^-1'),
+        A = (1.71e+11, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (4.32, 'kcal/mol'),
@@ -1287,376 +650,134 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 924,
     label = "R6_SSS_D;doublebond_intra_HCd_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (86200000000.0, 's^-1'),
+        A = (3.04e+09, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (5.6, 'kcal/mol'),
+        E0 = (4.1, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 925,
     label = "R6_SSS_D;doublebond_intra_HCd_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (576000000000.0, 's^-1'),
+        A = (2.04e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (5.82, 'kcal/mol'),
+        E0 = (4.32, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 926,
     label = "R6_SSS_D;doublebond_intra_HCd_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (184000000000.0, 's^-1'),
+        A = (6.38e+09, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (4.8, 'kcal/mol'),
+        E0 = (3.89, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 927,
     label = "R6_SSS_D;doublebond_intra_HCd_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (2170000000000.0, 's^-1'),
+        A = (4.31e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (14.7, 'kcal/mol'),
+        E0 = (12.5, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 928,
     label = "R6_SSS_D;doublebond_intra_HCd_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (146000000000.0, 's^-1'),
+        A = (6.33e+09, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (15.65, 'kcal/mol'),
+        E0 = (13.11, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 929,
     label = "R6_SSS_D;doublebond_intra_HCd_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (421000000000.0, 's^-1'),
+        A = (1.49e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (11.31, 'kcal/mol'),
+        E0 = (9.81, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 930,
     label = "R6_SSS_D;doublebond_intra_HCd_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (443000000000.0, 's^-1'),
+        A = (1.57e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (12.33, 'kcal/mol'),
+        E0 = (10.83, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 931,
     label = "R6_SSS_D;doublebond_intra_HCd_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (1670000000000.0, 's^-1'),
+        A = (5.89e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (3.04, 'kcal/mol'),
+        E0 = (1.53, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 932,
     label = "R6_SSS_D;doublebond_intra_NdCd_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (3650000000.0, 's^-1'),
+        A = (3.65e+09, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (4.34, 'kcal/mol'),
@@ -1664,41 +785,14 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 933,
     label = "R6_SSS_D;doublebond_intra_NdCd_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (24400000000.0, 's^-1'),
+        A = (2.44e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (4.56, 'kcal/mol'),
@@ -1706,4461 +800,29 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 934,
     label = "R6_SSS_D;doublebond_intra_NdCd_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (7790000000.0, 's^-1'),
+        A = (7.65e+09, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (3.53, 'kcal/mol'),
+        E0 = (4.13, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 935,
     label = "R6_SSS_D;doublebond_intra_NdCd_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (91900000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (13.44, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 936,
-    label = "R6_SSS_D;doublebond_intra_NdCd_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (6170000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (14.38, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 937,
-    label = "R6_SSS_D;doublebond_intra_NdCd_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (17800000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (10.05, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 938,
-    label = "R6_SSS_D;doublebond_intra_NdCd_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (18800000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (11.06, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 939,
-    label = "R6_SSS_D;doublebond_intra_NdCd_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (70600000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (1.77, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 940,
-    label = "R6_SSS_D;doublebond_intra_HCt_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (6600000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (3.93, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 941,
-    label = "R6_SSS_D;doublebond_intra_HCt_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (44100000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (4.15, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 942,
-    label = "R6_SSS_D;doublebond_intra_HCt_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (14100000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (3.12, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 943,
-    label = "R6_SSS_D;doublebond_intra_HCt_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (166000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (13.03, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 944,
-    label = "R6_SSS_D;doublebond_intra_HCt_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (11200000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (13.97, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 945,
-    label = "R6_SSS_D;doublebond_intra_HCt_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (32200000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (9.64, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 946,
-    label = "R6_SSS_D;doublebond_intra_HCt_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (33900000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (10.65, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 947,
-    label = "R6_SSS_D;doublebond_intra_HCt_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (128000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (1.36, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 948,
-    label = "R6_SSS_D;doublebond_intra_NdCt_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (3840000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (4.21, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 949,
-    label = "R6_SSS_D;doublebond_intra_NdCt_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (25700000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (4.43, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 950,
-    label = "R6_SSS_D;doublebond_intra_NdCt_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (8210000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (3.4, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 951,
-    label = "R6_SSS_D;doublebond_intra_NdCt_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (96800000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (13.31, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 952,
-    label = "R6_SSS_D;doublebond_intra_NdCt_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (6500000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (14.25, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 953,
-    label = "R6_SSS_D;doublebond_intra_NdCt_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (18800000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (9.92, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 954,
-    label = "R6_SSS_D;doublebond_intra_NdCt_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (19800000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (10.94, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 955,
-    label = "R6_SSS_D;doublebond_intra_NdCt_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *5 R!H 0 {3,S} {5,S}
-5 *2 Cd  0 {4,S} {6,D}
-6 *3 {Cd,Cdd}  0 {5,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (74300000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (1.64, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 956,
-    label = "R4_S_D;doublebond_intra_2H_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (38400000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (8.78, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 957,
-    label = "R4_S_D;doublebond_intra_2H_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (257000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (9, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 958,
-    label = "R4_S_D;doublebond_intra_2H_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (82100000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (7.98, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 959,
-    label = "R4_S_D;doublebond_intra_2H_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (968000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (17.88, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 960,
-    label = "R4_S_D;doublebond_intra_2H_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (65000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (18.82, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 961,
-    label = "R4_S_D;doublebond_intra_2H_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (188000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (14.49, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 962,
-    label = "R4_S_D;doublebond_intra_2H_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (198000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (15.51, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 963,
-    label = "R4_S_D;doublebond_intra_2H_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (744000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (6.21, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 964,
-    label = "R4_S_D;doublebond_intra_HNd_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (404000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (8.65, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 965,
-    label = "R4_S_D;doublebond_intra_HNd_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (2700000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (8.87, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 966,
-    label = "R4_S_D;doublebond_intra_HNd_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (862000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (7.85, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 967,
-    label = "R4_S_D;doublebond_intra_HNd_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (10200000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (17.75, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 968,
-    label = "R4_S_D;doublebond_intra_HNd_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (683000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (18.69, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 969,
-    label = "R4_S_D;doublebond_intra_HNd_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (1970000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (14.36, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 970,
-    label = "R4_S_D;doublebond_intra_HNd_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (2080000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (15.38, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 971,
-    label = "R4_S_D;doublebond_intra_HNd_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (7810000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (6.08, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 972,
-    label = "R4_S_D;doublebond_intra_NdNd_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (677000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (8.38, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 973,
-    label = "R4_S_D;doublebond_intra_NdNd_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (4520000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (8.6, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 974,
-    label = "R4_S_D;doublebond_intra_NdNd_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (1450000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (7.57, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 975,
-    label = "R4_S_D;doublebond_intra_NdNd_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (17000000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (17.48, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 976,
-    label = "R4_S_D;doublebond_intra_NdNd_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (1140000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (18.42, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 977,
-    label = "R4_S_D;doublebond_intra_NdNd_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (3310000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (14.09, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 978,
-    label = "R4_S_D;doublebond_intra_NdNd_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (3480000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (15.1, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 979,
-    label = "R4_S_D;doublebond_intra_NdNd_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (13100000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (5.81, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 980,
-    label = "R4_S_D;doublebond_intra_HCd_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (6620000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (7.09, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 981,
-    label = "R4_S_D;doublebond_intra_HCd_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (44200000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (7.31, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 982,
-    label = "R4_S_D;doublebond_intra_HCd_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (14100000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (6.29, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 983,
-    label = "R4_S_D;doublebond_intra_HCd_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (167000000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (16.19, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 984,
-    label = "R4_S_D;doublebond_intra_HCd_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (11200000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (17.14, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 985,
-    label = "R4_S_D;doublebond_intra_HCd_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (32300000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (12.8, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 986,
-    label = "R4_S_D;doublebond_intra_HCd_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (34000000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (13.82, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 987,
-    label = "R4_S_D;doublebond_intra_HCd_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (128000000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (4.53, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 988,
-    label = "R4_S_D;doublebond_intra_NdCd_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (280000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (5.83, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 989,
-    label = "R4_S_D;doublebond_intra_NdCd_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (1870000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (6.05, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 990,
-    label = "R4_S_D;doublebond_intra_NdCd_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (598000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (5.02, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 991,
-    label = "R4_S_D;doublebond_intra_NdCd_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (7050000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (14.93, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 992,
-    label = "R4_S_D;doublebond_intra_NdCd_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (474000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (15.87, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 993,
-    label = "R4_S_D;doublebond_intra_NdCd_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (1370000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (11.54, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 994,
-    label = "R4_S_D;doublebond_intra_NdCd_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (1440000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (12.55, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 995,
-    label = "R4_S_D;doublebond_intra_NdCd_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (5420000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (3.26, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 996,
-    label = "R4_S_D;doublebond_intra_HCt_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (507000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (5.42, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 997,
-    label = "R4_S_D;doublebond_intra_HCt_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (3390000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (5.64, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 998,
-    label = "R4_S_D;doublebond_intra_HCt_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (1080000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (4.61, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 999,
-    label = "R4_S_D;doublebond_intra_HCt_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (12800000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (14.52, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1000,
-    label = "R4_S_D;doublebond_intra_HCt_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (857000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (15.46, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1001,
-    label = "R4_S_D;doublebond_intra_HCt_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (2480000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (11.13, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1002,
-    label = "R4_S_D;doublebond_intra_HCt_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (2610000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (12.14, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1003,
-    label = "R4_S_D;doublebond_intra_HCt_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (9800000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (2.85, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1004,
-    label = "R4_S_D;doublebond_intra_NdCt_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (295000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (5.7, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1005,
-    label = "R4_S_D;doublebond_intra_NdCt_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (1970000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (5.92, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1006,
-    label = "R4_S_D;doublebond_intra_NdCt_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (630000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (4.89, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1007,
-    label = "R4_S_D;doublebond_intra_NdCt_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (7430000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (14.8, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1008,
-    label = "R4_S_D;doublebond_intra_NdCt_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (499000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (15.74, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1009,
-    label = "R4_S_D;doublebond_intra_NdCt_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (1440000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (11.41, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1010,
-    label = "R4_S_D;doublebond_intra_NdCt_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (1520000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (12.43, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1011,
-    label = "R4_S_D;doublebond_intra_NdCt_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *2 Cd  0 {2,S} {4,D}
-4 *3 {Cd,Cdd}  0 {3,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (5710000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (3.13, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1012,
-    label = "R5_SS_D;doublebond_intra_2H_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (15200000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (16.99, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1013,
-    label = "R5_SS_D;doublebond_intra_2H_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (102000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (17.21, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1014,
-    label = "R5_SS_D;doublebond_intra_2H_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (32500000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (16.19, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1015,
-    label = "R5_SS_D;doublebond_intra_2H_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (383000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (26.09, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1016,
-    label = "R5_SS_D;doublebond_intra_2H_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (25700000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (27.03, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1017,
-    label = "R5_SS_D;doublebond_intra_2H_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (74300000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (22.7, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1018,
-    label = "R5_SS_D;doublebond_intra_2H_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (78200000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (23.72, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1019,
-    label = "R5_SS_D;doublebond_intra_2H_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (294000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (14.42, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1020,
-    label = "R5_SS_D;doublebond_intra_HNd_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (160000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (16.86, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1021,
-    label = "R5_SS_D;doublebond_intra_HNd_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (1070000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (17.08, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1022,
-    label = "R5_SS_D;doublebond_intra_HNd_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (341000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (16.06, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1023,
-    label = "R5_SS_D;doublebond_intra_HNd_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (4020000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (25.96, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1024,
-    label = "R5_SS_D;doublebond_intra_HNd_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (270000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (26.9, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1025,
-    label = "R5_SS_D;doublebond_intra_HNd_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (781000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (22.57, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1026,
-    label = "R5_SS_D;doublebond_intra_HNd_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (822000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (23.59, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1027,
-    label = "R5_SS_D;doublebond_intra_HNd_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (3090000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (14.29, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1028,
-    label = "R5_SS_D;doublebond_intra_NdNd_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (268000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (16.59, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1029,
-    label = "R5_SS_D;doublebond_intra_NdNd_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (1790000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (16.81, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1030,
-    label = "R5_SS_D;doublebond_intra_NdNd_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (572000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (15.78, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1031,
-    label = "R5_SS_D;doublebond_intra_NdNd_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (6750000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (25.69, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1032,
-    label = "R5_SS_D;doublebond_intra_NdNd_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (453000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (26.63, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1033,
-    label = "R5_SS_D;doublebond_intra_NdNd_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (1310000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (22.3, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1034,
-    label = "R5_SS_D;doublebond_intra_NdNd_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (1380000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (23.31, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1035,
-    label = "R5_SS_D;doublebond_intra_NdNd_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (5180000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (14.02, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1036,
-    label = "R5_SS_D;doublebond_intra_HCd_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (2620000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (15.3, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1037,
-    label = "R5_SS_D;doublebond_intra_HCd_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (17500000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (15.52, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1038,
-    label = "R5_SS_D;doublebond_intra_HCd_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (5590000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (14.5, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1039,
-    label = "R5_SS_D;doublebond_intra_HCd_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (66000000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (24.4, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1040,
-    label = "R5_SS_D;doublebond_intra_HCd_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (4430000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (25.34, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1041,
-    label = "R5_SS_D;doublebond_intra_HCd_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (12800000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (21.01, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1042,
-    label = "R5_SS_D;doublebond_intra_HCd_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (13500000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (22.03, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1043,
-    label = "R5_SS_D;doublebond_intra_HCd_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (50700000000000.0, 's^-1'),
+        A = (5.16e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (12.73, 'kcal/mol'),
@@ -6168,653 +830,44 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1044,
-    label = "R5_SS_D;doublebond_intra_NdCd_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
+    index = 936,
+    label = "R6_SSS_D;doublebond_intra_NdCd_pri;radadd_intra_csNdCd",
     kinetics = ArrheniusEP(
-        A = (111000000000.0, 's^-1'),
+        A = (7.58e+09, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (14.04, 'kcal/mol'),
+        E0 = (13.34, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1045,
-    label = "R5_SS_D;doublebond_intra_NdCd_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
+    index = 937,
+    label = "R6_SSS_D;doublebond_intra_NdCd_pri;radadd_intra_csHCt",
     kinetics = ArrheniusEP(
-        A = (741000000000.0, 's^-1'),
+        A = (1.78e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (14.26, 'kcal/mol'),
+        E0 = (10.05, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1046,
-    label = "R5_SS_D;doublebond_intra_NdCd_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
+    index = 938,
+    label = "R6_SSS_D;doublebond_intra_NdCd_pri;radadd_intra_csNdCt",
     kinetics = ArrheniusEP(
-        A = (237000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (13.23, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1047,
-    label = "R5_SS_D;doublebond_intra_NdCd_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (2790000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (23.14, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1048,
-    label = "R5_SS_D;doublebond_intra_NdCd_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (187000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (24.08, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1049,
-    label = "R5_SS_D;doublebond_intra_NdCd_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (542000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (19.75, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1050,
-    label = "R5_SS_D;doublebond_intra_NdCd_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (570000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (20.76, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1051,
-    label = "R5_SS_D;doublebond_intra_NdCd_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (2140000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (11.47, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1052,
-    label = "R5_SS_D;doublebond_intra_HCt_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (201000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (13.63, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1053,
-    label = "R5_SS_D;doublebond_intra_HCt_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (1340000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (13.85, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1054,
-    label = "R5_SS_D;doublebond_intra_HCt_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (428000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (12.82, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1055,
-    label = "R5_SS_D;doublebond_intra_HCt_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (5050000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (22.73, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1056,
-    label = "R5_SS_D;doublebond_intra_HCt_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (339000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (23.67, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1057,
-    label = "R5_SS_D;doublebond_intra_HCt_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (980000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (19.34, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1058,
-    label = "R5_SS_D;doublebond_intra_HCt_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (1030000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (20.35, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1059,
-    label = "R5_SS_D;doublebond_intra_HCt_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (3880000000000.0, 's^-1'),
+        A = (1.88e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (11.06, 'kcal/mol'),
@@ -6822,1098 +875,299 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1060,
-    label = "R5_SS_D;doublebond_intra_NdCt_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
+    index = 939,
+    label = "R6_SSS_D;doublebond_intra_NdCd_pri;radadd_intra_cdsingleH",
     kinetics = ArrheniusEP(
-        A = (117000000000.0, 's^-1'),
+        A = (7.06e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (13.91, 'kcal/mol'),
+        E0 = (1.77, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1061,
-    label = "R5_SS_D;doublebond_intra_NdCt_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
+    index = 940,
+    label = "R6_SSS_D;doublebond_intra_HCt_pri;radadd_intra_cs2H",
     kinetics = ArrheniusEP(
-        A = (781000000000.0, 's^-1'),
+        A = (6.6e+09, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (14.13, 'kcal/mol'),
+        E0 = (3.93, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1062,
-    label = "R5_SS_D;doublebond_intra_NdCt_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
+    index = 941,
+    label = "R6_SSS_D;doublebond_intra_HCt_pri;radadd_intra_csHNd",
     kinetics = ArrheniusEP(
-        A = (249000000000.0, 's^-1'),
+        A = (4.41e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (13.1, 'kcal/mol'),
+        E0 = (4.15, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1063,
-    label = "R5_SS_D;doublebond_intra_NdCt_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
+    index = 942,
+    label = "R6_SSS_D;doublebond_intra_HCt_pri;radadd_intra_csNdNd",
     kinetics = ArrheniusEP(
-        A = (2940000000000.0, 's^-1'),
+        A = (1.38e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (23.01, 'kcal/mol'),
+        E0 = (3.72, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1064,
-    label = "R5_SS_D;doublebond_intra_NdCt_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
+    index = 943,
+    label = "R6_SSS_D;doublebond_intra_HCt_pri;radadd_intra_csHCd",
     kinetics = ArrheniusEP(
-        A = (198000000000.0, 's^-1'),
+        A = (9.34e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (23.95, 'kcal/mol'),
+        E0 = (12.32, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1065,
-    label = "R5_SS_D;doublebond_intra_NdCt_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
+    index = 944,
+    label = "R6_SSS_D;doublebond_intra_HCt_pri;radadd_intra_csNdCd",
     kinetics = ArrheniusEP(
-        A = (571000000000.0, 's^-1'),
+        A = (1.37e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (19.62, 'kcal/mol'),
+        E0 = (12.93, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1066,
-    label = "R5_SS_D;doublebond_intra_NdCt_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
+    index = 945,
+    label = "R6_SSS_D;doublebond_intra_HCt_pri;radadd_intra_csHCt",
     kinetics = ArrheniusEP(
-        A = (601000000000.0, 's^-1'),
+        A = (3.22e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (20.64, 'kcal/mol'),
+        E0 = (9.64, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1067,
-    label = "R5_SS_D;doublebond_intra_NdCt_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *5 R!H 0 {2,S} {4,S}
-4 *2 Cd  0 {3,S} {5,D}
-5 *3 {Cd,Cdd}  0 {4,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
+    index = 946,
+    label = "R6_SSS_D;doublebond_intra_HCt_pri;radadd_intra_csNdCt",
     kinetics = ArrheniusEP(
-        A = (2260000000000.0, 's^-1'),
+        A = (3.39e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (11.34, 'kcal/mol'),
+        E0 = (10.65, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1068,
-    label = "R7_SSSS_D;doublebond_intra_2H_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
+    index = 947,
+    label = "R6_SSS_D;doublebond_intra_HCt_pri;radadd_intra_cdsingleH",
     kinetics = ArrheniusEP(
-        A = (1710000000.0, 's^-1'),
+        A = (1.28e+11, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (8.75, 'kcal/mol'),
+        E0 = (1.36, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1069,
-    label = "R7_SSSS_D;doublebond_intra_2H_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
+    index = 948,
+    label = "R6_SSS_D;doublebond_intra_NdCt_pri;radadd_intra_cs2H",
     kinetics = ArrheniusEP(
-        A = (11400000000.0, 's^-1'),
+        A = (3.84e+09, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (8.97, 'kcal/mol'),
+        E0 = (4.21, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1070,
-    label = "R7_SSSS_D;doublebond_intra_2H_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
+    index = 949,
+    label = "R6_SSS_D;doublebond_intra_NdCt_pri;radadd_intra_csHNd",
     kinetics = ArrheniusEP(
-        A = (3650000000.0, 's^-1'),
+        A = (2.57e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (7.95, 'kcal/mol'),
+        E0 = (4.43, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1071,
-    label = "R7_SSSS_D;doublebond_intra_2H_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
+    index = 950,
+    label = "R6_SSS_D;doublebond_intra_NdCt_pri;radadd_intra_csNdNd",
     kinetics = ArrheniusEP(
-        A = (43100000000.0, 's^-1'),
+        A = (8.06e+09, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (17.85, 'kcal/mol'),
+        E0 = (4, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1072,
-    label = "R7_SSSS_D;doublebond_intra_2H_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
+    index = 951,
+    label = "R6_SSS_D;doublebond_intra_NdCt_pri;radadd_intra_csHCd",
     kinetics = ArrheniusEP(
-        A = (2890000000.0, 's^-1'),
+        A = (5.44e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (18.79, 'kcal/mol'),
+        E0 = (12.61, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1073,
-    label = "R7_SSSS_D;doublebond_intra_2H_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
+    index = 952,
+    label = "R6_SSS_D;doublebond_intra_NdCt_pri;radadd_intra_csNdCd",
     kinetics = ArrheniusEP(
-        A = (8360000000.0, 's^-1'),
+        A = (7.99e+09, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (14.46, 'kcal/mol'),
+        E0 = (13.22, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1074,
-    label = "R7_SSSS_D;doublebond_intra_2H_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
+    index = 953,
+    label = "R6_SSS_D;doublebond_intra_NdCt_pri;radadd_intra_csHCt",
     kinetics = ArrheniusEP(
-        A = (8800000000.0, 's^-1'),
+        A = (1.88e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (15.48, 'kcal/mol'),
+        E0 = (9.92, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1075,
-    label = "R7_SSSS_D;doublebond_intra_2H_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    H  0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
+    index = 954,
+    label = "R6_SSS_D;doublebond_intra_NdCt_pri;radadd_intra_csNdCt",
     kinetics = ArrheniusEP(
-        A = (33100000000.0, 's^-1'),
+        A = (1.98e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (6.18, 'kcal/mol'),
+        E0 = (10.94, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1076,
-    label = "R7_SSSS_D;doublebond_intra_HNd_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
+    index = 955,
+    label = "R6_SSS_D;doublebond_intra_NdCt_pri;radadd_intra_cdsingleH",
     kinetics = ArrheniusEP(
-        A = (18000000000.0, 's^-1'),
+        A = (7.44e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (8.62, 'kcal/mol'),
+        E0 = (1.64, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1077,
-    label = "R7_SSSS_D;doublebond_intra_HNd_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
+    index = 956,
+    label = "R4_S_D;doublebond_intra_2H_pri;radadd_intra_cs2H",
     kinetics = ArrheniusEP(
-        A = (120000000000.0, 's^-1'),
+        A = (3.84e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (8.84, 'kcal/mol'),
+        E0 = (8.78, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1078,
-    label = "R7_SSSS_D;doublebond_intra_HNd_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
+    index = 957,
+    label = "R4_S_D;doublebond_intra_2H_pri;radadd_intra_csHNd",
     kinetics = ArrheniusEP(
-        A = (38400000000.0, 's^-1'),
+        A = (2.57e+11, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (7.82, 'kcal/mol'),
+        E0 = (9, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1079,
-    label = "R7_SSSS_D;doublebond_intra_HNd_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
+    index = 958,
+    label = "R4_S_D;doublebond_intra_2H_pri;radadd_intra_csNdNd",
     kinetics = ArrheniusEP(
-        A = (453000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (17.72, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1080,
-    label = "R7_SSSS_D;doublebond_intra_HNd_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (30400000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (18.66, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1081,
-    label = "R7_SSSS_D;doublebond_intra_HNd_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (87800000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (14.33, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1082,
-    label = "R7_SSSS_D;doublebond_intra_HNd_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (92400000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (15.35, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1083,
-    label = "R7_SSSS_D;doublebond_intra_HNd_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    H      0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (348000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (6.05, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1084,
-    label = "R7_SSSS_D;doublebond_intra_NdNd_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (30100000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (8.35, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1085,
-    label = "R7_SSSS_D;doublebond_intra_NdNd_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (201000000000.0, 's^-1'),
+        A = (8.06e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (8.57, 'kcal/mol'),
@@ -7921,1114 +1175,44 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1086,
-    label = "R7_SSSS_D;doublebond_intra_NdNd_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
+    index = 959,
+    label = "R4_S_D;doublebond_intra_2H_pri;radadd_intra_csHCd",
     kinetics = ArrheniusEP(
-        A = (64300000000.0, 's^-1'),
+        A = (5.44e+11, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (7.54, 'kcal/mol'),
+        E0 = (17.18, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1087,
-    label = "R7_SSSS_D;doublebond_intra_NdNd_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
+    index = 960,
+    label = "R4_S_D;doublebond_intra_2H_pri;radadd_intra_csNdCd",
     kinetics = ArrheniusEP(
-        A = (759000000000.0, 's^-1'),
+        A = (7.99e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (17.45, 'kcal/mol'),
+        E0 = (17.79, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1088,
-    label = "R7_SSSS_D;doublebond_intra_NdNd_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
+    index = 961,
+    label = "R4_S_D;doublebond_intra_2H_pri;radadd_intra_csHCt",
     kinetics = ArrheniusEP(
-        A = (50900000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (18.39, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1089,
-    label = "R7_SSSS_D;doublebond_intra_NdNd_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (147000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (14.06, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1090,
-    label = "R7_SSSS_D;doublebond_intra_NdNd_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (155000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (15.07, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1091,
-    label = "R7_SSSS_D;doublebond_intra_NdNd_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    {Cs,O} 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (583000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (5.78, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1092,
-    label = "R7_SSSS_D;doublebond_intra_HCd_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (295000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (7.06, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1093,
-    label = "R7_SSSS_D;doublebond_intra_HCd_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (1970000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (7.28, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1094,
-    label = "R7_SSSS_D;doublebond_intra_HCd_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (629000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (6.26, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1095,
-    label = "R7_SSSS_D;doublebond_intra_HCd_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (7420000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (16.16, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1096,
-    label = "R7_SSSS_D;doublebond_intra_HCd_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (498000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (17.1, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1097,
-    label = "R7_SSSS_D;doublebond_intra_HCd_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (1440000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (12.77, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1098,
-    label = "R7_SSSS_D;doublebond_intra_HCd_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (1510000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (13.79, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1099,
-    label = "R7_SSSS_D;doublebond_intra_HCd_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Cd 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (5700000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (4.5, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1100,
-    label = "R7_SSSS_D;doublebond_intra_NdCd_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (12500000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (5.8, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1101,
-    label = "R7_SSSS_D;doublebond_intra_NdCd_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (83400000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (6.02, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1102,
-    label = "R7_SSSS_D;doublebond_intra_NdCd_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (26600000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (4.99, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1103,
-    label = "R7_SSSS_D;doublebond_intra_NdCd_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (314000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (14.9, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1104,
-    label = "R7_SSSS_D;doublebond_intra_NdCd_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (21100000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (15.84, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1105,
-    label = "R7_SSSS_D;doublebond_intra_NdCd_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (60900000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (11.51, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1106,
-    label = "R7_SSSS_D;doublebond_intra_NdCd_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (64100000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (12.52, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1107,
-    label = "R7_SSSS_D;doublebond_intra_NdCd_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Cd     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (241000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (3.23, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1108,
-    label = "R7_SSSS_D;doublebond_intra_HCt_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (22500000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (5.39, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1109,
-    label = "R7_SSSS_D;doublebond_intra_HCt_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (151000000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (5.61, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1110,
-    label = "R7_SSSS_D;doublebond_intra_HCt_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (48200000000.0, 's^-1'),
-        n = 0.21,
-        alpha = 0,
-        E0 = (4.58, 'kcal/mol'),
-        Tmin = (300, 'K'),
-        Tmax = (1500, 'K'),
-    ),
-    rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
-)
-
-entry(
-    index = 1111,
-    label = "R7_SSSS_D;doublebond_intra_HCt_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
-    kinetics = ArrheniusEP(
-        A = (568000000000.0, 's^-1'),
+        A = (1.88e+11, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (14.49, 'kcal/mol'),
@@ -9036,85 +1220,3119 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1112,
-    label = "R7_SSSS_D;doublebond_intra_HCt_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
+    index = 962,
+    label = "R4_S_D;doublebond_intra_2H_pri;radadd_intra_csNdCt",
     kinetics = ArrheniusEP(
-        A = (38100000000.0, 's^-1'),
+        A = (1.98e+11, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (15.43, 'kcal/mol'),
+        E0 = (15.51, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
 
-""",
+entry(
+    index = 963,
+    label = "R4_S_D;doublebond_intra_2H_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (7.44e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (6.21, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 964,
+    label = "R4_S_D;doublebond_intra_HNd_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (4.04e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (8.65, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 965,
+    label = "R4_S_D;doublebond_intra_HNd_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (2.7e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (8.87, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 966,
+    label = "R4_S_D;doublebond_intra_HNd_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (8.47e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (8.44, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 967,
+    label = "R4_S_D;doublebond_intra_HNd_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (5.72e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (17.05, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 968,
+    label = "R4_S_D;doublebond_intra_HNd_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (8.39e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (17.66, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 969,
+    label = "R4_S_D;doublebond_intra_HNd_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (1.97e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (14.36, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 970,
+    label = "R4_S_D;doublebond_intra_HNd_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (2.08e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (15.38, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 971,
+    label = "R4_S_D;doublebond_intra_HNd_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (7.81e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (6.08, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 972,
+    label = "R4_S_D;doublebond_intra_NdNd_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (6.77e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (8.38, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 973,
+    label = "R4_S_D;doublebond_intra_NdNd_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (4.53e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (8.6, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 974,
+    label = "R4_S_D;doublebond_intra_NdNd_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (1.42e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (8.17, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 975,
+    label = "R4_S_D;doublebond_intra_NdNd_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (9.58e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (16.77, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 976,
+    label = "R4_S_D;doublebond_intra_NdNd_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (1.41e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (17.38, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 977,
+    label = "R4_S_D;doublebond_intra_NdNd_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (3.31e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (14.09, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 978,
+    label = "R4_S_D;doublebond_intra_NdNd_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (3.48e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (15.1, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 979,
+    label = "R4_S_D;doublebond_intra_NdNd_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (1.31e+13, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (5.81, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 980,
+    label = "R4_S_D;doublebond_intra_HCd_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (2.34e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (5.59, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 981,
+    label = "R4_S_D;doublebond_intra_HCd_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (1.56e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (5.81, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 982,
+    label = "R4_S_D;doublebond_intra_HCd_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (4.9e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (5.38, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 983,
+    label = "R4_S_D;doublebond_intra_HCd_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (3.31e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (13.99, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 984,
+    label = "R4_S_D;doublebond_intra_HCd_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (4.86e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (14.6, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 985,
+    label = "R4_S_D;doublebond_intra_HCd_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (1.14e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (11.3, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 986,
+    label = "R4_S_D;doublebond_intra_HCd_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (1.2e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (12.32, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 987,
+    label = "R4_S_D;doublebond_intra_HCd_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (4.52e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (3.02, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 988,
+    label = "R4_S_D;doublebond_intra_NdCd_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (2.8e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (5.83, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 989,
+    label = "R4_S_D;doublebond_intra_NdCd_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (1.87e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (6.05, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 990,
+    label = "R4_S_D;doublebond_intra_NdCd_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (5.88e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (5.62, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 991,
+    label = "R4_S_D;doublebond_intra_NdCd_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (3.97e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (14.22, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 992,
+    label = "R4_S_D;doublebond_intra_NdCd_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (5.82e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (14.83, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 993,
+    label = "R4_S_D;doublebond_intra_NdCd_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (1.37e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (11.54, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 994,
+    label = "R4_S_D;doublebond_intra_NdCd_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (1.44e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (12.55, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 995,
+    label = "R4_S_D;doublebond_intra_NdCd_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (5.42e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (3.26, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 996,
+    label = "R4_S_D;doublebond_intra_HCt_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (5.07e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (5.42, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 997,
+    label = "R4_S_D;doublebond_intra_HCt_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (3.39e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (5.64, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 998,
+    label = "R4_S_D;doublebond_intra_HCt_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (1.06e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (5.21, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 999,
+    label = "R4_S_D;doublebond_intra_HCt_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (7.17e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (13.81, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1000,
+    label = "R4_S_D;doublebond_intra_HCt_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (1.05e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (14.42, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1001,
+    label = "R4_S_D;doublebond_intra_HCt_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (2.48e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (11.13, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1002,
+    label = "R4_S_D;doublebond_intra_HCt_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (2.61e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (12.14, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1003,
+    label = "R4_S_D;doublebond_intra_HCt_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (9.81e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (2.85, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1004,
+    label = "R4_S_D;doublebond_intra_NdCt_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (2.95e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (5.7, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1005,
+    label = "R4_S_D;doublebond_intra_NdCt_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (1.97e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (5.92, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1006,
+    label = "R4_S_D;doublebond_intra_NdCt_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (6.19e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (5.49, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1007,
+    label = "R4_S_D;doublebond_intra_NdCt_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (4.18e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (14.1, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1008,
+    label = "R4_S_D;doublebond_intra_NdCt_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (6.13e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (14.71, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1009,
+    label = "R4_S_D;doublebond_intra_NdCt_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (1.44e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (11.41, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1010,
+    label = "R4_S_D;doublebond_intra_NdCt_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (1.52e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (12.43, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1011,
+    label = "R4_S_D;doublebond_intra_NdCt_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (5.71e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (3.13, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1012,
+    label = "R5_SS_D;doublebond_intra_2H_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (1.52e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (16.99, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1013,
+    label = "R5_SS_D;doublebond_intra_2H_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (1.02e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (17.21, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1014,
+    label = "R5_SS_D;doublebond_intra_2H_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (3.19e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (16.78, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1015,
+    label = "R5_SS_D;doublebond_intra_2H_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (2.15e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (25.39, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1016,
+    label = "R5_SS_D;doublebond_intra_2H_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (3.16e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (26, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1017,
+    label = "R5_SS_D;doublebond_intra_2H_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (7.43e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (22.7, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1018,
+    label = "R5_SS_D;doublebond_intra_2H_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (7.82e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (23.72, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1019,
+    label = "R5_SS_D;doublebond_intra_2H_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (2.94e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (14.42, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1020,
+    label = "R5_SS_D;doublebond_intra_HNd_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (1.6e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (16.86, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1021,
+    label = "R5_SS_D;doublebond_intra_HNd_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (1.07e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (17.08, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1022,
+    label = "R5_SS_D;doublebond_intra_HNd_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (3.35e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (16.65, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1023,
+    label = "R5_SS_D;doublebond_intra_HNd_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (2.26e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (25.26, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1024,
+    label = "R5_SS_D;doublebond_intra_HNd_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (3.32e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (25.87, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1025,
+    label = "R5_SS_D;doublebond_intra_HNd_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (7.81e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (22.57, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1026,
+    label = "R5_SS_D;doublebond_intra_HNd_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (8.22e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (23.59, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1027,
+    label = "R5_SS_D;doublebond_intra_HNd_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (3.09e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (14.29, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1028,
+    label = "R5_SS_D;doublebond_intra_NdNd_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (2.68e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (16.59, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1029,
+    label = "R5_SS_D;doublebond_intra_NdNd_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (1.79e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (16.81, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1030,
+    label = "R5_SS_D;doublebond_intra_NdNd_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (5.62e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (16.38, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1031,
+    label = "R5_SS_D;doublebond_intra_NdNd_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (3.79e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (24.98, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1032,
+    label = "R5_SS_D;doublebond_intra_NdNd_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (5.57e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (25.59, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1033,
+    label = "R5_SS_D;doublebond_intra_NdNd_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (1.31e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (22.3, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1034,
+    label = "R5_SS_D;doublebond_intra_NdNd_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (1.38e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (23.31, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1035,
+    label = "R5_SS_D;doublebond_intra_NdNd_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (5.18e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (14.02, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1036,
+    label = "R5_SS_D;doublebond_intra_HCd_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (9.25e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (13.8, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1037,
+    label = "R5_SS_D;doublebond_intra_HCd_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (6.19e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (14.02, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1038,
+    label = "R5_SS_D;doublebond_intra_HCd_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (1.94e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (13.59, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1039,
+    label = "R5_SS_D;doublebond_intra_HCd_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (1.31e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (22.19, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1040,
+    label = "R5_SS_D;doublebond_intra_HCd_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (1.92e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (22.81, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1041,
+    label = "R5_SS_D;doublebond_intra_HCd_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (4.52e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (19.51, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1042,
+    label = "R5_SS_D;doublebond_intra_HCd_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (4.76e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (20.53, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1043,
+    label = "R5_SS_D;doublebond_intra_HCd_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (1.79e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (11.23, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1044,
+    label = "R5_SS_D;doublebond_intra_NdCd_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (1.11e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (14.04, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1045,
+    label = "R5_SS_D;doublebond_intra_NdCd_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (7.41e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (14.26, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1046,
+    label = "R5_SS_D;doublebond_intra_NdCd_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (2.32e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (13.83, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1047,
+    label = "R5_SS_D;doublebond_intra_NdCd_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (1.57e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (22.43, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1048,
+    label = "R5_SS_D;doublebond_intra_NdCd_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (2.3e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (23.04, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1049,
+    label = "R5_SS_D;doublebond_intra_NdCd_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (5.42e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (19.75, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1050,
+    label = "R5_SS_D;doublebond_intra_NdCd_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (5.7e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (20.76, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1051,
+    label = "R5_SS_D;doublebond_intra_NdCd_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (2.14e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (11.47, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1052,
+    label = "R5_SS_D;doublebond_intra_HCt_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (2.01e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (13.63, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1053,
+    label = "R5_SS_D;doublebond_intra_HCt_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (1.34e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (13.85, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1054,
+    label = "R5_SS_D;doublebond_intra_HCt_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (4.21e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (13.42, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1055,
+    label = "R5_SS_D;doublebond_intra_HCt_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (2.84e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (22.02, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1056,
+    label = "R5_SS_D;doublebond_intra_HCt_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (4.17e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (22.63, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1057,
+    label = "R5_SS_D;doublebond_intra_HCt_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (9.8e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (19.34, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1058,
+    label = "R5_SS_D;doublebond_intra_HCt_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (1.03e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (20.35, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1059,
+    label = "R5_SS_D;doublebond_intra_HCt_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (3.88e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (11.06, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1060,
+    label = "R5_SS_D;doublebond_intra_NdCt_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (1.17e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (13.91, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1061,
+    label = "R5_SS_D;doublebond_intra_NdCt_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (7.81e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (14.13, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1062,
+    label = "R5_SS_D;doublebond_intra_NdCt_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (2.45e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (13.7, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1063,
+    label = "R5_SS_D;doublebond_intra_NdCt_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (1.65e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (22.3, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1064,
+    label = "R5_SS_D;doublebond_intra_NdCt_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (2.43e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (22.92, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1065,
+    label = "R5_SS_D;doublebond_intra_NdCt_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (5.71e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (19.62, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1066,
+    label = "R5_SS_D;doublebond_intra_NdCt_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (6.01e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (20.63, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1067,
+    label = "R5_SS_D;doublebond_intra_NdCt_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (2.26e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (11.34, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1068,
+    label = "R6_SMS_D;doublebond_intra_2H_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (1.69e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (21.91, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1069,
+    label = "R6_SMS_D;doublebond_intra_2H_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (1.13e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (22.13, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1070,
+    label = "R6_SMS_D;doublebond_intra_2H_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (3.55e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (21.7, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1071,
+    label = "R6_SMS_D;doublebond_intra_2H_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (2.4e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (30.3, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1072,
+    label = "R6_SMS_D;doublebond_intra_2H_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (3.52e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (30.91, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1073,
+    label = "R6_SMS_D;doublebond_intra_2H_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (8.27e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (27.62, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1074,
+    label = "R6_SMS_D;doublebond_intra_2H_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (8.7e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (28.63, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1075,
+    label = "R6_SMS_D;doublebond_intra_2H_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (3.27e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (19.34, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1076,
+    label = "R6_SMS_D;doublebond_intra_HNd_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (1.78e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (21.78, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1077,
+    label = "R6_SMS_D;doublebond_intra_HNd_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (1.19e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (22, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1078,
+    label = "R6_SMS_D;doublebond_intra_HNd_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (3.73e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (21.57, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1079,
+    label = "R6_SMS_D;doublebond_intra_HNd_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (2.52e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (30.17, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1080,
+    label = "R6_SMS_D;doublebond_intra_HNd_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (3.69e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (30.78, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1081,
+    label = "R6_SMS_D;doublebond_intra_HNd_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (8.69e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (27.49, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1082,
+    label = "R6_SMS_D;doublebond_intra_HNd_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (9.14e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (28.5, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1083,
+    label = "R6_SMS_D;doublebond_intra_HNd_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (3.44e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (19.21, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1084,
+    label = "R6_SMS_D;doublebond_intra_NdNd_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (2.98e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (21.5, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1085,
+    label = "R6_SMS_D;doublebond_intra_NdNd_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (1.99e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (21.72, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1086,
+    label = "R6_SMS_D;doublebond_intra_NdNd_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (6.25e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (21.29, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1087,
+    label = "R6_SMS_D;doublebond_intra_NdNd_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (4.22e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (29.9, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1088,
+    label = "R6_SMS_D;doublebond_intra_NdNd_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (6.19e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (30.51, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1089,
+    label = "R6_SMS_D;doublebond_intra_NdNd_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (1.46e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (27.21, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1090,
+    label = "R6_SMS_D;doublebond_intra_NdNd_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (1.53e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (28.23, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1091,
+    label = "R6_SMS_D;doublebond_intra_NdNd_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (5.77e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (18.93, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1092,
+    label = "R6_SMS_D;doublebond_intra_HCd_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (1.03e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (18.71, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1093,
+    label = "R6_SMS_D;doublebond_intra_HCd_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (6.88e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (18.93, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1094,
+    label = "R6_SMS_D;doublebond_intra_HCd_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (2.16e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (18.5, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1095,
+    label = "R6_SMS_D;doublebond_intra_HCd_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (1.46e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (27.11, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1096,
+    label = "R6_SMS_D;doublebond_intra_HCd_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (2.14e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (27.72, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1097,
+    label = "R6_SMS_D;doublebond_intra_HCd_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (5.03e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (24.42, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1098,
+    label = "R6_SMS_D;doublebond_intra_HCd_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (5.29e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (25.44, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1099,
+    label = "R6_SMS_D;doublebond_intra_HCd_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (1.99e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (16.14, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1100,
+    label = "R6_SMS_D;doublebond_intra_NdCd_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (1.23e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (18.95, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1101,
+    label = "R6_SMS_D;doublebond_intra_NdCd_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (8.25e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (19.17, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1102,
+    label = "R6_SMS_D;doublebond_intra_NdCd_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (2.59e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (18.74, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1103,
+    label = "R6_SMS_D;doublebond_intra_NdCd_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (1.75e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (27.35, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1104,
+    label = "R6_SMS_D;doublebond_intra_NdCd_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (2.56e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (27.96, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1105,
+    label = "R6_SMS_D;doublebond_intra_NdCd_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (6.03e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (24.66, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1106,
+    label = "R6_SMS_D;doublebond_intra_NdCd_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (6.34e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (25.68, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1107,
+    label = "R6_SMS_D;doublebond_intra_NdCd_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (2.39e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (16.38, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1108,
+    label = "R6_SMS_D;doublebond_intra_HCt_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (2.23e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (18.54, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1109,
+    label = "R6_SMS_D;doublebond_intra_HCt_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (1.49e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (18.76, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1110,
+    label = "R6_SMS_D;doublebond_intra_HCt_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (4.68e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (18.33, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1111,
+    label = "R6_SMS_D;doublebond_intra_HCt_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (3.16e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (26.94, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1112,
+    label = "R6_SMS_D;doublebond_intra_HCt_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (4.64e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (27.55, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
     index = 1113,
-    label = "R7_SSSS_D;doublebond_intra_HCt_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
+    label = "R6_SMS_D;doublebond_intra_HCt_pri;radadd_intra_csHCt",
     kinetics = ArrheniusEP(
-        A = (110000000000.0, 's^-1'),
+        A = (1.09e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (24.25, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1114,
+    label = "R6_SMS_D;doublebond_intra_HCt_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (1.15e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (25.27, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1115,
+    label = "R6_SMS_D;doublebond_intra_HCt_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (4.32e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (15.97, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1116,
+    label = "R6_SMS_D;doublebond_intra_NdCt_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (1.3e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (18.82, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1117,
+    label = "R6_SMS_D;doublebond_intra_NdCt_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (8.69e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (19.04, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1118,
+    label = "R6_SMS_D;doublebond_intra_NdCt_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (2.73e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (18.61, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1119,
+    label = "R6_SMS_D;doublebond_intra_NdCt_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (1.84e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (27.22, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1120,
+    label = "R6_SMS_D;doublebond_intra_NdCt_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (2.7e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (27.83, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1121,
+    label = "R6_SMS_D;doublebond_intra_NdCt_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (6.35e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (24.53, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1122,
+    label = "R6_SMS_D;doublebond_intra_NdCt_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (6.68e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (25.55, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1123,
+    label = "R6_SMS_D;doublebond_intra_NdCt_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (2.51e+12, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (16.25, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1124,
+    label = "R7_SSSS_D;doublebond_intra_2H_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (1.71e+09, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (8.75, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1125,
+    label = "R7_SSSS_D;doublebond_intra_2H_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (1.14e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (8.97, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1126,
+    label = "R7_SSSS_D;doublebond_intra_2H_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (3.59e+09, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (8.54, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1127,
+    label = "R7_SSSS_D;doublebond_intra_2H_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (2.42e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (17.15, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1128,
+    label = "R7_SSSS_D;doublebond_intra_2H_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (3.56e+09, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (17.76, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1129,
+    label = "R7_SSSS_D;doublebond_intra_2H_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (8.36e+09, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (14.46, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1130,
+    label = "R7_SSSS_D;doublebond_intra_2H_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (8.8e+09, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (15.48, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1131,
+    label = "R7_SSSS_D;doublebond_intra_2H_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (3.31e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (6.18, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1132,
+    label = "R7_SSSS_D;doublebond_intra_HNd_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (1.8e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (8.62, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1133,
+    label = "R7_SSSS_D;doublebond_intra_HNd_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (1.2e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (8.84, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1134,
+    label = "R7_SSSS_D;doublebond_intra_HNd_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (3.77e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (8.41, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1135,
+    label = "R7_SSSS_D;doublebond_intra_HNd_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (2.54e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (17.02, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1136,
+    label = "R7_SSSS_D;doublebond_intra_HNd_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (3.74e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (17.63, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1137,
+    label = "R7_SSSS_D;doublebond_intra_HNd_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (8.78e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (14.33, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1138,
+    label = "R7_SSSS_D;doublebond_intra_HNd_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (9.24e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (15.35, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1139,
+    label = "R7_SSSS_D;doublebond_intra_HNd_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (3.48e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (6.05, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1140,
+    label = "R7_SSSS_D;doublebond_intra_NdNd_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (3.01e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (8.35, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1141,
+    label = "R7_SSSS_D;doublebond_intra_NdNd_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (2.01e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (8.57, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1142,
+    label = "R7_SSSS_D;doublebond_intra_NdNd_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (6.32e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (8.14, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1143,
+    label = "R7_SSSS_D;doublebond_intra_NdNd_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (4.26e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (16.74, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1144,
+    label = "R7_SSSS_D;doublebond_intra_NdNd_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (6.26e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (17.35, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1145,
+    label = "R7_SSSS_D;doublebond_intra_NdNd_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (1.47e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (14.06, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1146,
+    label = "R7_SSSS_D;doublebond_intra_NdNd_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (1.55e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (15.07, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1147,
+    label = "R7_SSSS_D;doublebond_intra_NdNd_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (5.83e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (5.78, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1148,
+    label = "R7_SSSS_D;doublebond_intra_HCd_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (1.04e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (5.56, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1149,
+    label = "R7_SSSS_D;doublebond_intra_HCd_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (6.96e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (5.78, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1150,
+    label = "R7_SSSS_D;doublebond_intra_HCd_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (2.18e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (5.35, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1151,
+    label = "R7_SSSS_D;doublebond_intra_HCd_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (1.47e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (13.95, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1152,
+    label = "R7_SSSS_D;doublebond_intra_HCd_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (2.16e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (14.57, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1153,
+    label = "R7_SSSS_D;doublebond_intra_HCd_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (5.08e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (11.27, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1154,
+    label = "R7_SSSS_D;doublebond_intra_HCd_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (5.35e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (12.29, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1155,
+    label = "R7_SSSS_D;doublebond_intra_HCd_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (2.01e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (2.99, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1156,
+    label = "R7_SSSS_D;doublebond_intra_NdCd_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (1.25e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (5.8, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1157,
+    label = "R7_SSSS_D;doublebond_intra_NdCd_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (8.34e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (6.02, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1158,
+    label = "R7_SSSS_D;doublebond_intra_NdCd_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (2.62e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (5.59, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1159,
+    label = "R7_SSSS_D;doublebond_intra_NdCd_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (1.77e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (14.19, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1160,
+    label = "R7_SSSS_D;doublebond_intra_NdCd_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (2.59e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (14.8, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1161,
+    label = "R7_SSSS_D;doublebond_intra_NdCd_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (6.09e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (11.51, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1162,
+    label = "R7_SSSS_D;doublebond_intra_NdCd_pri;radadd_intra_csNdCt",
+    kinetics = ArrheniusEP(
+        A = (6.41e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (12.52, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1163,
+    label = "R7_SSSS_D;doublebond_intra_NdCd_pri;radadd_intra_cdsingleH",
+    kinetics = ArrheniusEP(
+        A = (2.41e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (3.23, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1164,
+    label = "R7_SSSS_D;doublebond_intra_HCt_pri;radadd_intra_cs2H",
+    kinetics = ArrheniusEP(
+        A = (2.26e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (5.39, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1165,
+    label = "R7_SSSS_D;doublebond_intra_HCt_pri;radadd_intra_csHNd",
+    kinetics = ArrheniusEP(
+        A = (1.51e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (5.61, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1166,
+    label = "R7_SSSS_D;doublebond_intra_HCt_pri;radadd_intra_csNdNd",
+    kinetics = ArrheniusEP(
+        A = (4.73e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (5.18, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1167,
+    label = "R7_SSSS_D;doublebond_intra_HCt_pri;radadd_intra_csHCd",
+    kinetics = ArrheniusEP(
+        A = (3.19e+11, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (13.78, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1168,
+    label = "R7_SSSS_D;doublebond_intra_HCt_pri;radadd_intra_csNdCd",
+    kinetics = ArrheniusEP(
+        A = (4.69e+10, 's^-1'),
+        n = 0.21,
+        alpha = 0,
+        E0 = (14.39, 'kcal/mol'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Aaron Vandeputte small GA method""",
+)
+
+entry(
+    index = 1169,
+    label = "R7_SSSS_D;doublebond_intra_HCt_pri;radadd_intra_csHCt",
+    kinetics = ArrheniusEP(
+        A = (1.1e+11, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (11.1, 'kcal/mol'),
@@ -9122,42 +4340,14 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1114,
+    index = 1170,
     label = "R7_SSSS_D;doublebond_intra_HCt_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (116000000000.0, 's^-1'),
+        A = (1.16e+11, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (12.11, 'kcal/mol'),
@@ -9165,41 +4355,14 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1115,
+    index = 1171,
     label = "R7_SSSS_D;doublebond_intra_HCt_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd 0 {2,D} {3,S}
-2 *3 Cd 0 {1,D} {4,S} {5,S}
-3    H  0 {1,S}
-4    H  0 {2,S}
-5    Ct 0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (436000000000.0, 's^-1'),
+        A = (4.37e+11, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (2.82, 'kcal/mol'),
@@ -9207,42 +4370,14 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1116,
+    index = 1172,
     label = "R7_SSSS_D;doublebond_intra_NdCt_pri;radadd_intra_cs2H",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    H  0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (13100000000.0, 's^-1'),
+        A = (1.31e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (5.67, 'kcal/mol'),
@@ -9250,42 +4385,14 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1117,
+    index = 1173,
     label = "R7_SSSS_D;doublebond_intra_NdCt_pri;radadd_intra_csHNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    H      0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (87800000000.0, 's^-1'),
+        A = (8.79e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (5.89, 'kcal/mol'),
@@ -9293,171 +4400,59 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1118,
+    index = 1174,
     label = "R7_SSSS_D;doublebond_intra_NdCt_pri;radadd_intra_csNdNd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    {Cs,O} 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (28100000000.0, 's^-1'),
+        A = (2.76e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (4.86, 'kcal/mol'),
+        E0 = (5.46, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1119,
+    index = 1175,
     label = "R7_SSSS_D;doublebond_intra_NdCt_pri;radadd_intra_csHCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Cd 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (331000000000.0, 's^-1'),
+        A = (1.86e+11, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (14.77, 'kcal/mol'),
+        E0 = (14.06, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1120,
+    index = 1176,
     label = "R7_SSSS_D;doublebond_intra_NdCt_pri;radadd_intra_csNdCd",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Cd     0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (22200000000.0, 's^-1'),
+        A = (2.73e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
-        E0 = (15.71, 'kcal/mol'),
+        E0 = (14.68, 'kcal/mol'),
         Tmin = (300, 'K'),
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1121,
+    index = 1177,
     label = "R7_SSSS_D;doublebond_intra_NdCt_pri;radadd_intra_csHCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs 1 {2,S} {3,S}
-2    H  0 {1,S}
-3    Ct 0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (64200000000.0, 's^-1'),
+        A = (6.42e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (11.38, 'kcal/mol'),
@@ -9465,42 +4460,14 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1122,
+    index = 1178,
     label = "R7_SSSS_D;doublebond_intra_NdCt_pri;radadd_intra_csNdCt",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cs     1 {2,S} {3,S}
-2    {Cs,O} 0 {1,S}
-3    Ct     0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (67500000000.0, 's^-1'),
+        A = (6.76e+10, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (12.4, 'kcal/mol'),
@@ -9508,41 +4475,14 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 
 entry(
-    index = 1123,
+    index = 1179,
     label = "R7_SSSS_D;doublebond_intra_NdCt_pri;radadd_intra_cdsingleH",
-    group1 = 
-"""
-1 *1 R!H 1 {2,S}
-2 *4 R!H 0 {1,S} {3,S}
-3 *6 R!H 0 {2,S} {4,S}
-4 *7 R!H 0 {3,S} {5,S}
-5 *5 R!H 0 {4,S} {6,S}
-6 *2 Cd  0 {5,S} {7,D}
-7 *3 {Cd,Cdd}  0 {6,D}
-""",
-    group2 = 
-"""
-1 *2 Cd     0 {2,D} {3,S}
-2 *3 Cd     0 {1,D} {4,S} {5,S}
-3    H      0 {1,S}
-4    {Cs,O} 0 {2,S}
-5    Ct     0 {2,S}
-""",
-    group3 = 
-"""
-1 *1 Cd 1 {2,S}
-2    H  0 {1,S}
-""",
     kinetics = ArrheniusEP(
-        A = (254000000000.0, 's^-1'),
+        A = (2.54e+11, 's^-1'),
         n = 0.21,
         alpha = 0,
         E0 = (3.1, 'kcal/mol'),
@@ -9550,10 +4490,6 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 0,
-    shortDesc = u"""Aan Vandeputte small GA method""",
-    longDesc = 
-u"""
-
-""",
+    shortDesc = u"""Aaron Vandeputte small GA method""",
 )
 

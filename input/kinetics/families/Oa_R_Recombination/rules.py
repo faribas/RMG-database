@@ -9,16 +9,8 @@ longDesc = u"""
 entry(
     index = 1000,
     label = "Y_rad;Oa",
-    group1 = 
-"""
-1 *1 R 1
-""",
-    group2 = 
-"""
-1 *2 O 2T
-""",
     kinetics = ArrheniusEP(
-        A = (10000000000000.0, 'cm^3/(mol*s)'),
+        A = (1e+13, 'cm^3/(mol*s)'),
         n = 0,
         alpha = 0,
         E0 = (0, 'kcal/mol'),
@@ -26,10 +18,5 @@ entry(
         Tmax = (1500, 'K'),
     ),
     rank = 2,
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
 )
 
