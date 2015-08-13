@@ -4505,23 +4505,23 @@ u"""
 
 """,
 )
-entry(
-    index = 7002,
-    label = "Cds-CdClCl",
-    group = 
-"""
-1 * Cd u0 {2,D} {3,S} {4,S}
-2   C  u0 {1,D}
-3   Cl  u0 {1,S}
-4   Cl  u0 {1,S}
-""",
-    thermo = u'Cds-CdsFF',
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
+#entry(
+#    index = 7002,
+#    label = "Cds-CdClCl",
+#    group = 
+#"""
+#1 * Cd u0 {2,D} {3,S} {4,S}
+#2   C  u0 {1,D}
+#3   Cl  u0 {1,S}
+#4   Cl  u0 {1,S}
+#""",
+#    thermo = u'Cds-CdsFF',
+#    shortDesc = u"""""",
+#    longDesc = 
+#u"""
+#
+#""",
+#)
 
 entry(
     index = 7003,
@@ -4535,9 +4535,9 @@ entry(
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([10.97,12.42,13.33,13.92,14.63,15.01,15.44],'cal/(mol*K)','+|-',[0.07,0.07,0.07,0.07,0.07,0.07,0.07]),
-        H298 = (-5.76,'kcal/mol','+|-',0.19),
-        S298 = (40.77,'cal/(mol*K)','+|-',0.1),
+        Cpdata = ([10.97,12.42,13.33,13.92,14.63,15.01,15.44],'cal/(mol*K)'),
+        H298 = (-5.76,'kcal/mol'),
+        S298 = (40.77,'cal/(mol*K)'),
     ),
     shortDesc = u"""Cd-CdsClCl Group values, """,
     longDesc = 
@@ -5139,23 +5139,23 @@ u"""
 
 """,
 )
-entry(
-    index = 7014,
-    label = "Cds-CdsCCl",
-    group = 
-"""
-1 * Cd u0 {2,D} {3,S} {4,S}
-2   C  u0 {1,D}
-3   C  u0 {1,S}
-4   Cl  u0 {1,S}
-""",
-    thermo = u'Cds-CdsCsCl',
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
+#entry(
+#    index = 7014,
+#    label = "Cds-CdsCCl",
+#    group = 
+#"""
+#1 * Cd u0 {2,D} {3,S} {4,S}
+#2   C  u0 {1,D}
+#3   C  u0 {1,S}
+#4   Cl  u0 {1,S}
+#""",
+#    thermo = u'Cds-CdsCsCl',
+#    shortDesc = u"""""",
+#    longDesc = 
+#u"""
+#
+#""",
+#)
 
 entry(
     index = 7015,
@@ -12437,24 +12437,24 @@ u"""
 
 """,
 )
-entry(
-    index = 6001,
-    label = "Cs-CClClCl",
-    group = 
-"""
-1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
-2   C  u0 {1,S}
-3   Cl  u0 {1,S}
-4   Cl  u0 {1,S}
-5   Cl  u0 {1,S}
-""",
-    thermo = u'Cs-CClClCl',
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
+#entry(
+#    index = 6001,
+#    label = "Cs-CClClCl",
+#    group = 
+#"""
+#1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+#2   C  u0 {1,S}
+#3   Cl  u0 {1,S}
+#4   Cl  u0 {1,S}
+#5   Cl  u0 {1,S}
+#""",
+#    thermo = u'Cs-CsClClCl',
+#    shortDesc = u"""""",
+#    longDesc = 
+#u"""
+#
+#""",
+#)
 
 entry(
     index = 6002,
@@ -12491,7 +12491,7 @@ entry(
 4   F  u0 {1,S}
 5   H  u0 {1,S}
 """,
-    thermo = u'Cs-CFFH',
+    thermo = u'Cs-CsFFH',
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -12523,24 +12523,24 @@ u"""
 """,
 )
 
-entry(
-    index = 6027,
-    label = "Cs-CClClH",
-    group = 
-"""
-1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
-2   C  u0 {1,S}
-3   Cl  u0 {1,S}
-4   Cl  u0 {1,S}
-5   H  u0 {1,S}
-""",
-    thermo = u'Cs-CClClH',
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
+#entry(
+#    index = 6027,
+#    label = "Cs-CClClH",
+#    group = 
+#"""
+#1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+#2   C  u0 {1,S}
+#3   Cl  u0 {1,S}
+#4   Cl  u0 {1,S}
+#5   H  u0 {1,S}
+#""",
+#    thermo = u'Cs-CsClClH',
+#    shortDesc = u"""""",
+#    longDesc = 
+#u"""
+#
+#""",
+#)
 
 entry(
     index = 6020,
@@ -12609,24 +12609,24 @@ u"""
 """,
 )
 
-entry(
-    index = 6006,
-    label = "Cs-CCClCl",
-    group = 
-"""
-1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
-2   C  u0 {1,S}
-3   C  u0 {1,S}
-4   Cl  u0 {1,S}
-5   Cl  u0 {1,S}
-""",
-    thermo = u'Cs-CsCsClCl',
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
+#entry(
+#    index = 6006,
+#    label = "Cs-CCClCl",
+#    group = 
+#"""
+#1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+#2   C  u0 {1,S}
+#3   C  u0 {1,S}
+#4   Cl  u0 {1,S}
+#5   Cl  u0 {1,S}
+#""",
+#    thermo = u'Cs-CsCsClCl',
+#    shortDesc = u"""""",
+#    longDesc = 
+#u"""
+#
+#""",
+#)
 
 entry(
     index = 6007,
@@ -12666,7 +12666,7 @@ entry(
 4   H  u0 {1,S}
 5   H  u0 {1,S}
 """,
-    thermo = u'Cs-CFHH',
+    thermo = u'Cs-CsFHH',
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -12699,39 +12699,39 @@ u"""
 )
 
 
-entry(
-    index = 6023,
-    label = "Cs-CClHH",
-    group = 
-"""
-1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
-2   C  u0 {1,S}
-3   Cl  u0 {1,S}
-4   H  u0 {1,S}
-5   H  u0 {1,S}
-""",
-    thermo = u'Cs-CClHH',
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
+#entry(
+#    index = 6023,
+#    label = "Cs-CClHH",
+#    group = 
+#"""
+#1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+#2   C  u0 {1,S}
+#3   Cl  u0 {1,S}
+#4   H  u0 {1,S}
+#5   H  u0 {1,S}
+#""",
+#    thermo = u'Cs-CsClHH',
+#    shortDesc = u"""""",
+#    longDesc = 
+#u"""
+#
+#""",
+#)
 
 entry(
     index = 6024,
     label = "Cs-CsClHH",
     group = 
 """
-1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
-2   Cs u0 {1,S}
+1 * Cs  u0 {2,S} {3,S} {4,S} {5,S}
+2   Cs  u0 {1,S}
 3   Cl  u0 {1,S}
-4   H  u0 {1,S}
-5   H  u0 {1,S}
+4   H   u0 {1,S}
+5   H   u0 {1,S}
 """,
     thermo = ThermoData(
         Tdata = ([300,400,500,600,800,1000,1500],'K'),
-        Cpdata = ([8.74,10.54,12.08,13.31,15.15,16.47,18.46],'cal/(mol*K)'),
+        Cpdata = ([8.74, 10.54, 12.08, 13.31, 15.15, 16.47, 18.46],'cal/(mol*K)'),
         H298 = (-16.8,'kcal/mol'),
         S298 = (38.17,'cal/(mol*K)'),
     ),
@@ -12753,7 +12753,7 @@ entry(
 4   H  u0 {1,S}
 5   F  u0 {1,S}
 """,
-    thermo = u'Cs-CCFH',
+    thermo = u'Cs-CsCsFH',
     shortDesc = u"""""",
     longDesc = 
 u"""
@@ -12786,24 +12786,24 @@ u"""
 """,
 )
 
-entry(
-    index = 6028,
-    label = "Cs-CCClH",
-    group = 
-"""
-1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
-2   C u0 {1,S}
-3   C u0 {1,S}
-4   H  u0 {1,S}
-5   Cl  u0 {1,S}
-""",
-    thermo = u'Cs-CCClH',
-    shortDesc = u"""""",
-    longDesc = 
-u"""
-
-""",
-)
+#entry(
+#    index = 6028,
+#    label = "Cs-CCClH",
+#    group = 
+#"""
+#1 * Cs u0 {2,S} {3,S} {4,S} {5,S}
+#2   C u0 {1,S}
+#3   C u0 {1,S}
+#4   H  u0 {1,S}
+#5   Cl  u0 {1,S}
+#""",
+#    thermo = u'Cs-CsCsClH',
+#    shortDesc = u"""""",
+#    longDesc = 
+#u"""
+#
+#""",
+#)
 
 
 entry(
@@ -42668,27 +42668,29 @@ u"""
 """,
 )
 
-#entry(
-#    index = 7018,
-#    label = "Cl-Cl",
-#    group = 
-#"""
-#1 * Cl u0 {2,S}
-#2   Cl u0 {1,S}
-#""",
-#    thermo = ThermoData(
-#        Tdata = ([300,400,500,600,800,1000,1500],'K'),
-#        Cpdata = ([0,0,0,0,0,0,0],'cal/(mol*K)'),
-#        H298 = (0,'kcal/mol'),
-#        S298 = (0,'cal/(mol*K)'),
-#    ),
-#    shortDesc = u"""""",
-#    longDesc = 
-#u"""
-#
-#""",
-#)
-#
+entry(
+    index = 7018,
+    label = "Cl-Cl",
+    group = 
+"""
+1 * Cl u0 {2,S}
+2   Cl u0 {1,S}
+""",
+    thermo = ThermoData(
+        Tdata = ([300,400,500,600,800,1000,1500],'K'),
+        Cpdata = ([0.75,0.46,0.23,0.08,-0.05,-0.05,0.02],'cal/(mol*K)'),
+        H298 = (2.54,'kcal/mol'),
+        S298 = (-1.29,'cal/(mol*K)'),
+    ),
+    shortDesc = u"""""",
+    longDesc = 
+u"""
+
+""",
+)
+
+
+
 entry(
     index = 7019,
     label = "F",
@@ -44283,8 +44285,7 @@ L1: R
             L4: CS-CsOs
             L4: Cds-CdFF
                 L5: Cds-CdsFF
-            L4: Cds-CdClCl
-                L5: Cds-CdsClCl
+            L4: Cds-CdsClCl
             L4: Cds-CdHH
                 L5: Cds-CdsHH
                 L5: Cds-CddHH
@@ -44296,8 +44297,7 @@ L1: R
                 L5: Cds-CddOsH
                     L6: Cds-(Cdd-Od)OsH
                     L6: Cds-(Cdd-Cd)OsH
-            L4: Cds-CdHCl
-                L5: Cds-CdsHCl
+            L4: Cds-CdsHCl
             L4: Cds-CdSsH
                 L5: Cds-CdsSsH
                 L5: Cds-CddSsH
@@ -44315,8 +44315,7 @@ L1: R
                     L6: Cds-(Cdd-Cd)SsSs
             L4: Cds-CdsCF
                 L5: Cds-CdsCsF
-            L4: Cds-CdsCCl
-                L5: Cds-CdsCsCl
+            L4: Cds-CdsCsCl
             L4: Cds-CdCH
                 L5: Cds-CdsCsH
                 L5: Cds-CdsCdsH
@@ -44667,24 +44666,19 @@ L1: R
             L4: Cs-CFFF
                 L5: Cs-CsFFF
                 L5: Cs-CdFFF
-            L4: Cs-CClClCl
-                L5: Cs-CsClClCl
+            L4: Cs-CsClClCl
             L4: Cs-CFFH
                 L5: Cs-CsFFH
-            L4: Cs-CClClH
-                L5: Cs-CsClClH
+            L4: Cs-CsClClH
             L4: Cs-CCFF
                 L5: Cs-CsCsFF
-            L4: Cs-CCClCl
-                L5: Cs-CsCsClCl
+            L4: Cs-CsCsClCl
             L4: Cs-CFHH
                 L5: Cs-CsFHH  
-            L4: Cs-CClHH
-                L5: Cs-CsClHH
+            L4: Cs-CsClHH
             L4: Cs-CCFH
                 L5: Cs-CsCsFH
-            L4: Cs-CCClH
-                L5: Cs-CsCsClH
+            L4: Cs-CsCsClH
             L4: Cs-CHHH
                 L5: Cs-CsHHH
                 L5: Cs-CdsHHH
@@ -46078,6 +46072,7 @@ L1: R
                 L5: Ss-CtCb
                 L5: Ss-CbCb
     L2: Cl
+        L3: Cl-Cl
     L2: F
     L2: N
         L3: N1d
