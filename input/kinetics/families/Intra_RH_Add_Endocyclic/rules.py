@@ -4,10 +4,6 @@
 name = "Intra_RH_Add_Endocyclic/rules"
 shortDesc = u""
 longDesc = u"""
-<<<<<<< HEAD
-=======
-"""
->>>>>>> b60bf41336e4a52f6397f18b7d4e90d4d41af42f
 
 """
 entry(
